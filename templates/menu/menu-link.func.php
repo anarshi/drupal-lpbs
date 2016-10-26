@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_menu_link() and suggestion(s).
+ * Stub file for lpbs_menu_link() and suggestion(s).
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_menu_link(array $variables) {
+function lpbs_menu_link(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
 
@@ -52,7 +52,7 @@ function bootstrap_menu_link(array $variables) {
 /**
  * Overrides theme_menu_link() for book module.
  */
-function bootstrap_menu_link__book_toc(array $variables) {
+function lpbs_menu_link__book_toc(array $variables) {
   $element = $variables['element'];
   $sub_menu = drupal_render($element['#below']);
   $element['#attributes']['role'] = 'presentation';

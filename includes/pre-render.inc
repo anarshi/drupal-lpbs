@@ -9,8 +9,8 @@
 /**
  * Implements hook_pre_render().
  */
-function bootstrap_pre_render($element) {
-  if (!empty($element['#bootstrap_ignore_pre_render'])) {
+function lpbs_pre_render($element) {
+  if (!empty($element['#lpbs_ignore_pre_render'])) {
     return $element;
   }
 
@@ -56,7 +56,7 @@ function bootstrap_pre_render($element) {
   }
 
   // Add smart descriptions to the element, if necessary.
-  bootstrap_element_smart_description($element);
+  lpbs_element_smart_description($element);
 
   // Return the modified element.
   return $element;
@@ -65,9 +65,9 @@ function bootstrap_pre_render($element) {
 /**
  * Implements hook_pre_render_HOOK().
  */
-function bootstrap_pre_render_fieldset($element) {
+function lpbs_pre_render_fieldset($element) {
   // Fieldsets may be rendered outside of a Form API context.
-  if (!empty($element['#bootstrap_ignore_pre_render']) || !isset($element['#parents']) || !isset($element['#groups'])) {
+  if (!empty($element['#lpbs_ignore_pre_render']) || !isset($element['#parents']) || !isset($element['#groups'])) {
     return $element;
   }
   // Inject group member elements belonging to this group.

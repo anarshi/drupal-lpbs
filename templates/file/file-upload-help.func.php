@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_file_upload_help().
+ * Stub file for lpbs_file_upload_help().
  */
 
 /**
@@ -21,9 +21,9 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_file_upload_help($variables) {
+function lpbs_file_upload_help($variables) {
   // If popover's are disabled, just theme this normally.
-  if (!bootstrap_setting('popover_enabled')) {
+  if (!lpbs_setting('popover_enabled')) {
     return theme_file_upload_help($variables);
   }
 
@@ -64,7 +64,7 @@ function bootstrap_file_upload_help($variables) {
     $build['instructions'] = array(
       '#theme' => 'link__file_upload_requirements',
       // @todo remove space between icon/text and fix via styling.
-      '#text' => _bootstrap_icon('question-sign') . ' ' . t('More information'),
+      '#text' => _lpbs_icon('question-sign') . ' ' . t('More information'),
       '#path' => '#',
       '#options' => array(
         'attributes' => array(

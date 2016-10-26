@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * Stub file for "bootstrap_dropdown" theme hook [pre]process functions.
+ * Stub file for "lpbs_dropdown" theme hook [pre]process functions.
  */
 
 /**
- * Pre-processes variables for the "bootstrap_dropdown" theme hook.
+ * Pre-processes variables for the "lpbs_dropdown" theme hook.
  *
  * See theme function for list of available variables.
  *
- * @see bootstrap_bootstrap_dropdown()
+ * @see lpbs_lpbs_dropdown()
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_bootstrap_dropdown(&$variables) {
+function lpbs_preprocess_lpbs_dropdown(&$variables) {
   $element = &$variables['element'];
 
   // Provide defaults.
@@ -34,7 +34,7 @@ function bootstrap_preprocess_bootstrap_dropdown(&$variables) {
   if (isset($element['#toggle'])) {
     if (is_string($element['#toggle'])) {
       $element['#toggle'] = array(
-        '#theme' => 'link__bootstrap_dropdown__toggle',
+        '#theme' => 'link__lpbs_dropdown__toggle',
         '#text' => $element['#toggle'],
         '#path' => '#',
         '#options' => array(
@@ -63,15 +63,15 @@ function bootstrap_preprocess_bootstrap_dropdown(&$variables) {
 }
 
 /**
- * Processes variables for the "bootstrap_dropdown" theme hook.
+ * Processes variables for the "lpbs_dropdown" theme hook.
  *
  * See theme function for list of available variables.
  *
- * @see bootstrap_bootstrap_dropdown()
+ * @see lpbs_lpbs_dropdown()
  *
  * @ingroup theme_process
  */
-function bootstrap_process_bootstrap_dropdown(&$variables) {
+function lpbs_process_lpbs_dropdown(&$variables) {
   $element = &$variables['element'];
 
   $items = array();
@@ -113,7 +113,7 @@ function bootstrap_process_bootstrap_dropdown(&$variables) {
     '#attributes' => $element['#wrapper_attributes'],
     'toggle' => $element['#toggle'],
     'items' => array(
-      '#theme' => 'item_list__bootstrap_dropdown',
+      '#theme' => 'item_list__lpbs_dropdown',
       '#items' => $items,
       '#attributes' => $element['#attributes'],
     ),

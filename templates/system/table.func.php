@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_table().
+ * Stub file for lpbs_table().
  */
 
 /**
@@ -99,7 +99,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_table($variables) {
+function lpbs_table($variables) {
   $header = $variables['header'];
   $rows = $variables['rows'];
   $footer = $variables['footer'];

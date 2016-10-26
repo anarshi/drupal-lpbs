@@ -13,7 +13,7 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_links(&$variables) {
+function lpbs_preprocess_links(&$variables) {
   if (isset($variables['attributes']) && isset($variables['attributes']['class'])) {
     $string = is_string($variables['attributes']['class']);
     if ($string) {

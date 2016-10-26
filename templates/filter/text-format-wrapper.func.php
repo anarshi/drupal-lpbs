@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_text_format_wrapper().
+ * Stub file for lpbs_text_format_wrapper().
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_text_format_wrapper($variables) {
+function lpbs_text_format_wrapper($variables) {
   $element = $variables['element'];
   $output = '<div class="text-format-wrapper">';
   $output .= $element['#children'];

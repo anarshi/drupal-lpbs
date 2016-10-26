@@ -22,10 +22,10 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_admin_menu_links(&$variables) {
+function lpbs_preprocess_admin_menu_links(&$variables) {
   $elements = &$variables['elements'];
   foreach (element_children($elements) as $child) {
-    $elements[$child]['#bootstrap_ignore_pre_render'] = TRUE;
-    $elements[$child]['#bootstrap_ignore_process'] = TRUE;
+    $elements[$child]['#lpbs_ignore_pre_render'] = TRUE;
+    $elements[$child]['#lpbs_ignore_process'] = TRUE;
   }
 }

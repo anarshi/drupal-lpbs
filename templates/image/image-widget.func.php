@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_image_widget().
+ * Stub file for lpbs_image_widget().
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_image_widget($variables) {
+function lpbs_image_widget($variables) {
   $element = $variables['element'];
   $output = '';
   $output .= '<div class="image-widget form-managed-file clearfix">';

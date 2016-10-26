@@ -9,8 +9,8 @@
 /**
  * Implements hook_form_process().
  */
-function bootstrap_form_process($element, &$form_state, &$form) {
-  if (!empty($element['#bootstrap_ignore_process'])) {
+function lpbs_form_process($element, &$form_state, &$form) {
+  if (!empty($element['#lpbs_ignore_process'])) {
     return $element;
   }
 
@@ -53,8 +53,8 @@ function bootstrap_form_process($element, &$form_state, &$form) {
         continue;
       }
 
-      if ($found_current_element && _bootstrap_is_button($parent[$child])) {
-        _bootstrap_iconize_button($parent[$child]);
+      if ($found_current_element && _lpbs_is_button($parent[$child])) {
+        _lpbs_iconize_button($parent[$child]);
         $element['#field_suffix'] = drupal_render($parent[$child]);
         break;
       }
@@ -67,15 +67,15 @@ function bootstrap_form_process($element, &$form_state, &$form) {
 /**
  * Implements hook_form_process_HOOK().
  */
-function bootstrap_form_process_actions($element, &$form_state, &$form) {
+function lpbs_form_process_actions($element, &$form_state, &$form) {
   $element['#attributes']['class'][] = 'form-actions';
 
-  if (!empty($element['#bootstrap_ignore_process'])) {
+  if (!empty($element['#lpbs_ignore_process'])) {
     return $element;
   }
 
   foreach (element_children($element) as $child) {
-    _bootstrap_iconize_button($element[$child]);
+    _lpbs_iconize_button($element[$child]);
   }
   return $element;
 }
@@ -83,13 +83,13 @@ function bootstrap_form_process_actions($element, &$form_state, &$form) {
 /**
  * Implements hook_form_process_HOOK().
  */
-function bootstrap_form_process_text_format($element, &$form_state, &$form) {
-  if (!empty($element['#bootstrap_ignore_process'])) {
+function lpbs_form_process_text_format($element, &$form_state, &$form) {
+  if (!empty($element['#lpbs_ignore_process'])) {
     return $element;
   }
 
   // Provide smart description on the value text area.
-  bootstrap_element_smart_description($element, $element['value']);
+  lpbs_element_smart_description($element, $element['value']);
 
   // Allow the elements inside to be displayed inline.
   $element['format']['#attributes']['class'][] = 'form-inline';

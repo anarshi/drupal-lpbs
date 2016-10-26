@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_form_element_label().
+ * Stub file for lpbs_form_element_label().
  */
 
 /**
@@ -32,7 +32,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_form_element_label(&$variables) {
+function lpbs_form_element_label(&$variables) {
   $element = $variables['element'];
 
   // Extract variables.
@@ -57,7 +57,7 @@ function bootstrap_form_element_label(&$variables) {
   }
 
   // Retrieve the label attributes array.
-  $attributes = &_bootstrap_get_attributes($element, 'label_attributes');
+  $attributes = &_lpbs_get_attributes($element, 'label_attributes');
 
   // Add Bootstrap label class.
   $attributes['class'][] = 'control-label';

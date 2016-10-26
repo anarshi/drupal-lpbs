@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_mark().
+ * Stub file for lpbs_mark().
  */
 
 /**
@@ -19,7 +19,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_mark($variables) {
+function lpbs_mark($variables) {
   global $user;
   if ($user->uid) {
     if ($variables['type'] == MARK_NEW) {

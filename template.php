@@ -18,7 +18,7 @@
  * Visit this project's official documentation site, http://drupal-bootstrap.org
  * or the markdown files inside the `./docs` folder.
  *
- * @see _bootstrap_theme()
+ * @see _lpbs_theme()
  */
 
 /**
@@ -29,7 +29,7 @@ include_once dirname(__FILE__) . '/includes/common.inc';
 /**
  * Include any deprecated functions.
  */
-bootstrap_include('bootstrap', 'includes/deprecated.inc');
+lpbs_include('lpbs', 'includes/deprecated.inc');
 
 /**
  * Implements hook_theme().
@@ -42,11 +42,11 @@ bootstrap_include('bootstrap', 'includes/deprecated.inc');
  * #theme property), or they return the HTML that should be returned by an
  * invocation of theme().
  *
- * @see _bootstrap_theme()
+ * @see _lpbs_theme()
  */
-function bootstrap_theme(&$existing, $type, $theme, $path) {
-  bootstrap_include($theme, 'includes/registry.inc');
-  return _bootstrap_theme($existing, $type, $theme, $path);
+function lpbs_theme(&$existing, $type, $theme, $path) {
+  lpbs_include($theme, 'includes/registry.inc');
+  return _lpbs_theme($existing, $type, $theme, $path);
 }
 
 /**
@@ -65,4 +65,4 @@ drupal_static_reset('element_info');
  * hook_*_alter() implementations must live (via include) inside this file so
  * they are properly detected when drupal_alter() is invoked.
  */
-bootstrap_include('bootstrap', 'includes/alter.inc');
+lpbs_include('lpbs', 'includes/alter.inc');

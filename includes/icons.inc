@@ -11,8 +11,8 @@ require_once dirname(__FILE__) . '/common.inc';
 /**
  * Implements hook_icon_providers().
  */
-function bootstrap_icon_providers() {
-  $providers['bootstrap'] = array(
+function lpbs_icon_providers() {
+  $providers['lpbs'] = array(
     'title' => t('Bootstrap'),
     'url' => 'http://getbootstrap.com/components/#glyphicons',
   );
@@ -22,12 +22,12 @@ function bootstrap_icon_providers() {
 /**
  * Implements hook_icon_bundles().
  */
-function bootstrap_icon_bundles() {
+function lpbs_icon_bundles() {
   $bundles = array();
-  if (_bootstrap_glyphicons_supported()) {
-    $bundles['bootstrap'] = array(
+  if (_lpbs_glyphicons_supported()) {
+    $bundles['lpbs'] = array(
       'render' => 'sprite',
-      'provider' => 'bootstrap',
+      'provider' => 'lpbs',
       'title' => t('Bootstrap'),
       'version' => t('Icons by Glyphicons'),
       'variations' => array(
@@ -36,7 +36,7 @@ function bootstrap_icon_bundles() {
       'settings' => array(
         'tag' => 'span',
       ),
-      'icons' => _bootstrap_glyphicons(),
+      'icons' => _lpbs_glyphicons(),
     );
   }
   return $bundles;

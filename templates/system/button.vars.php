@@ -9,12 +9,12 @@
  *
  * See theme function for list of available variables.
  *
- * @see bootstrap_button()
+ * @see lpbs_button()
  * @see theme_button()
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_button(&$vars) {
+function lpbs_preprocess_button(&$vars) {
   $element = &$vars['element'];
 
   // Drupal buttons should be of type 'submit'.
@@ -28,12 +28,12 @@ function bootstrap_preprocess_button(&$vars) {
   $element['#attributes']['class'][] = 'btn';
 
   // Add button size, if necessary.
-  if ($size = bootstrap_setting('button_size')) {
+  if ($size = lpbs_setting('button_size')) {
     $element['#attributes']['class'][] = $size;
   }
 
   // Colorize button.
-  _bootstrap_colorize_button($element);
+  _lpbs_colorize_button($element);
 
   // Add in the button type class.
   $element['#attributes']['class'][] = 'form-' . $element['#button_type'];

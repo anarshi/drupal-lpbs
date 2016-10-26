@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_filter_tips().
+ * Stub file for lpbs_filter_tips().
  */
 
 /**
@@ -35,7 +35,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_filter_tips($variables) {
+function lpbs_filter_tips($variables) {
   $format_id = arg(2);
   $current_path = current_path();
   $tips = _filter_tips(-1, TRUE);

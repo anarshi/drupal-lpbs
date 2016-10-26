@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_textfield().
+ * Stub file for lpbs_textfield().
  */
 
 /**
@@ -20,7 +20,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_textfield($variables) {
+function lpbs_textfield($variables) {
   $element = $variables['element'];
   $element['#attributes']['type'] = 'text';
   element_set_attributes($element, array(
@@ -46,7 +46,7 @@ function bootstrap_textfield($variables) {
     $attributes['disabled'] = 'disabled';
     $attributes['class'][] = 'autocomplete';
     // Uses icon for autocomplete "throbber".
-    if ($icon = _bootstrap_icon('refresh')) {
+    if ($icon = _lpbs_icon('refresh')) {
       $output = '<div class="input-group">' . $output . '<span class="input-group-addon">' . $icon . '</span></div>';
     }
     // Fallback to using core's throbber.

@@ -41,7 +41,7 @@ to your sub-theme should the need arise.
 Theme functions can be be stored in a dedicated file. These files should end in
 a `.func.php` extension where the name of the file relates to the base "theme
 hook" being invoked. For example: the theme hook `breadcrumb` is rendered by
-the `bootstrap_breadcrumb()` theme function located in the
+the `lpbs_breadcrumb()` theme function located in the
 `./bootstrap/templates/system/breadcrumb.func.php` file.
 
 {.help-block} See related sub-topic below for a list of functions.
@@ -52,7 +52,7 @@ files must end with a `.vars.php` extension where the name of the file relates
 to the base "theme hook" being invoked.
 
 For example: the theme hook `page` has both the process function
-`bootstrap_process_page()` and the preprocess function `bootstrap_preprocess_page()`
+`lpbs_process_page()` and the preprocess function `lpbs_preprocess_page()`
 which are located in the `./bootstrap/templates/system/page.vars.php` file.
 
 This file should also contain any helper functions that are specific to the
@@ -82,7 +82,7 @@ named using the base theme hook (using the general rule).
 
 Theme hook suggestions should not be used in the file name, but rather their
 suggestion functions placed inside the base theme hook `.func.php` or `.vars.php`
-file. An example of this would be the `bootstrap_menu_tree__primary()` theme
+file. An example of this would be the `lpbs_menu_tree__primary()` theme
 function where the base theme hook is `menu_tree` (the hook name before `__`)
 and located in the `./bootstrap/templates/menu/menu-tree.func.php` file.
 

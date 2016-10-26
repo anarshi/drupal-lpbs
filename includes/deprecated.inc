@@ -16,8 +16,8 @@
  *
  * @todo Remove in 7.x-3.2.
  */
-function _bootstrap_pre_render_input($element) {
-  return bootstrap_pre_render($element);
+function _lpbs_pre_render_input($element) {
+  return lpbs_pre_render($element);
 }
 
 /**
@@ -29,8 +29,8 @@ function _bootstrap_pre_render_input($element) {
  *
  * @todo Remove in 7.x-3.2.
  */
-function _bootstrap_pre_render_fieldset($element) {
-  return bootstrap_pre_render_fieldset($element);
+function _lpbs_pre_render_fieldset($element) {
+  return lpbs_pre_render_fieldset($element);
 }
 
 /**
@@ -42,17 +42,17 @@ function _bootstrap_pre_render_fieldset($element) {
  *
  * @todo Remove in 7.x-3.2.
  */
-function _bootstrap_process_element($element, &$form_state, &$form) {
-  $element = bootstrap_form_process($element, $form_state, $form);
+function _lpbs_process_element($element, &$form_state, &$form) {
+  $element = lpbs_form_process($element, $form_state, $form);
 
   // Process form actions.
   if (!empty($element['#type']) && $element['#type'] === 'actions') {
-    $element = bootstrap_form_process_actions($element, $form_state, $form);
+    $element = lpbs_form_process_actions($element, $form_state, $form);
   }
 
   // Process text_format elements.
   if (isset($element['#type']) && $element['#type'] === 'text_format') {
-    $element = bootstrap_form_process_text_format($element, $form_state, $form);
+    $element = lpbs_form_process_text_format($element, $form_state, $form);
   }
 
   return $element;
@@ -67,7 +67,7 @@ function _bootstrap_process_element($element, &$form_state, &$form) {
  *
  * @todo Remove in 7.x-3.2.
  */
-function _bootstrap_process_fieldset($element, &$form_state, &$form) {
+function _lpbs_process_fieldset($element, &$form_state, &$form) {
   // Purposefully left empty, there's nothing to process (just pre-render now).
 }
 
@@ -79,25 +79,25 @@ function _bootstrap_process_fieldset($element, &$form_state, &$form) {
  *
  * @deprecated Will be removed in 7.x-3.2.
  *
- * @see _bootstrap_simple_string()
- * @see bootstrap_element_smart_description()
+ * @see _lpbs_simple_string()
+ * @see lpbs_element_smart_description()
  *
  * @todo Remove in 7.x-3.2.
  */
-function _bootstrap_tooltip_description($description) {
+function _lpbs_tooltip_description($description) {
   // Determine if tooltips are enabled.
   static $enabled;
   if (!isset($enabled)) {
-    $enabled = bootstrap_setting('tooltip_enabled') && bootstrap_setting('forms_smart_descriptions');
+    $enabled = lpbs_setting('tooltip_enabled') && lpbs_setting('forms_smart_descriptions');
   }
   // Immediately return if "simple" tooltip descriptions are not enabled.
   if (!$enabled) {
     return FALSE;
   }
   $allowed_tags = array('b', 'code', 'em', 'i', 'kbd', 'span', 'strong');
-  $length = (int) bootstrap_setting('forms_smart_descriptions_length');
+  $length = (int) lpbs_setting('forms_smart_descriptions_length');
   if (empty($length)) {
     $length = FALSE;
   }
-  return _bootstrap_is_simple_string($description, $length, $allowed_tags);
+  return _lpbs_is_simple_string($description, $length, $allowed_tags);
 }

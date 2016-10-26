@@ -13,9 +13,9 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_picture(&$variables) {
+function lpbs_preprocess_picture(&$variables) {
   // Add responsiveness, if necessary.
-  if ($shape = bootstrap_setting('image_responsive')) {
+  if ($shape = lpbs_setting('image_responsive')) {
     $variables['attributes']['class'][] = 'img-responsive';
   }
 }

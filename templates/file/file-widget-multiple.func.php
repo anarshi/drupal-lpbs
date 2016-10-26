@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_file_widget_multiple().
+ * Stub file for lpbs_file_widget_multiple().
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_file_widget_multiple($variables) {
+function lpbs_file_widget_multiple($variables) {
   $element = $variables['element'];
 
   // Special ID and classes for draggable tables.
@@ -82,7 +82,7 @@ function bootstrap_file_widget_multiple($variables) {
       $operation_element['#attributes']['class'][] = 'btn-xs';
       switch ($operation_element['#value']) {
         case t('Remove'):
-          $operation_element['#icon'] = _bootstrap_icon('remove');
+          $operation_element['#icon'] = _lpbs_icon('remove');
           break;
       }
       $operations .= render($operation_element);

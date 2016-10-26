@@ -13,7 +13,7 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_region(&$variables) {
+function lpbs_preprocess_region(&$variables) {
   global $theme;
 
   $region = $variables['region'];
@@ -26,7 +26,7 @@ function bootstrap_preprocess_region(&$variables) {
   }
   // Help region.
   elseif ($region === 'help' && !empty($variables['content'])) {
-    $variables['content'] = _bootstrap_icon('question-sign') . $variables['content'];
+    $variables['content'] = _lpbs_icon('question-sign') . $variables['content'];
     $classes[] = 'alert';
     $classes[] = 'alert-info';
     $classes[] = 'messages';
@@ -37,7 +37,7 @@ function bootstrap_preprocess_region(&$variables) {
   static $wells;
   if (!isset($wells)) {
     foreach (system_region_list($theme) as $name => $title) {
-      $wells[$name] = bootstrap_setting('region_well-' . $name);
+      $wells[$name] = lpbs_setting('region_well-' . $name);
     }
   }
   if (!empty($wells[$region])) {

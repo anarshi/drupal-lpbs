@@ -9,25 +9,25 @@
 /**
  * Include #pre_render callbacks for elements.
  */
-bootstrap_include('bootstrap', 'includes/pre-render.inc');
+lpbs_include('lpbs', 'includes/pre-render.inc');
 
 /**
  * Include #process callbacks for elements.
  */
-bootstrap_include('bootstrap', 'includes/process.inc');
+lpbs_include('lpbs', 'includes/process.inc');
 
 /**
  * Implements hook_css_alter().
  */
-function bootstrap_css_alter(&$css) {
-  $theme_path = drupal_get_path('theme', 'bootstrap');
+function lpbs_css_alter(&$css) {
+  $theme_path = drupal_get_path('theme', 'lpbs');
 
   // Exclude specified CSS files from theme.
-  $excludes = bootstrap_get_theme_info(NULL, 'exclude][css');
+  $excludes = lpbs_get_theme_info(NULL, 'exclude][css');
 
   // Add CDN assets, if any.
-  $provider = bootstrap_setting('cdn_provider');
-  if ($cdn_assets = bootstrap_get_cdn_assets('css', $provider)) {
+  $provider = lpbs_setting('cdn_provider');
+  if ($cdn_assets = lpbs_get_cdn_assets('css', $provider)) {
     $cdn_weight = -2.99;
     foreach ($cdn_assets as $cdn_asset) {
       $cdn_weight += .01;
@@ -44,15 +44,15 @@ function bootstrap_css_alter(&$css) {
     }
 
     // Add a specific version and theme CSS overrides file.
-    $version = bootstrap_setting('cdn_' . $provider . '_version');
+    $version = lpbs_setting('cdn_' . $provider . '_version');
     if (!$version) {
       $version = BOOTSTRAP_VERSION;
     }
-    $theme = bootstrap_setting('cdn_' . $provider . '_theme');
+    $theme = lpbs_setting('cdn_' . $provider . '_theme');
     if (!$theme) {
-      $theme = 'bootstrap';
+      $theme = 'lpbs';
     }
-    $theme = $theme === 'bootstrap' || $theme === 'bootstrap_theme' ? '' : "-$theme";
+    $theme = $theme === 'lpbs' || $theme === 'lpbs_theme' ? '' : "-$theme";
     $overrides = "$theme_path/css/$version/overrides$theme.min.css";
     if (file_exists($overrides)) {
       $css[$overrides] = array(
@@ -76,7 +76,7 @@ function bootstrap_css_alter(&$css) {
 /**
  * Implements hook_element_info_alter().
  */
-function bootstrap_element_info_alter(&$info) {
+function lpbs_element_info_alter(&$info) {
   global $theme_key;
 
   $cid = "theme_registry:bootstrap:element_info";
@@ -85,19 +85,19 @@ function bootstrap_element_info_alter(&$info) {
     $cached = $cache->data;
   }
 
-  $themes = _bootstrap_get_base_themes($theme_key, TRUE);
+  $themes = _lpbs_get_base_themes($theme_key, TRUE);
   foreach ($themes as $theme) {
     if (!isset($cached[$theme])) {
       $cached[$theme] = array();
       foreach (array_keys($info) as $type) {
         $element = array();
 
-        // Replace fieldset theme implementations with bootstrap_panel.
+        // Replace fieldset theme implementations with lpbs_panel.
         if (!empty($info[$type]['#theme']) && $info[$type]['#theme'] === 'fieldset') {
-          $element['#bootstrap_replace']['#theme'] = 'bootstrap_panel';
+          $element['#lpbs_replace']['#theme'] = 'lpbs_panel';
         }
         if (!empty($info[$type]['#theme_wrappers']) && array_search('fieldset', $info[$type]['#theme_wrappers']) !== FALSE) {
-          $element['#bootstrap_replace']['#theme_wrappers']['fieldset'] = 'bootstrap_panel';
+          $element['#lpbs_replace']['#theme_wrappers']['fieldset'] = 'lpbs_panel';
         }
 
         // Setup a default "icon" variable. This allows #icon to be passed
@@ -122,11 +122,11 @@ function bootstrap_element_info_alter(&$info) {
             if (function_exists($function)) {
               // Replace direct core function correlation.
               if (!empty($info[$type][$property]) && array_search($callback, $info[$type][$property]) !== FALSE) {
-                $element['#bootstrap_replace'][$property][$callback] = $function;
+                $element['#lpbs_replace'][$property][$callback] = $function;
               }
               // Check for a "form_" prefix instead (for #pre_render).
               elseif (!empty($info[$type][$property]) && array_search('form_' . $callback, $info[$type][$property]) !== FALSE) {
-                $element['#bootstrap_replace'][$property]['form_' . $callback] = $function;
+                $element['#lpbs_replace'][$property]['form_' . $callback] = $function;
               }
               // Otherwise, append the function.
               else {
@@ -143,7 +143,7 @@ function bootstrap_element_info_alter(&$info) {
     }
 
     // Merge in each theme's cached element info.
-    $info = _bootstrap_element_info_array_merge($info, $cached[$theme]);
+    $info = _lpbs_element_info_array_merge($info, $cached[$theme]);
   }
 }
 
@@ -158,10 +158,10 @@ function bootstrap_element_info_alter(&$info) {
  * @return array
  *   The altered element info array.
  */
-function _bootstrap_element_info_array_merge($info, $cached) {
+function _lpbs_element_info_array_merge($info, $cached) {
   foreach ($cached as $type => $element) {
-    $replacement_data = isset($element['#bootstrap_replace']) ? $element['#bootstrap_replace'] : array();
-    unset($element['#bootstrap_replace']);
+    $replacement_data = isset($element['#lpbs_replace']) ? $element['#lpbs_replace'] : array();
+    unset($element['#lpbs_replace']);
     foreach ($element as $property => $data) {
       if (is_array($data)) {
         if (!isset($info[$type][$property])) {
@@ -202,7 +202,7 @@ function _bootstrap_element_info_array_merge($info, $cached) {
 /**
  * Implements hook_form_alter().
  */
-function bootstrap_form_alter(array &$form, array &$form_state = array(), $form_id = NULL) {
+function lpbs_form_alter(array &$form, array &$form_state = array(), $form_id = NULL) {
   if ($form_id) {
     switch ($form_id) {
       case 'system_theme_settings':
@@ -240,7 +240,7 @@ function bootstrap_form_alter(array &$form, array &$form_state = array(), $form_
 
         // Implement a theme wrapper to add a submit button containing a search
         // icon directly after the input element.
-        $form['basic']['keys']['#theme_wrappers'] = array('bootstrap_search_form_wrapper');
+        $form['basic']['keys']['#theme_wrappers'] = array('lpbs_search_form_wrapper');
         $form['basic']['keys']['#title'] = '';
         $form['basic']['keys']['#attributes']['placeholder'] = t('Search');
         break;
@@ -255,7 +255,7 @@ function bootstrap_form_alter(array &$form, array &$form_state = array(), $form_
         // to add a submit button containing a search icon directly after the
         // input element.
         $form['actions']['submit']['#attributes']['class'][] = 'element-invisible';
-        $form['search_block_form']['#theme_wrappers'] = array('bootstrap_search_form_wrapper');
+        $form['search_block_form']['#theme_wrappers'] = array('lpbs_search_form_wrapper');
 
         // Apply a clearfix so the results don't overflow onto the form.
         $form['#attributes']['class'][] = 'content-search';
@@ -276,15 +276,15 @@ function bootstrap_form_alter(array &$form, array &$form_state = array(), $form_
 /**
  * Implements hook_js_alter().
  */
-function bootstrap_js_alter(&$js) {
+function lpbs_js_alter(&$js) {
   // Exclude specified JavaScript files from theme.
-  $excludes = bootstrap_get_theme_info(NULL, 'exclude][js');
+  $excludes = lpbs_get_theme_info(NULL, 'exclude][js');
 
-  $theme_path = drupal_get_path('theme', 'bootstrap');
+  $theme_path = drupal_get_path('theme', 'lpbs');
 
   // Add or replace JavaScript files when matching paths are detected.
   // Replacement files must begin with '_', like '_node.js'.
-  $files = _bootstrap_file_scan_directory($theme_path . '/js', '/\.js$/');
+  $files = _lpbs_file_scan_directory($theme_path . '/js', '/\.js$/');
   foreach ($files as $file) {
     $path = str_replace($theme_path . '/js/', '', $file->uri);
     // Detect if this is a replacement file.
@@ -326,8 +326,8 @@ function bootstrap_js_alter(&$js) {
     $js['misc/jquery.once.js'] += drupal_js_defaults('misc/jquery.once.js');
   }
 
-  // Always add bootstrap.js last.
-  $bootstrap = $theme_path . '/js/bootstrap.js';
+  // Always add lpbs.js last.
+  $bootstrap = $theme_path . '/js/lpbs.js';
   $js[$bootstrap] = drupal_js_defaults($bootstrap);
   $js[$bootstrap]['group'] = JS_THEME;
   $js[$bootstrap]['scope'] = 'footer';
@@ -337,37 +337,37 @@ function bootstrap_js_alter(&$js) {
   }
 
   // Add Bootstrap settings.
-  $js['settings']['data'][]['bootstrap'] = array(
-    'anchorsFix' => bootstrap_setting('anchors_fix'),
-    'anchorsSmoothScrolling' => bootstrap_setting('anchors_smooth_scrolling'),
-    'formHasError' => (int) bootstrap_setting('forms_has_error_value_toggle'),
-    'popoverEnabled' => bootstrap_setting('popover_enabled'),
+  $js['settings']['data'][]['lpbs'] = array(
+    'anchorsFix' => lpbs_setting('anchors_fix'),
+    'anchorsSmoothScrolling' => lpbs_setting('anchors_smooth_scrolling'),
+    'formHasError' => (int) lpbs_setting('forms_has_error_value_toggle'),
+    'popoverEnabled' => lpbs_setting('popover_enabled'),
     'popoverOptions' => array(
-      'animation' => (int) bootstrap_setting('popover_animation'),
-      'html' => (int) bootstrap_setting('popover_html'),
-      'placement' => bootstrap_setting('popover_placement'),
-      'selector' => bootstrap_setting('popover_selector'),
-      'trigger' => implode(' ', array_filter(array_values((array) bootstrap_setting('popover_trigger')))),
-      'triggerAutoclose' => (int) bootstrap_setting('popover_trigger_autoclose'),
-      'title' => bootstrap_setting('popover_title'),
-      'content' => bootstrap_setting('popover_content'),
-      'delay' => (int) bootstrap_setting('popover_delay'),
-      'container' => bootstrap_setting('popover_container'),
+      'animation' => (int) lpbs_setting('popover_animation'),
+      'html' => (int) lpbs_setting('popover_html'),
+      'placement' => lpbs_setting('popover_placement'),
+      'selector' => lpbs_setting('popover_selector'),
+      'trigger' => implode(' ', array_filter(array_values((array) lpbs_setting('popover_trigger')))),
+      'triggerAutoclose' => (int) lpbs_setting('popover_trigger_autoclose'),
+      'title' => lpbs_setting('popover_title'),
+      'content' => lpbs_setting('popover_content'),
+      'delay' => (int) lpbs_setting('popover_delay'),
+      'container' => lpbs_setting('popover_container'),
     ),
-    'tooltipEnabled' => bootstrap_setting('tooltip_enabled'),
+    'tooltipEnabled' => lpbs_setting('tooltip_enabled'),
     'tooltipOptions' => array(
-      'animation' => (int) bootstrap_setting('tooltip_animation'),
-      'html' => (int) bootstrap_setting('tooltip_html'),
-      'placement' => bootstrap_setting('tooltip_placement'),
-      'selector' => bootstrap_setting('tooltip_selector'),
-      'trigger' => implode(' ', array_filter(array_values((array) bootstrap_setting('tooltip_trigger')))),
-      'delay' => (int) bootstrap_setting('tooltip_delay'),
-      'container' => bootstrap_setting('tooltip_container'),
+      'animation' => (int) lpbs_setting('tooltip_animation'),
+      'html' => (int) lpbs_setting('tooltip_html'),
+      'placement' => lpbs_setting('tooltip_placement'),
+      'selector' => lpbs_setting('tooltip_selector'),
+      'trigger' => implode(' ', array_filter(array_values((array) lpbs_setting('tooltip_trigger')))),
+      'delay' => (int) lpbs_setting('tooltip_delay'),
+      'container' => lpbs_setting('tooltip_container'),
     ),
   );
 
   // Add CDN assets, if any.
-  if ($cdn_assets = bootstrap_get_cdn_assets('js')) {
+  if ($cdn_assets = lpbs_get_cdn_assets('js')) {
     $cdn_weight = -99.99;
     foreach ($cdn_assets as $cdn_asset) {
       $cdn_weight += .01;
@@ -382,8 +382,8 @@ function bootstrap_js_alter(&$js) {
 /**
  * Implements hook_icon_bundle_list_alter().
  */
-function bootstrap_icon_bundle_list_alter(&$build, $bundle) {
-  if (bootstrap_setting('tooltip_enabled')) {
+function lpbs_icon_bundle_list_alter(&$build, $bundle) {
+  if (lpbs_setting('tooltip_enabled')) {
     foreach ($build as &$icon) {
       $icon['#attributes']['data-toggle'] = 'tooltip';
       $icon['#attributes']['data-placement'] = 'bottom';
@@ -394,7 +394,7 @@ function bootstrap_icon_bundle_list_alter(&$build, $bundle) {
 /**
  * Implements hook_menu_local_tasks_alter().
  */
-function bootstrap_menu_local_tasks_alter(&$data, &$router_item, $root_path) {
+function lpbs_menu_local_tasks_alter(&$data, &$router_item, $root_path) {
   if (!empty($data['actions']['output'])) {
     $items = array();
     foreach ($data['actions']['output'] as $item) {
@@ -415,6 +415,6 @@ function bootstrap_menu_local_tasks_alter(&$data, &$router_item, $root_path) {
 /**
  * Implements hook_js_callback_filter_xss_alter().
  */
-function bootstrap_js_callback_filter_xss_alter(array &$allowed_tags = array()) {
+function lpbs_js_callback_filter_xss_alter(array &$allowed_tags = array()) {
   $allowed_tags[] = 'button';
 }

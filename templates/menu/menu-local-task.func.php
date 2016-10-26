@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_menu_local_task().
+ * Stub file for lpbs_menu_local_task().
  */
 
 /**
@@ -21,7 +21,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_menu_local_task($variables) {
+function lpbs_menu_local_task($variables) {
   $link = $variables['element']['#link'];
   $link_text = $link['title'];
   $attributes = array();

@@ -9,12 +9,12 @@
  *
  * See theme function for list of available variables.
  *
- * @see bootstrap_table()
+ * @see lpbs_table()
  * @see theme_table()
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_table(&$variables) {
+function lpbs_preprocess_table(&$variables) {
   // Prepare classes array if necessary.
   if (!isset($variables['attributes']['class'])) {
     $variables['attributes']['class'] = array();
@@ -25,7 +25,7 @@ function bootstrap_preprocess_table(&$variables) {
   }
 
   // Add the necessary classes to the table.
-  _bootstrap_table_add_classes($variables['attributes']['class'], $variables);
+  _lpbs_table_add_classes($variables['attributes']['class'], $variables);
 }
 
 /**
@@ -36,32 +36,32 @@ function bootstrap_preprocess_table(&$variables) {
  * @param array $variables
  *   The variables of the theme hook, passed by reference.
  */
-function _bootstrap_table_add_classes(&$classes, &$variables) {
+function _lpbs_table_add_classes(&$classes, &$variables) {
   $context = $variables['context'];
 
   // Generic table class for all tables.
   $classes[] = 'table';
 
   // Bordered table.
-  if (!empty($context['bordered']) || (!isset($context['bordered']) && bootstrap_setting('table_bordered'))) {
+  if (!empty($context['bordered']) || (!isset($context['bordered']) && lpbs_setting('table_bordered'))) {
     $classes[] = 'table-bordered';
   }
 
   // Condensed table.
-  if (!empty($context['condensed']) || (!isset($context['condensed']) && bootstrap_setting('table_condensed'))) {
+  if (!empty($context['condensed']) || (!isset($context['condensed']) && lpbs_setting('table_condensed'))) {
     $classes[] = 'table-condensed';
   }
 
   // Hover rows.
-  if (!empty($context['hover']) || (!isset($context['hover']) && bootstrap_setting('table_hover'))) {
+  if (!empty($context['hover']) || (!isset($context['hover']) && lpbs_setting('table_hover'))) {
     $classes[] = 'table-hover';
   }
 
   // Striped rows.
-  if (!empty($context['striped']) || (!isset($context['striped']) && bootstrap_setting('table_striped'))) {
+  if (!empty($context['striped']) || (!isset($context['striped']) && lpbs_setting('table_striped'))) {
     $classes[] = 'table-striped';
   }
 
   // Responsive table.
-  $variables['responsive'] = isset($context['responsive']) ? $context['responsive'] : bootstrap_setting('table_responsive');
+  $variables['responsive'] = isset($context['responsive']) ? $context['responsive'] : lpbs_setting('table_responsive');
 }

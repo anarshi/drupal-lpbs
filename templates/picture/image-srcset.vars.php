@@ -13,9 +13,9 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_image_srcset(&$variables) {
+function lpbs_preprocess_image_srcset(&$variables) {
   // Add image shape, if necessary.
-  if ($shape = bootstrap_setting('image_shape')) {
+  if ($shape = lpbs_setting('image_shape')) {
     $variables['attributes']['class'][] = $shape;
   }
 }

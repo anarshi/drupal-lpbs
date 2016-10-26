@@ -31,11 +31,11 @@ define('BOOTSTRAP_VERSION', BOOTSTRAP_VERSION_MAJOR . '.' . BOOTSTRAP_VERSION_MI
  * @param int $length
  *   The length of characters to determine if description is "simple".
  */
-function bootstrap_element_smart_description(&$element, &$target = NULL, $input_only = TRUE, $length = NULL) {
+function lpbs_element_smart_description(&$element, &$target = NULL, $input_only = TRUE, $length = NULL) {
   // Determine if tooltips are enabled.
   static $enabled;
   if (!isset($enabled)) {
-    $enabled = bootstrap_setting('tooltip_enabled') && bootstrap_setting('forms_smart_descriptions');
+    $enabled = lpbs_setting('tooltip_enabled') && lpbs_setting('forms_smart_descriptions');
   }
 
   // Immediately return if "simple" tooltip descriptions are not enabled.
@@ -50,7 +50,7 @@ function bootstrap_element_smart_description(&$element, &$target = NULL, $input_
 
   // Retrieve the length limit for smart descriptions.
   if (!isset($length)) {
-    $length = (int) bootstrap_setting('forms_smart_descriptions_limit');
+    $length = (int) lpbs_setting('forms_smart_descriptions_limit');
     // Disable length checking by setting it to FALSE if empty.
     if (empty($length)) {
       $length = FALSE;
@@ -60,7 +60,7 @@ function bootstrap_element_smart_description(&$element, &$target = NULL, $input_
   // Retrieve the allowed tags for smart descriptions. This is primarily used
   // for display purposes only (i.e. non-UI/UX related elements that wouldn't
   // require a user to "click", like a link).
-  $allowed_tags = array_filter(array_unique(array_map('trim', explode(',', bootstrap_setting('forms_smart_descriptions_allowed_tags') . ''))));
+  $allowed_tags = array_filter(array_unique(array_map('trim', explode(',', lpbs_setting('forms_smart_descriptions_allowed_tags') . ''))));
 
   // Disable length checking by setting it to FALSE if empty.
   if (empty($allowed_tags)) {
@@ -91,7 +91,7 @@ function bootstrap_element_smart_description(&$element, &$target = NULL, $input_
     || (isset($target['#smart_description']) && !$target['#smart_description'])
 
     // Ignore if the description is not "simple".
-    || !_bootstrap_is_simple_string($element['#description'], $length, $allowed_tags, $html)
+    || !_lpbs_is_simple_string($element['#description'], $length, $allowed_tags, $html)
   ) {
     // Set the both the actual element and the target element
     // #smart_description property to FALSE.
@@ -120,7 +120,7 @@ function bootstrap_element_smart_description(&$element, &$target = NULL, $input_
   }
 
   // Retrieve the proper attributes array.
-  $attributes = &_bootstrap_get_attributes($target, $property);
+  $attributes = &_lpbs_get_attributes($target, $property);
 
   // Set the tooltip attributes.
   $attributes['title'] = $allowed_tags !== FALSE ? filter_xss($element['#description'], $allowed_tags) : $element['#description'];
@@ -151,7 +151,7 @@ function bootstrap_element_smart_description(&$element, &$target = NULL, $input_
  *   are returned as an indexed array of files. Otherwise, an associative array
  *   is returned keyed by the type.
  */
-function bootstrap_get_cdn_assets($type = NULL, $provider = NULL, $theme = NULL) {
+function lpbs_get_cdn_assets($type = NULL, $provider = NULL, $theme = NULL) {
   $original_type = $type;
   $assets = array();
   $types = array();
@@ -174,19 +174,19 @@ function bootstrap_get_cdn_assets($type = NULL, $provider = NULL, $theme = NULL)
 
   // Retrieve the CDN provider from the theme.
   if (!isset($provider)) {
-    $provider = bootstrap_setting('cdn_provider', $theme);
+    $provider = lpbs_setting('cdn_provider', $theme);
   }
 
   // Load the CDN provider data.
-  bootstrap_include('bootstrap', 'includes/cdn.inc');
-  if (!empty($provider) && ($data = bootstrap_cdn_provider($provider))) {
+  lpbs_include('lpbs', 'includes/cdn.inc');
+  if (!empty($provider) && ($data = lpbs_cdn_provider($provider))) {
     // Alter the assets based on provider.
-    $function = 'bootstrap_bootstrap_cdn_provider_' . $provider . '_assets_alter';
+    $function = 'lpbs_lpbs_cdn_provider_' . $provider . '_assets_alter';
     if (function_exists($function)) {
       $function($data, $theme);
     }
-    // @todo Use drupal_alter() once CDN is in bootstrap_core companion module.
-    // drupal_alter('bootstrap_cdn_provider_' . $provider . '_assets', $data, $theme);
+    // @todo Use drupal_alter() once CDN is in lpbs_core companion module.
+    // drupal_alter('lpbs_cdn_provider_' . $provider . '_assets', $data, $theme);
 
     // Iterate over each type.
     foreach ($types as $type) {
@@ -217,7 +217,7 @@ function bootstrap_get_cdn_assets($type = NULL, $provider = NULL, $theme = NULL)
  *   A string or array depending on the type of value and if a base theme also
  *   contains the same $key, FALSE if no $key is found.
  */
-function bootstrap_get_theme_info($theme_key = NULL, $key = NULL, $base_themes = TRUE) {
+function lpbs_get_theme_info($theme_key = NULL, $key = NULL, $base_themes = TRUE) {
   // If no $theme_key is given, use the current theme if we can determine it.
   if (!isset($theme_key)) {
     $theme_key = !empty($GLOBALS['theme_key']) ? $GLOBALS['theme_key'] : FALSE;
@@ -232,7 +232,7 @@ function bootstrap_get_theme_info($theme_key = NULL, $key = NULL, $base_themes =
         // Recursively add base theme values.
         if ($base_themes && isset($theme->base_themes)) {
           foreach (array_keys($theme->base_themes) as $base_theme) {
-            $value = bootstrap_get_theme_info($base_theme, $key);
+            $value = lpbs_get_theme_info($base_theme, $key);
           }
         }
         if (!empty($themes[$theme_key])) {
@@ -289,7 +289,7 @@ function bootstrap_get_theme_info($theme_key = NULL, $key = NULL, $base_themes =
  * @param string $path
  *   Path relative to $theme.
  */
-function bootstrap_include($theme, $path) {
+function lpbs_include($theme, $path) {
   static $themes = array();
   if (!isset($themes[$theme])) {
     $themes[$theme] = drupal_get_path('theme', $theme);
@@ -320,40 +320,40 @@ function bootstrap_include($theme, $path) {
  *
  * @todo Refactor in 7.x-4.x and get rid of the deprecated settings.
  */
-function bootstrap_setting($name, $theme = NULL, $prefix = 'bootstrap') {
+function lpbs_setting($name, $theme = NULL, $prefix = 'lpbs') {
   $prefix = !empty($prefix) ? $prefix . '_' : '';
   $setting = theme_get_setting($prefix . $name, $theme);
   switch ($prefix . $name) {
-    case 'bootstrap_cdn_provider':
-      $deprecated = theme_get_setting('bootstrap_cdn', $theme);
+    case 'lpbs_cdn_provider':
+      $deprecated = theme_get_setting('lpbs_cdn', $theme);
       if (isset($deprecated)) {
         $setting = empty($deprecated) ? '' : 'jsdelivr';
       }
       break;
 
-    case 'bootstrap_cdn_jsdelivr_version':
-      $deprecated = theme_get_setting('bootstrap_cdn', $theme);
+    case 'lpbs_cdn_jsdelivr_version':
+      $deprecated = theme_get_setting('lpbs_cdn', $theme);
       if (isset($deprecated)) {
         $setting = empty($deprecated) ? BOOTSTRAP_VERSION : $deprecated;
       }
       break;
 
-    case 'bootstrap_cdn_jsdelivr_theme':
-      $deprecated = theme_get_setting('bootstrap_bootswatch', $theme);
+    case 'lpbs_cdn_jsdelivr_theme':
+      $deprecated = theme_get_setting('lpbs_bootswatch', $theme);
       if (isset($deprecated)) {
-        $setting = empty($deprecated) ? 'bootstrap' : $deprecated;
+        $setting = empty($deprecated) ? 'lpbs' : $deprecated;
       }
       break;
 
-    case 'bootstrap_forms_smart_descriptions':
-      $deprecated = theme_get_setting('bootstrap_tooltip_descriptions', $theme);
+    case 'lpbs_forms_smart_descriptions':
+      $deprecated = theme_get_setting('lpbs_tooltip_descriptions', $theme);
       if (isset($deprecated)) {
         $setting = (int) !empty($deprecated);
       }
       break;
 
-    case 'bootstrap_forms_smart_descriptions_limit':
-      $deprecated = theme_get_setting('bootstrap_tooltip_descriptions_length', $theme);
+    case 'lpbs_forms_smart_descriptions_limit':
+      $deprecated = theme_get_setting('lpbs_tooltip_descriptions_length', $theme);
       if (isset($deprecated)) {
         $setting = (int) !empty($deprecated);
       }
@@ -379,7 +379,7 @@ function bootstrap_setting($name, $theme = NULL, $prefix = 'bootstrap') {
  * @return array
  *   The attributes array. Passed by reference.
  */
-function &_bootstrap_get_attributes(&$element, $property = 'attributes') {
+function &_lpbs_get_attributes(&$element, $property = 'attributes') {
   // Attempt to retrieve a renderable element attributes first.
   if (
     isset($element['#type']) ||
@@ -428,8 +428,8 @@ function &_bootstrap_get_attributes(&$element, $property = 'attributes') {
  * @return array
  *   The classes array. Passed by reference.
  */
-function &_bootstrap_get_classes(&$element, $property = 'attributes') {
-  $attributes = &_bootstrap_get_attributes($element, $property);
+function &_lpbs_get_classes(&$element, $property = 'attributes') {
+  $attributes = &_lpbs_get_attributes($element, $property);
 
   if (!isset($attributes['class'])) {
     $attributes['class'] = array();
@@ -461,9 +461,9 @@ function &_bootstrap_get_classes(&$element, $property = 'attributes') {
  *   normal attributes, but can be "wrapper_attributes" or
  *   "input_group_attributes".
  */
-function _bootstrap_add_class($class, &$element, $property = 'attributes') {
+function _lpbs_add_class($class, &$element, $property = 'attributes') {
   // Retrieve the element's classes.
-  $classes = &_bootstrap_get_classes($element, $property);
+  $classes = &_lpbs_get_classes($element, $property);
 
   // Convert the class to an array.
   if (!is_array($class)) {
@@ -494,9 +494,9 @@ function _bootstrap_add_class($class, &$element, $property = 'attributes') {
  *   normal attributes, but can be "wrapper_attributes" or
  *   "input_group_attributes".
  */
-function _bootstrap_remove_class($class, &$element, $property = 'attributes') {
+function _lpbs_remove_class($class, &$element, $property = 'attributes') {
   // Retrieve the element's classes.
-  $classes = &_bootstrap_get_classes($element, $property);
+  $classes = &_lpbs_get_classes($element, $property);
 
   // Convert the class to an array.
   if (!is_array($class)) {
@@ -524,13 +524,13 @@ function _bootstrap_remove_class($class, &$element, $property = 'attributes') {
  * @return array
  *   An indexed array of base themes.
  */
-function _bootstrap_get_base_themes($theme_key = NULL, $include_theme_key = FALSE) {
+function _lpbs_get_base_themes($theme_key = NULL, $include_theme_key = FALSE) {
   static $themes;
   if (!isset($theme_key)) {
     $theme_key = $GLOBALS['theme_key'];
   }
   if (!isset($themes[$theme_key])) {
-    $themes[$theme_key] = array_unique(array_filter((array) bootstrap_get_theme_info($theme_key, 'base theme')));
+    $themes[$theme_key] = array_unique(array_filter((array) lpbs_get_theme_info($theme_key, 'base theme')));
   }
   if ($include_theme_key) {
     $themes[$theme_key][] = $theme_key;
@@ -558,7 +558,7 @@ function _bootstrap_get_base_themes($theme_key = NULL, $include_theme_key = FALS
  *
  * @see file_scan_directory()
  */
-function _bootstrap_file_scan_directory($dir, $mask, array $options = array()) {
+function _lpbs_file_scan_directory($dir, $mask, array $options = array()) {
   // Retrieve cached data.
   $cid = 'theme_registry:bootstrap:files';
   $files = array();
@@ -585,7 +585,7 @@ function _bootstrap_file_scan_directory($dir, $mask, array $options = array()) {
  * @return array
  *   An associative array of icons keyed by their classes.
  */
-function _bootstrap_glyphicons($version = NULL) {
+function _lpbs_glyphicons($version = NULL) {
   static $versions;
   if (!isset($versions)) {
     $versions = array();
@@ -892,15 +892,15 @@ function _bootstrap_glyphicons($version = NULL) {
  *   The HTML markup containing the icon defined by $name, $default value if
  *   icon does not exist or returns empty output for whatever reason.
  */
-function _bootstrap_icon($name, $default = NULL) {
+function _lpbs_icon($name, $default = NULL) {
   $output = NULL;
   // Ensure the icon specified is a valid Bootstrap Glyphicon.
-  // @todo Supply a specific version to _bootstrap_glyphicons() when Icon API
+  // @todo Supply a specific version to _lpbs_glyphicons() when Icon API
   // supports versioning.
-  if (_bootstrap_glyphicons_supported() && in_array($name, _bootstrap_glyphicons())) {
+  if (_lpbs_glyphicons_supported() && in_array($name, _lpbs_glyphicons())) {
     // Attempt to use the Icon API module, if enabled and it generates output.
     if (module_exists('icon')) {
-      $output = theme('icon', array('bundle' => 'bootstrap', 'icon' => 'glyphicon-' . $name));
+      $output = theme('icon', array('bundle' => 'lpbs', 'icon' => 'glyphicon-' . $name));
     }
     if (empty($output)) {
       // Mimic the Icon API markup.
@@ -917,9 +917,9 @@ function _bootstrap_icon($name, $default = NULL) {
 /**
  * Determine whether or not Bootstrap Glyphicons can be used.
  */
-function _bootstrap_glyphicons_supported() {
+function _lpbs_glyphicons_supported() {
   // Use the advanced drupal_static() pattern, since this has the potential to
-  // be called very often by _bootstrap_icon().
+  // be called very often by _lpbs_icon().
   static $drupal_static_fast;
   if (!isset($drupal_static_fast)) {
     $drupal_static_fast['supported'] = &drupal_static(__FUNCTION__);
@@ -946,14 +946,14 @@ function _bootstrap_glyphicons_supported() {
       // that is the case here so no file discovery is necessary. If the active
       // theme does not have this setting, it falls back to the base theme that
       // does.
-      $supported[$theme] = !!bootstrap_get_cdn_assets('css', NULL, $theme);
+      $supported[$theme] = !!lpbs_get_cdn_assets('css', NULL, $theme);
 
       // CDN not used, iterate over all of the active (base) themes to determine
       // if they contain glyphicon font files.
       if (!$supported[$theme]) {
-        foreach (_bootstrap_get_base_themes($theme, TRUE) as $_theme) {
+        foreach (_lpbs_get_base_themes($theme, TRUE) as $_theme) {
           // Scan the theme for files.
-          $fonts = _bootstrap_file_scan_directory(drupal_get_path('theme', $_theme), '/glyphicons-halflings-regular\.(eot|svg|ttf|woff)$/');
+          $fonts = _lpbs_file_scan_directory(drupal_get_path('theme', $_theme), '/glyphicons-halflings-regular\.(eot|svg|ttf|woff)$/');
 
           // Fonts found, stop the search.
           if (!empty($fonts)) {
@@ -979,7 +979,7 @@ function _bootstrap_glyphicons_supported() {
  * @return bool
  *   TRUE or FALSE.
  */
-function _bootstrap_is_button($element) {
+function _lpbs_is_button($element) {
   return
     !empty($element['#type']) &&
     !empty($element['#value']) && (
@@ -995,8 +995,8 @@ function _bootstrap_is_button($element) {
  * @param array $element
  *   The form element, passed by reference.
  */
-function _bootstrap_colorize_button(&$element) {
-  if (_bootstrap_is_button($element)) {
+function _lpbs_colorize_button(&$element) {
+  if (_lpbs_is_button($element)) {
     // Do not add the class if one is already present in the array.
     $button_classes = array(
       'btn-default',
@@ -1010,7 +1010,7 @@ function _bootstrap_colorize_button(&$element) {
     $class_intersection = array_intersect($button_classes, $element['#attributes']['class']);
     if (empty($class_intersection)) {
       // Get the matched class.
-      $class = bootstrap_setting('button_colorize') ? _bootstrap_colorize_text($element['#value']) : FALSE;
+      $class = lpbs_setting('button_colorize') ? _lpbs_colorize_text($element['#value']) : FALSE;
       // If no particular class matched, use the default style.
       if (!$class) {
         $class = 'default';
@@ -1032,7 +1032,7 @@ function _bootstrap_colorize_button(&$element) {
  *   The Bootstrap class matched against the value of $haystack or $default if
  *   no match could be made.
  */
-function _bootstrap_colorize_text($string, $default = '') {
+function _lpbs_colorize_text($string, $default = '') {
   static $texts;
   if (!isset($texts)) {
     $texts = array(
@@ -1083,7 +1083,7 @@ function _bootstrap_colorize_text($string, $default = '') {
     );
 
     // Allow sub-themes to alter this array of patterns.
-    drupal_alter('bootstrap_colorize_text', $texts);
+    drupal_alter('lpbs_colorize_text', $texts);
   }
 
   // Iterate over the array.
@@ -1115,8 +1115,8 @@ function _bootstrap_colorize_text($string, $default = '') {
  * @param array $element
  *   The form element, passed by reference.
  */
-function _bootstrap_iconize_button(&$element) {
-  if (bootstrap_setting('button_iconize') && _bootstrap_is_button($element) && ($icon = _bootstrap_iconize_text($element['#value']))) {
+function _lpbs_iconize_button(&$element) {
+  if (lpbs_setting('button_iconize') && _lpbs_is_button($element) && ($icon = _lpbs_iconize_text($element['#value']))) {
     $element['#icon'] = $icon;
   }
 }
@@ -1133,7 +1133,7 @@ function _bootstrap_iconize_button(&$element) {
  *   The Bootstrap icon matched against the value of $haystack or $default if
  *   no match could be made.
  */
-function _bootstrap_iconize_text($string, $default = '') {
+function _lpbs_iconize_text($string, $default = '') {
   static $texts;
   if (!isset($texts)) {
     $texts = array(
@@ -1162,7 +1162,7 @@ function _bootstrap_iconize_text($string, $default = '') {
     );
 
     // Allow sub-themes to alter this array of patterns.
-    drupal_alter('bootstrap_iconize_text', $texts);
+    drupal_alter('lpbs_iconize_text', $texts);
   }
 
   // Iterate over the array.
@@ -1171,13 +1171,13 @@ function _bootstrap_iconize_text($string, $default = '') {
       switch ($pattern) {
         case 'matches':
           if ($string === $value) {
-            return _bootstrap_icon($icon, $default);
+            return _lpbs_icon($icon, $default);
           }
           break;
 
         case 'contains':
           if (strpos(drupal_strtolower($string), drupal_strtolower($value)) !== FALSE) {
-            return _bootstrap_icon($icon, $default);
+            return _lpbs_icon($icon, $default);
           }
           break;
       }
@@ -1185,7 +1185,7 @@ function _bootstrap_iconize_text($string, $default = '') {
   }
 
   // Return a default icon if nothing was matched.
-  return _bootstrap_icon($default);
+  return _lpbs_icon($default);
 }
 
 /**
@@ -1194,7 +1194,7 @@ function _bootstrap_iconize_text($string, $default = '') {
  * @param array $variables
  *   The theme implementation variables array.
  */
-function _bootstrap_preprocess_theme_suggestion(&$variables) {
+function _lpbs_preprocess_theme_suggestion(&$variables) {
   $registry = theme_get_registry();
   if (!empty($variables['theme_hook_suggestion']) && !empty($registry[$variables['theme_hook_suggestion']]['preprocess functions'])) {
     // Save the suggestion as the hook to pass to the function.
@@ -1223,7 +1223,7 @@ function _bootstrap_preprocess_theme_suggestion(&$variables) {
  * @param array $variables
  *   The theme implementation variables array.
  */
-function _bootstrap_process_theme_suggestion(&$variables) {
+function _lpbs_process_theme_suggestion(&$variables) {
   $registry = theme_get_registry();
   if (!empty($variables['theme_hook_suggestion']) && !empty($registry[$variables['theme_hook_suggestion']]['process functions'])) {
     // Save the suggestion as the hook to pass to the function.
@@ -1263,7 +1263,7 @@ function _bootstrap_process_theme_suggestion(&$variables) {
  * @return bool
  *   Returns TRUE if the $string is considered "simple", FALSE otherwise.
  */
-function _bootstrap_is_simple_string($string, $length = 250, $allowed_tags = NULL, &$html = FALSE) {
+function _lpbs_is_simple_string($string, $length = 250, $allowed_tags = NULL, &$html = FALSE) {
   // Use the advanced drupal_static() pattern, since this is called very often.
   static $drupal_static_fast;
   if (!isset($drupal_static_fast)) {
@@ -1297,7 +1297,7 @@ function _bootstrap_is_simple_string($string, $length = 250, $allowed_tags = NUL
  * @return bool
  *   TRUE or FALSE
  */
-function _bootstrap_use_path_breadcrumbs($theme = NULL) {
+function _lpbs_use_path_breadcrumbs($theme = NULL) {
   static $path_breadcrumbs;
 
   if (!isset($path_breadcrumbs)) {

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_breadcrumb().
+ * Stub file for lpbs_breadcrumb().
  */
 
 /**
@@ -18,9 +18,9 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_breadcrumb($variables) {
+function lpbs_breadcrumb($variables) {
   // Use the Path Breadcrumbs theme function if it should be used instead.
-  if (_bootstrap_use_path_breadcrumbs()) {
+  if (_lpbs_use_path_breadcrumbs()) {
     return path_breadcrumbs_breadcrumb($variables);
   }
 
@@ -28,8 +28,8 @@ function bootstrap_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
 
   // Determine if we are to display the breadcrumb.
-  $bootstrap_breadcrumb = bootstrap_setting('breadcrumb');
-  if (($bootstrap_breadcrumb == 1 || ($bootstrap_breadcrumb == 2 && arg(0) == 'admin')) && !empty($breadcrumb)) {
+  $lpbs_breadcrumb = lpbs_setting('breadcrumb');
+  if (($lpbs_breadcrumb == 1 || ($lpbs_breadcrumb == 2 && arg(0) == 'admin')) && !empty($breadcrumb)) {
     $output = theme('item_list', array(
       'attributes' => array(
         'class' => array('breadcrumb'),

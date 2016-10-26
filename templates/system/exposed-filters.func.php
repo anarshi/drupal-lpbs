@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_exposed_filters().
+ * Stub file for lpbs_exposed_filters().
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_exposed_filters($variables) {
+function lpbs_exposed_filters($variables) {
   $form = $variables['form'];
   $output = '';
 

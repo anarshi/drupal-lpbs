@@ -13,14 +13,14 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_image(&$variables) {
+function lpbs_preprocess_image(&$variables) {
   // Add image shape, if necessary.
-  if ($shape = bootstrap_setting('image_shape')) {
-    _bootstrap_add_class($shape, $variables);
+  if ($shape = lpbs_setting('image_shape')) {
+    _lpbs_add_class($shape, $variables);
   }
 
   // Add responsiveness, if necessary.
-  if (bootstrap_setting('image_responsive')) {
-    _bootstrap_add_class('img-responsive', $variables);
+  if (lpbs_setting('image_responsive')) {
+    _lpbs_add_class('img-responsive', $variables);
   }
 }

@@ -19,9 +19,9 @@
  *   An associative array containing the text and classes to be matched, passed
  *   by reference.
  *
- * @see _bootstrap_colorize_text()
+ * @see _lpbs_colorize_text()
  */
-function hook_bootstrap_colorize_text_alter(&$texts) {
+function hook_lpbs_colorize_text_alter(&$texts) {
   // This matches the exact string: "My Unique Button Text".
   $texts['matches'][t('My Unique Button Text')] = 'primary';
 
@@ -43,9 +43,9 @@ function hook_bootstrap_colorize_text_alter(&$texts) {
  *   An associative array containing the text and icons to be matched, passed
  *   by reference.
  *
- * @see _bootstrap_iconize_text()
+ * @see _lpbs_iconize_text()
  */
-function hook_bootstrap_iconize_text_alter(&$texts) {
+function hook_lpbs_iconize_text_alter(&$texts) {
   // This matches the exact string: "My Unique Button Text".
   $texts['matches'][t('My Unique Button Text')] = 'heart';
 
@@ -70,7 +70,7 @@ function hook_bootstrap_iconize_text_alter(&$texts) {
  * cleared and rebuilt for the changes to take effect.
  *
  * Implementations of this hook should check to see if the element has a
- * property named #bootstrap_ignore_process and check if it is set to TRUE.
+ * property named #lpbs_ignore_process and check if it is set to TRUE.
  * If it is, the hook should immediately return with the unaltered element.
  *
  * @param array $element
@@ -84,7 +84,7 @@ function hook_bootstrap_iconize_text_alter(&$texts) {
  * @return array
  *   The altered element array.
  *
- * @see bootstrap_element_info_alter()
+ * @see lpbs_element_info_alter()
  * @see form_builder()
  * @see drupal_process_form()
  */
@@ -106,7 +106,7 @@ function hook_form_process($element, &$form_state, &$form) {
  * responsible for fully processing the element as it was prior.
  *
  * Implementations of this hook should check to see if the element has a
- * property named #bootstrap_ignore_process and check if it is set to TRUE.
+ * property named #lpbs_ignore_process and check if it is set to TRUE.
  * If it is, the hook should immediately return with the unaltered element.
  *
  * @param array $element
@@ -120,7 +120,7 @@ function hook_form_process($element, &$form_state, &$form) {
  * @return array
  *   The altered element array.
  *
- * @see bootstrap_element_info_alter()
+ * @see lpbs_element_info_alter()
  * @see form_builder()
  * @see drupal_process_form()
  */
@@ -138,7 +138,7 @@ function hook_form_process_HOOK($element, &$form_state, &$form) {
  * cleared and rebuilt for the changes to take effect.
  *
  * Implementations of this hook should check to see if the element has a
- * property named #bootstrap_ignore_pre_render and check if it is set to TRUE.
+ * property named #lpbs_ignore_pre_render and check if it is set to TRUE.
  * If it is, the hook should immediately return with the unaltered element.
  *
  * @param array $element
@@ -148,7 +148,7 @@ function hook_form_process_HOOK($element, &$form_state, &$form) {
  * @return array
  *   The altered element array.
  *
- * @see bootstrap_element_info_alter()
+ * @see lpbs_element_info_alter()
  */
 function hook_pre_render($element) {
   return $element;
@@ -168,7 +168,7 @@ function hook_pre_render($element) {
  * responsible for fully processing the element as it was prior.
  *
  * Implementations of this hook should check to see if the element has a
- * property named #bootstrap_ignore_pre_render and check if it is set to TRUE.
+ * property named #lpbs_ignore_pre_render and check if it is set to TRUE.
  * If it is, the hook should immediately return with the unaltered element.
  *
  * @param array $element
@@ -178,7 +178,7 @@ function hook_pre_render($element) {
  * @return array
  *   The altered element array.
  *
- * @see bootstrap_element_info_alter()
+ * @see lpbs_element_info_alter()
  */
 function hook_pre_render_HOOK($element) {
   return $element;

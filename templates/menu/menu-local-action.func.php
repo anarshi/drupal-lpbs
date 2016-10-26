@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_menu_local_action().
+ * Stub file for lpbs_menu_local_action().
  */
 
 /**
@@ -20,7 +20,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_menu_local_action($variables) {
+function lpbs_menu_local_action($variables) {
   $link = $variables['element']['#link'];
 
   $options = isset($link['localized_options']) ? $link['localized_options'] : array();
@@ -30,13 +30,13 @@ function bootstrap_menu_local_action($variables) {
     $link['title'] = check_plain($link['title']);
   }
 
-  $icon = _bootstrap_iconize_text($link['title']);
+  $icon = _lpbs_iconize_text($link['title']);
 
   // Format the action link.
   $output = '';
   if (isset($link['href'])) {
     // Turn link into a mini-button and colorize based on title.
-    if ($class = _bootstrap_colorize_text($link['title'])) {
+    if ($class = _lpbs_colorize_text($link['title'])) {
       if (!isset($options['attributes']['class'])) {
         $options['attributes']['class'] = array();
       }

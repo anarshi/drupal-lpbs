@@ -40,19 +40,19 @@
  */
 
 /**
- * Stub implementation for bootstrap_theme().
+ * Stub implementation for lpbs_theme().
  *
  * This base-theme's custom theme hook implementations. Never define "path"
  * or "template" as these are detected and automatically added.
  *
- * @see bootstrap_theme_registry_alter()
- * @see bootstrap_hook_theme_complete()
- * @see bootstrap_theme()
+ * @see lpbs_theme_registry_alter()
+ * @see lpbs_hook_theme_complete()
+ * @see lpbs_theme()
  * @see hook_theme()
  */
-function _bootstrap_theme(&$existing, $type, $theme, $path) {
+function _lpbs_theme(&$existing, $type, $theme, $path) {
   // Bootstrap Carousels.
-  $hooks['bootstrap_carousel'] = array(
+  $hooks['lpbs_carousel'] = array(
     'variables' => array(
       'attributes' => array(),
       'items' => array(),
@@ -66,12 +66,12 @@ function _bootstrap_theme(&$existing, $type, $theme, $path) {
   );
 
   // Bootstrap Dropdowns.
-  $hooks['bootstrap_dropdown'] = array(
+  $hooks['lpbs_dropdown'] = array(
     'render element' => 'element',
   );
 
   // Bootstrap Modals.
-  $hooks['bootstrap_modal'] = array(
+  $hooks['lpbs_modal'] = array(
     'variables' => array(
       'heading' => '',
       'body' => '',
@@ -84,13 +84,13 @@ function _bootstrap_theme(&$existing, $type, $theme, $path) {
   );
 
   // Bootstrap Panels.
-  $hooks['bootstrap_panel'] = array(
+  $hooks['lpbs_panel'] = array(
     'render element' => 'element',
   );
 
   // Bootstrap search form wrapper.
   // @todo Remove this as it's not really needed and should use suggestions.
-  $hooks['bootstrap_search_form_wrapper'] = array(
+  $hooks['lpbs_search_form_wrapper'] = array(
     'render element' => 'element',
   );
   return $hooks;
@@ -99,12 +99,12 @@ function _bootstrap_theme(&$existing, $type, $theme, $path) {
 /**
  * Implements hook_theme_registry_alter().
  */
-function bootstrap_theme_registry_alter(&$registry) {
+function lpbs_theme_registry_alter(&$registry) {
   // Retrieve the active theme names.
-  $themes = _bootstrap_get_base_themes(NULL, TRUE);
+  $themes = _lpbs_get_base_themes(NULL, TRUE);
 
   // Return the theme registry unaltered if it is not Bootstrap based.
-  if (!in_array('bootstrap', $themes)) {
+  if (!in_array('lpbs', $themes)) {
     return;
   }
 
@@ -114,12 +114,12 @@ function bootstrap_theme_registry_alter(&$registry) {
   $registry['table']['variables']['footer'] = NULL;
 
   // Process registered hooks in the theme registry.
-  _bootstrap_process_theme_registry($registry, $themes);
+  _lpbs_process_theme_registry($registry, $themes);
 
   // Process registered hooks in the theme registry to add necessary theme hook
   // suggestion phased function invocations. This must be run after separately
   // and after all includes have been loaded.
-  _bootstrap_process_theme_registry_suggestions($registry, $themes);
+  _lpbs_process_theme_registry_suggestions($registry, $themes);
 
   // Post-process theme registry. This happens after all altering has occurred.
   foreach ($registry as $hook => $info) {
@@ -170,11 +170,11 @@ function bootstrap_theme_registry_alter(&$registry) {
  * @param string|array $themes
  *   The name of the theme or list of theme names to process.
  *
- * @see bootstrap_theme_registry_alter()
+ * @see lpbs_theme_registry_alter()
  * @see _theme_process_registry()
  * @see _theme_build_registry()
  */
-function _bootstrap_process_theme_registry(&$registry, $themes) {
+function _lpbs_process_theme_registry(&$registry, $themes) {
   // Convert to an array if needed.
   if (is_string($themes)) {
     $themes = array();
@@ -245,7 +245,7 @@ function _bootstrap_process_theme_registry(&$registry, $themes) {
 
         // Sort the phase functions.
         // @see https://www.drupal.org/node/2098551
-        _bootstrap_registry_sort_phase_functions($registry[$hook][$phase_key], $hook, $phase, $themes);
+        _lpbs_registry_sort_phase_functions($registry[$hook][$phase_key], $hook, $phase, $themes);
 
         // Setup a default "context" variable. This allows #context to be passed
         // to every template and theme function.
@@ -282,7 +282,7 @@ function _bootstrap_process_theme_registry(&$registry, $themes) {
  *
  * @see https://www.drupal.org/node/2098551
  */
-function _bootstrap_registry_sort_phase_functions(&$functions, $hook, $phase, $themes) {
+function _lpbs_registry_sort_phase_functions(&$functions, $hook, $phase, $themes) {
   // Immediately return if there is nothing to sort.
   if (count($functions) < 2) {
     return;
@@ -333,7 +333,7 @@ function _bootstrap_registry_sort_phase_functions(&$functions, $hook, $phase, $t
  * @see https://drupal.org/node/939462
  * @see drupal_find_theme_functions()
  */
-function _bootstrap_process_theme_registry_suggestions(&$registry, $themes) {
+function _lpbs_process_theme_registry_suggestions(&$registry, $themes) {
   // Convert to an array if needed.
   if (is_string($themes)) {
     $themes = array();
@@ -441,7 +441,7 @@ function _bootstrap_process_theme_registry_suggestions(&$registry, $themes) {
               // suggestion hook info. To get around this, a helper function
               // must be appended to the base hook info so it can call the
               // theme suggestion implementation's phase function.
-              $function = '_bootstrap_' . $phase . '_theme_suggestion';
+              $function = '_lpbs_' . $phase . '_theme_suggestion';
               if (!in_array($function, $registry[$base_hook][$phase_key])) {
                 $registry[$base_hook][$phase_key][] = $function;
               }

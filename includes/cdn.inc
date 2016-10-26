@@ -22,9 +22,9 @@ define('BOOTSTRAP_CDN_PROVIDER_PATH', 'public://bootstrap/cdn_providers');
  *   data array will be returned. If $provider is set and the data does not
  *   exist then FALSE will be returned.
  *
- * @todo Move to bootstrap_core in 7.x-4.x
+ * @todo Move to lpbs_core in 7.x-4.x
  */
-function bootstrap_cdn_provider($provider = NULL, $reset = FALSE) {
+function lpbs_cdn_provider($provider = NULL, $reset = FALSE) {
   $original_provider = $provider;
 
   // Use the advanced drupal_static() pattern, since this is called very often.
@@ -58,8 +58,8 @@ function bootstrap_cdn_provider($provider = NULL, $reset = FALSE) {
         ),
       );
 
-      // @todo Use drupal_alter() once CDN is in bootstrap_core companion module.
-      // drupal_alter('bootstrap_cdn_provider', $providers);
+      // @todo Use drupal_alter() once CDN is in lpbs_core companion module.
+      // drupal_alter('lpbs_cdn_provider', $providers);
 
       // Defaults properties each provider must have.
       $defaults = array(
@@ -99,12 +99,12 @@ function bootstrap_cdn_provider($provider = NULL, $reset = FALSE) {
         }
 
         // Alter the specific provider.
-        $function = 'bootstrap_bootstrap_cdn_provider_' . $name . '_alter';
+        $function = 'lpbs_lpbs_cdn_provider_' . $name . '_alter';
         if (function_exists($function)) {
           $function($data, $request);
         }
-        // @todo Use drupal_alter() once CDN is in bootstrap_core companion module.
-        // drupal_alter('bootstrap_cdn_provider_' . $name, $data, $request);
+        // @todo Use drupal_alter() once CDN is in lpbs_core companion module.
+        // drupal_alter('lpbs_cdn_provider_' . $name, $data, $request);
       }
       cache_set($cid, $providers);
     }
@@ -119,7 +119,7 @@ function bootstrap_cdn_provider($provider = NULL, $reset = FALSE) {
 }
 
 /**
- * Implements hook_bootstrap_cdn_provider_PROVIDER_alter().
+ * Implements hook_lpbs_cdn_provider_PROVIDER_alter().
  *
  * @param array $provider
  *   The provider data array, passed by reference.
@@ -130,7 +130,7 @@ function bootstrap_cdn_provider($provider = NULL, $reset = FALSE) {
  *
  * @todo Finish documentation when hook is real.
  */
-function bootstrap_bootstrap_cdn_provider_jsdelivr_alter(&$provider, $request = NULL) {
+function lpbs_lpbs_cdn_provider_jsdelivr_alter(&$provider, $request = NULL) {
   $json = array();
   $provider['versions'] = array();
   $provider['themes'] = array();
@@ -165,7 +165,7 @@ function bootstrap_bootstrap_cdn_provider_jsdelivr_alter(&$provider, $request = 
     $provider['error'] = TRUE;
     $provider['versions'][BOOTSTRAP_VERSION] = BOOTSTRAP_VERSION;
     $provider['themes'][BOOTSTRAP_VERSION] = array(
-      'bootstrap' => array(
+      'lpbs' => array(
         'title' => t('Bootstrap'),
         'css' => array('//cdn.jsdelivr.net/bootstrap/' . BOOTSTRAP_VERSION . '/css/bootstrap.css'),
         'js' => array('//cdn.jsdelivr.net/bootstrap/' . BOOTSTRAP_VERSION . '/js/bootstrap.js'),
@@ -187,11 +187,11 @@ function bootstrap_bootstrap_cdn_provider_jsdelivr_alter(&$provider, $request = 
     }
 
     // Extract Bootstrap themes.
-    $provider['themes'][$version] = drupal_array_merge_deep($provider['themes'][$version], _bootstrap_cdn_provider_jsdelivr_extract_themes($libraries[$bootstrap][$version], "//cdn.jsdelivr.net/bootstrap/$version"));
+    $provider['themes'][$version] = drupal_array_merge_deep($provider['themes'][$version], _lpbs_cdn_provider_jsdelivr_extract_themes($libraries[$bootstrap][$version], "//cdn.jsdelivr.net/bootstrap/$version"));
 
     // Extract Bootswatch themes.
     if (isset($libraries[$bootswatch][$version])) {
-      $provider['themes'][$version] = drupal_array_merge_deep($provider['themes'][$version], _bootstrap_cdn_provider_jsdelivr_extract_themes($libraries[$bootswatch][$version], "//cdn.jsdelivr.net/bootswatch/$version"));
+      $provider['themes'][$version] = drupal_array_merge_deep($provider['themes'][$version], _lpbs_cdn_provider_jsdelivr_extract_themes($libraries[$bootswatch][$version], "//cdn.jsdelivr.net/bootswatch/$version"));
     }
   }
 
@@ -200,21 +200,21 @@ function bootstrap_bootstrap_cdn_provider_jsdelivr_alter(&$provider, $request = 
     foreach (array_keys($provider['themes'][$version]) as $theme) {
       // Some themes actually require Bootstrap framework assets to still
       // function properly.
-      if ($theme !== 'bootstrap') {
+      if ($theme !== 'lpbs') {
         foreach (array('css', 'js') as $type) {
           // Bootswatch themes include the Bootstrap framework in their CSS.
           // Skip the CSS portions.
-          if ($theme !== 'bootstrap_theme' && $type === 'css') {
+          if ($theme !== 'lpbs_theme' && $type === 'css') {
             continue;
           }
-          if (!isset($provider['themes'][$version][$theme][$type]) && !empty($provider['themes'][$version]['bootstrap'][$type])) {
+          if (!isset($provider['themes'][$version][$theme][$type]) && !empty($provider['themes'][$version]['lpbs'][$type])) {
             $provider['themes'][$version][$theme][$type] = array();
           }
-          $provider['themes'][$version][$theme][$type] = drupal_array_merge_deep($provider['themes'][$version]['bootstrap'][$type], $provider['themes'][$version][$theme][$type]);
-          if (!isset($provider['themes'][$version][$theme]['min'][$type]) && !empty($provider['themes'][$version]['bootstrap']['min'][$type])) {
+          $provider['themes'][$version][$theme][$type] = drupal_array_merge_deep($provider['themes'][$version]['lpbs'][$type], $provider['themes'][$version][$theme][$type]);
+          if (!isset($provider['themes'][$version][$theme]['min'][$type]) && !empty($provider['themes'][$version]['lpbs']['min'][$type])) {
             $provider['themes'][$version][$theme]['min'][$type] = array();
           }
-          $provider['themes'][$version][$theme]['min'][$type] = drupal_array_merge_deep($provider['themes'][$version]['bootstrap']['min'][$type], $provider['themes'][$version][$theme]['min'][$type]);
+          $provider['themes'][$version][$theme]['min'][$type] = drupal_array_merge_deep($provider['themes'][$version]['lpbs']['min'][$type], $provider['themes'][$version][$theme]['min'][$type]);
         }
       }
       // Some themes do not have a non-minified version, clone them to the
@@ -250,7 +250,7 @@ function bootstrap_bootstrap_cdn_provider_jsdelivr_alter(&$provider, $request = 
  *     - css
  *     - js
  */
-function _bootstrap_cdn_provider_jsdelivr_extract_themes($files, $base_url = '') {
+function _lpbs_cdn_provider_jsdelivr_extract_themes($files, $base_url = '') {
   $themes = array();
   foreach ($files as $file) {
     preg_match('`([^/]*)/bootstrap(-theme)?(\.min)?\.(js|css)$`', $file, $matches);
@@ -261,7 +261,7 @@ function _bootstrap_cdn_provider_jsdelivr_extract_themes($files, $base_url = '')
 
       // Determine the "theme" name.
       if ($path === 'css' || $path === 'js') {
-        $theme = 'bootstrap';
+        $theme = 'lpbs';
         $title = t('Bootstrap');
       }
       else {
@@ -269,7 +269,7 @@ function _bootstrap_cdn_provider_jsdelivr_extract_themes($files, $base_url = '')
         $title = ucfirst($path);
       }
       if ($matches[2]) {
-        $theme = 'bootstrap_theme';
+        $theme = 'lpbs_theme';
         $title = t('Bootstrap Theme');
       }
 
@@ -286,30 +286,30 @@ function _bootstrap_cdn_provider_jsdelivr_extract_themes($files, $base_url = '')
 }
 
 /**
- * Implements hook_bootstrap_cdn_provider_PROVIDER_assets_alter().
+ * Implements hook_lpbs_cdn_provider_PROVIDER_assets_alter().
  *
  * @todo Create documentation when hook is real.
  */
-function bootstrap_bootstrap_cdn_provider_custom_assets_alter(&$provider, $theme = NULL) {
+function lpbs_lpbs_cdn_provider_custom_assets_alter(&$provider, $theme = NULL) {
   foreach (array('css', 'js') as $type) {
-    if ($setting = bootstrap_setting('cdn_custom_' . $type, $theme)) {
+    if ($setting = lpbs_setting('cdn_custom_' . $type, $theme)) {
       $provider[$type][] = $setting;
     }
-    if ($setting = bootstrap_setting('cdn_custom_' . $type . '_min', $theme)) {
+    if ($setting = lpbs_setting('cdn_custom_' . $type . '_min', $theme)) {
       $provider['min'][$type][] = $setting;
     }
   }
 }
 
 /**
- * Implements hook_bootstrap_cdn_provider_PROVIDER_assets_alter().
+ * Implements hook_lpbs_cdn_provider_PROVIDER_assets_alter().
  *
  * @todo Create documentation when hook is real.
  */
-function bootstrap_bootstrap_cdn_provider_jsdelivr_assets_alter(&$provider, $theme = NULL) {
+function lpbs_lpbs_cdn_provider_jsdelivr_assets_alter(&$provider, $theme = NULL) {
   $error = !empty($provider['error']);
-  $version = $error ? BOOTSTRAP_VERSION : bootstrap_setting('cdn_jsdelivr_version', $theme);
-  $theme = $error ? 'bootstrap' : bootstrap_setting('cdn_jsdelivr_theme', $theme);
+  $version = $error ? BOOTSTRAP_VERSION : lpbs_setting('cdn_jsdelivr_version', $theme);
+  $theme = $error ? 'lpbs' : lpbs_setting('cdn_jsdelivr_theme', $theme);
   if (isset($provider['themes'][$version][$theme])) {
     $provider = drupal_array_merge_deep($provider, $provider['themes'][$version][$theme]);
   }
@@ -318,17 +318,17 @@ function bootstrap_bootstrap_cdn_provider_jsdelivr_assets_alter(&$provider, $the
 /**
  * Custom callback for CDN provider settings.
  *
- * @see bootstrap_form_system_theme_settings_alter()
+ * @see lpbs_form_system_theme_settings_alter()
  */
-function bootstrap_cdn_provider_settings_form(&$form, &$form_state, $theme) {
+function lpbs_cdn_provider_settings_form(&$form, &$form_state, $theme) {
   // Retrieve the provider from form values or the setting.
-  $provider = isset($form_state['values']['bootstrap_cdn_provider']) ? $form_state['values']['bootstrap_cdn_provider'] : bootstrap_setting('cdn_provider', $theme);
+  $provider = isset($form_state['values']['lpbs_cdn_provider']) ? $form_state['values']['lpbs_cdn_provider'] : lpbs_setting('cdn_provider', $theme);
 
   // Intercept possible manual import of API data via AJAX callback.
   if (isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#value'] === t('Save provider data')) {
     $provider_path = BOOTSTRAP_CDN_PROVIDER_PATH;
     file_prepare_directory($provider_path, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS);
-    $provider_data = isset($form_state['values']['bootstrap_cdn_provider_import_data']) ? $form_state['values']['bootstrap_cdn_provider_import_data'] : FALSE;
+    $provider_data = isset($form_state['values']['lpbs_cdn_provider_import_data']) ? $form_state['values']['lpbs_cdn_provider_import_data'] : FALSE;
     $provider_file = "$provider_path/$provider.json";
     if ($provider_data) {
       file_unmanaged_save_data($provider_data, $provider_file, FILE_EXISTS_REPLACE);
@@ -336,7 +336,7 @@ function bootstrap_cdn_provider_settings_form(&$form, &$form_state, $theme) {
     elseif ($provider_file && file_exists($provider_file)) {
       file_unmanaged_delete($provider_file);
     }
-    bootstrap_cdn_provider(NULL, TRUE);
+    lpbs_cdn_provider(NULL, TRUE);
   }
 
   $form['advanced']['cdn'] = array(
@@ -347,12 +347,12 @@ function bootstrap_cdn_provider_settings_form(&$form, &$form_state, $theme) {
     '#collapsed' => !$provider,
   );
 
-  $providers = bootstrap_cdn_provider();
+  $providers = lpbs_cdn_provider();
   $options = array();
   foreach ($providers as $key => $data) {
     $options[$key] = $data['title'];
   }
-  $form['advanced']['cdn']['bootstrap_cdn_provider'] = array(
+  $form['advanced']['cdn']['lpbs_cdn_provider'] = array(
     '#type' => 'select',
     '#title' => t('CDN Provider'),
     '#default_value' => $provider,
@@ -368,7 +368,7 @@ function bootstrap_cdn_provider_settings_form(&$form, &$form_state, $theme) {
       '#suffix' => '</div>',
       '#states' => array(
         'visible' => array(
-          ':input[name="bootstrap_cdn_provider"]' => array('value' => $name),
+          ':input[name="lpbs_cdn_provider"]' => array('value' => $name),
         ),
       ),
     );
@@ -397,7 +397,7 @@ function bootstrap_cdn_provider_settings_form(&$form, &$form_state, $theme) {
         '#collapsible' => TRUE,
         '#collapsed' => TRUE,
       );
-      $element['import']['bootstrap_cdn_provider_import_data'] = array(
+      $element['import']['lpbs_cdn_provider_import_data'] = array(
         '#type' => 'textarea',
         '#default_value' => file_exists(BOOTSTRAP_CDN_PROVIDER_PATH . '/' . $name . '.json') ? file_get_contents(BOOTSTRAP_CDN_PROVIDER_PATH . '/' . $name . '.json') : NULL,
       );
@@ -406,37 +406,37 @@ function bootstrap_cdn_provider_settings_form(&$form, &$form_state, $theme) {
         '#value' => t('Save provider data'),
         '#executes_submit_callback' => FALSE,
         '#ajax' => array(
-          'callback' => 'bootstrap_cdn_provider_settings_form_ajax_reload_provider',
+          'callback' => 'lpbs_cdn_provider_settings_form_ajax_reload_provider',
           'wrapper' => 'bootstrap-cdn-provider-' . $name,
         ),
       );
     }
 
     // Alter the specific provider.
-    $function = 'bootstrap_bootstrap_cdn_provider_' . $name . '_settings_form_alter';
+    $function = 'lpbs_lpbs_cdn_provider_' . $name . '_settings_form_alter';
     if (function_exists($function)) {
       $function($element, $form_state, $data, $theme);
     }
-    // @todo Use drupal_alter() once CDN is in bootstrap_core companion module.
-    // drupal_alter('bootstrap_cdn_provider_' . $name . '_settings_form', $element, $form_state, $data, $theme);
+    // @todo Use drupal_alter() once CDN is in lpbs_core companion module.
+    // drupal_alter('lpbs_cdn_provider_' . $name . '_settings_form', $element, $form_state, $data, $theme);
   }
 }
 
 /**
  * AJAX callback for reloading CDN provider elements.
  */
-function bootstrap_cdn_provider_settings_form_ajax_reload_provider($form, $form_state) {
-  return $form['advanced']['cdn']['provider'][$form_state['values']['bootstrap_cdn_provider']];
+function lpbs_cdn_provider_settings_form_ajax_reload_provider($form, $form_state) {
+  return $form['advanced']['cdn']['provider'][$form_state['values']['lpbs_cdn_provider']];
 }
 
 /**
- * Implements hook_bootstrap_cdn_provider_PROVIDER_settings_form_alter().
+ * Implements hook_lpbs_cdn_provider_PROVIDER_settings_form_alter().
  */
-function bootstrap_bootstrap_cdn_provider_custom_settings_form_alter(&$element, &$form_state, $provider = array(), $theme = NULL) {
+function lpbs_lpbs_cdn_provider_custom_settings_form_alter(&$element, &$form_state, $provider = array(), $theme = NULL) {
   foreach (array('css', 'js') as $type) {
-    $setting = bootstrap_setting('cdn_custom_' . $type, $theme);
-    $setting_min = bootstrap_setting('cdn_custom_' . $type . '_min', $theme);
-    $element['bootstrap_cdn_custom_' . $type] = array(
+    $setting = lpbs_setting('cdn_custom_' . $type, $theme);
+    $setting_min = lpbs_setting('cdn_custom_' . $type . '_min', $theme);
+    $element['lpbs_cdn_custom_' . $type] = array(
       '#type' => 'textfield',
       '#title' => t('Bootstrap @type URL', array(
         '@type' => drupal_strtoupper($type),
@@ -444,7 +444,7 @@ function bootstrap_bootstrap_cdn_provider_custom_settings_form_alter(&$element, 
       '#description' => t('It is best to use protocol relative URLs (i.e. without http: or https:) here as it will allow more flexibility if the need ever arises.'),
       '#default_value' => $setting,
     );
-    $element['bootstrap_cdn_custom_' . $type . '_min'] = array(
+    $element['lpbs_cdn_custom_' . $type . '_min'] = array(
       '#type' => 'textfield',
       '#title' => t('Minified Bootstrap @type URL', array(
         '@type' => drupal_strtoupper($type),
@@ -456,22 +456,22 @@ function bootstrap_bootstrap_cdn_provider_custom_settings_form_alter(&$element, 
 }
 
 /**
- * Implements hook_bootstrap_cdn_provider_PROVIDER_settings_form_alter().
+ * Implements hook_lpbs_cdn_provider_PROVIDER_settings_form_alter().
  */
-function bootstrap_bootstrap_cdn_provider_jsdelivr_settings_form_alter(&$element, &$form_state, $provider = array(), $theme = NULL) {
-  $version = isset($form_state['values']['bootstrap_cdn_jsdelivr_version']) ? $form_state['values']['bootstrap_cdn_jsdelivr_version'] : bootstrap_setting('cdn_jsdelivr_version', $theme);
-  $element['bootstrap_cdn_jsdelivr_version'] = array(
+function lpbs_lpbs_cdn_provider_jsdelivr_settings_form_alter(&$element, &$form_state, $provider = array(), $theme = NULL) {
+  $version = isset($form_state['values']['lpbs_cdn_jsdelivr_version']) ? $form_state['values']['lpbs_cdn_jsdelivr_version'] : lpbs_setting('cdn_jsdelivr_version', $theme);
+  $element['lpbs_cdn_jsdelivr_version'] = array(
     '#type' => 'select',
     '#title' => t('Version'),
     '#options' => isset($provider['versions']) ? $provider['versions'] : array(),
     '#default_value' => $version,
     '#ajax' => array(
-      'callback' => 'bootstrap_cdn_provider_settings_form_ajax_reload_provider',
+      'callback' => 'lpbs_cdn_provider_settings_form_ajax_reload_provider',
       'wrapper' => 'bootstrap-cdn-provider-jsdelivr',
     ),
   );
   if (empty($provider['error']) && empty($provider['imported'])) {
-    $element['bootstrap_cdn_jsdelivr_version']['#description'] = t('These versions are automatically populated by the @provider API upon cache clear and newer versions may appear over time. It is highly recommended the version that the site was built with stays at that version. Until a newer version has been properly tested for updatability by the site maintainer, you should not arbitrarily "update" just because there is a newer version. This can cause many inconsistencies and undesired effects with an existing site.', array(
+    $element['lpbs_cdn_jsdelivr_version']['#description'] = t('These versions are automatically populated by the @provider API upon cache clear and newer versions may appear over time. It is highly recommended the version that the site was built with stays at that version. Until a newer version has been properly tested for updatability by the site maintainer, you should not arbitrarily "update" just because there is a newer version. This can cause many inconsistencies and undesired effects with an existing site.', array(
       '@provider' => $provider['title'],
     ));
   }
@@ -483,17 +483,17 @@ function bootstrap_bootstrap_cdn_provider_jsdelivr_settings_form_alter(&$element
       $themes[$_theme] = $data['title'];
     }
   }
-  $element['bootstrap_cdn_jsdelivr_theme'] = array(
+  $element['lpbs_cdn_jsdelivr_theme'] = array(
     '#type' => 'select',
     '#title' => t('Theme'),
-    '#description' => t('Choose the example <a href="!bootstrap_theme" target="_blank">Bootstrap Theme</a> provided by Bootstrap or one of the many, many <a href="!bootswatch" target="_blank">Bootswatch</a> themes!', array(
+    '#description' => t('Choose the example <a href="!lpbs_theme" target="_blank">Bootstrap Theme</a> provided by Bootstrap or one of the many, many <a href="!bootswatch" target="_blank">Bootswatch</a> themes!', array(
       '!bootswatch' => 'https://bootswatch.com',
-      '!bootstrap_theme' => 'http://getbootstrap.com/examples/theme/',
+      '!lpbs_theme' => 'http://getbootstrap.com/examples/theme/',
     )),
-    '#default_value' => bootstrap_setting('cdn_jsdelivr_theme', $theme),
+    '#default_value' => lpbs_setting('cdn_jsdelivr_theme', $theme),
     '#options' => $themes,
     '#empty_option' => t('Bootstrap (default)'),
-    '#empty_value' => 'bootstrap',
+    '#empty_value' => 'lpbs',
     '#suffix' => '<div id="bootstrap-theme-preview"></div>',
   );
 }

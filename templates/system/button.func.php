@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_button().
+ * Stub file for lpbs_button().
  */
 
 /**
@@ -19,7 +19,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_button($variables) {
+function lpbs_button($variables) {
   $element = $variables['element'];
 
   // Allow button text to be appear hidden.

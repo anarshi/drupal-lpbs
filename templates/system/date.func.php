@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_date().
+ * Stub file for lpbs_date().
  */
 
 /**
@@ -20,7 +20,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_date($variables) {
+function lpbs_date($variables) {
   $element = $variables['element'];
 
   $attributes = array();

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_item_list().
+ * Stub file for lpbs_item_list().
  */
 
 /**
@@ -33,7 +33,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_item_list($variables) {
+function lpbs_item_list($variables) {
   $items = $variables['items'];
   $title = $variables['title'];
   $type = $variables['type'];

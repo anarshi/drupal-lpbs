@@ -1,11 +1,11 @@
 <?php
 /**
  * @file
- * Stub file for "bootstrap_modal" theme hook [pre]process functions.
+ * Stub file for "lpbs_modal" theme hook [pre]process functions.
  */
 
 /**
- * Pre-processes variables for the "bootstrap_modal" theme hook.
+ * Pre-processes variables for the "lpbs_modal" theme hook.
  *
  * See template for list of available variables.
  *
@@ -13,9 +13,9 @@
  *
  * @ingroup theme_preprocess
  *
- * @todo: Replace with "bootstrap_effect_fade" theme setting.
+ * @todo: Replace with "lpbs_effect_fade" theme setting.
  */
-function bootstrap_preprocess_bootstrap_modal(&$variables) {
+function lpbs_preprocess_lpbs_modal(&$variables) {
   if (empty($variables['attributes']['id'])) {
     $variables['attributes']['id'] = drupal_html_id(strip_tags($variables['heading']));
   }
@@ -34,7 +34,7 @@ function bootstrap_preprocess_bootstrap_modal(&$variables) {
 }
 
 /**
- * Processes variables for the "bootstrap_modal" theme hook.
+ * Processes variables for the "lpbs_modal" theme hook.
  *
  * See template for list of available variables.
  *
@@ -42,7 +42,7 @@ function bootstrap_preprocess_bootstrap_modal(&$variables) {
  *
  * @ingroup theme_process
  */
-function bootstrap_process_bootstrap_modal(&$variables) {
+function lpbs_process_lpbs_modal(&$variables) {
   $variables['attributes'] = drupal_attributes($variables['attributes']);
   $variables['dialog_attributes'] = drupal_attributes($variables['dialog_attributes']);
   $variables['body'] = render($variables['body']);

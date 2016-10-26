@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_webform_element().
+ * Stub file for lpbs_webform_element().
  */
 
 /**
  * Returns HTML for a webform element.
  *
  * @see theme_webform_element()
- * @see bootstrap_form_element()
+ * @see lpbs_form_element()
  */
-function bootstrap_webform_element(&$variables) {
+function lpbs_webform_element(&$variables) {
   $element = &$variables['element'];
 
   // Inline title.

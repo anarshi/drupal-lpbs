@@ -49,15 +49,15 @@ module.exports = function (grunt) {
           grunt.verbose.write("\nExtracting versions and themes from libraries...");
           libraries = {};
           json.forEach(function (library) {
-            if (library.name === 'bootstrap' || library.name === 'bootswatch') {
+            if (library.name === 'lpbs' || library.name === 'bootswatch') {
               library.assets.forEach(function (asset) {
                 if (asset.version.match(/^3.\d\.\d$/)) {
                   if (!libraries[library.name]) libraries[library.name] = {};
                   if (!libraries[library.name][asset.version]) libraries[library.name][asset.version] = {};
                   asset.files.forEach(function (file) {
                     if (!file.match(/bootstrap\.min\.css$/)) return;
-                    if (library.name === 'bootstrap') {
-                      libraries[library.name][asset.version]['bootstrap'] = true;
+                    if (library.name === 'lpbs') {
+                      libraries[library.name][asset.version]['lpbs'] = true;
                     }
                     else {
                       libraries[library.name][asset.version][file.split(path.sep)[0]] = true;

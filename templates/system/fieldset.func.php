@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_fieldset().
+ * Stub file for lpbs_fieldset().
  */
 
 /**
@@ -20,6 +20,6 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_fieldset($variables) {
-  return theme('bootstrap_panel', $variables);
+function lpbs_fieldset($variables) {
+  return theme('lpbs_panel', $variables);
 }

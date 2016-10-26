@@ -74,7 +74,7 @@ module.exports = function (grunt) {
 
       // Iterate over libraries.
       for (var library in libraries) {
-        if (!libraries.hasOwnProperty(library) || (dev && library !== 'bootstrap')) continue;
+        if (!libraries.hasOwnProperty(library) || (dev && library !== 'lpbs')) continue;
         // Iterate over versions.
         for (var version in libraries[library]) {
           if (!libraries[library].hasOwnProperty(version) || (dev && version !== latestVersion)) continue;
@@ -85,10 +85,10 @@ module.exports = function (grunt) {
               queue.push(function (done) {
                 var lessPaths = [path.join(librariesPath)];
                 var latestVersion = [].concat(versions).pop();
-                var latestVariables = path.join(latestVersion, 'bootstrap', 'less', 'variables.less');
-                var themeVariables = path.join(version, library, (library === 'bootstrap' ? 'less' : theme), 'variables.less');
-                var backupVariables = path.join(version, 'bootstrap', 'less', 'variables.less');
-                var fileName = (library === 'bootstrap' ? 'overrides.min.css' : 'overrides-' + theme + '.min.css');
+                var latestVariables = path.join(latestVersion, 'lpbs', 'less', 'variables.less');
+                var themeVariables = path.join(version, library, (library === 'lpbs' ? 'less' : theme), 'variables.less');
+                var backupVariables = path.join(version, 'lpbs', 'less', 'variables.less');
+                var fileName = (library === 'lpbs' ? 'overrides.min.css' : 'overrides-' + theme + '.min.css');
                 var outputFile = path.join(cssPath, version, fileName);
 
                 // Resolve the variable files.

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_form_element().
+ * Stub file for lpbs_form_element().
  */
 
 /**
@@ -55,7 +55,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_form_element(&$variables) {
+function lpbs_form_element(&$variables) {
   $element = &$variables['element'];
   $name = !empty($element['#name']) ? $element['#name'] : FALSE;
   $type = !empty($element['#type']) ? $element['#type'] : FALSE;
@@ -80,7 +80,7 @@ function bootstrap_form_element(&$variables) {
   }
 
   // Check for errors and set correct error class.
-  if ((isset($element['#parents']) && form_get_error($element) !== NULL) || (!empty($element['#required']) && bootstrap_setting('forms_required_has_error'))) {
+  if ((isset($element['#parents']) && form_get_error($element) !== NULL) || (!empty($element['#required']) && lpbs_setting('forms_required_has_error'))) {
     $wrapper_attributes['class'][] = 'has-error';
   }
 
@@ -134,7 +134,7 @@ function bootstrap_form_element(&$variables) {
       }
 
       // Add a wrapping container around the elements.
-      $input_group_attributes = &_bootstrap_get_attributes($element, 'input_group_attributes');
+      $input_group_attributes = &_lpbs_get_attributes($element, 'input_group_attributes');
       $input_group_attributes['class'][] = 'input-group';
       $prefix = '<div' . drupal_attributes($input_group_attributes) . '>' . $prefix;
       $suffix .= '</div>';

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_pager().
+ * Stub file for lpbs_pager().
  */
 
 /**
@@ -27,7 +27,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_pager($variables) {
+function lpbs_pager($variables) {
   $output = "";
   $items = array();
   $tags = $variables['tags'];
@@ -88,7 +88,7 @@ function bootstrap_pager($variables) {
   if ($pager_total[$element] > 1) {
 
     // Only show "first" link if set on components' theme setting
-    if ($li_first && bootstrap_setting('pager_first_and_last')) {
+    if ($li_first && lpbs_setting('pager_first_and_last')) {
       $items[] = array(
         'class' => array('pager-first'),
         'data' => $li_first,
@@ -154,7 +154,7 @@ function bootstrap_pager($variables) {
       );
     }
     // // Only show "last" link if set on components' theme setting
-    if ($li_last && bootstrap_setting('pager_first_and_last')) {
+    if ($li_last && lpbs_setting('pager_first_and_last')) {
       $items[] = array(
        'class' => array('pager-last'),
        'data' => $li_last,

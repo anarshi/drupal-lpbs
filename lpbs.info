@@ -32,104 +32,104 @@ regions[page_bottom]    = 'Page bottom'
 
 ; Container
 ; --------------
-settings[bootstrap_fluid_container] = 0
+settings[lpbs_fluid_container] = 0
 
 ; Buttons
 ; --------------
-settings[bootstrap_button_size] = ''
-settings[bootstrap_button_colorize] = 1
-settings[bootstrap_button_iconize] = 1
+settings[lpbs_button_size] = ''
+settings[lpbs_button_colorize] = 1
+settings[lpbs_button_iconize] = 1
 
 ; Images
 ; --------------
-settings[bootstrap_image_shape] = ''
-settings[bootstrap_image_responsive] = 1
+settings[lpbs_image_shape] = ''
+settings[lpbs_image_responsive] = 1
 
 ; Tables
 ; --------------
-settings[bootstrap_table_bordered] = 0
-settings[bootstrap_table_condensed] = 0
-settings[bootstrap_table_hover] = 1
-settings[bootstrap_table_striped] = 1
-settings[bootstrap_table_responsive] = 1
+settings[lpbs_table_bordered] = 0
+settings[lpbs_table_condensed] = 0
+settings[lpbs_table_hover] = 1
+settings[lpbs_table_striped] = 1
+settings[lpbs_table_responsive] = 1
 
 ; Breadcrumbs
 ; --------------
-settings[bootstrap_breadcrumb] = 1
-settings[bootstrap_breadcrumb_home] = 0
-settings[bootstrap_breadcrumb_title] = 1
+settings[lpbs_breadcrumb] = 1
+settings[lpbs_breadcrumb_home] = 0
+settings[lpbs_breadcrumb_title] = 1
 
 ; Navbar
 ; --------------
-settings[bootstrap_navbar_position] = ''
-settings[bootstrap_navbar_inverse] = 0
+settings[lpbs_navbar_position] = ''
+settings[lpbs_navbar_inverse] = 0
 
 ; Pager
 ; --------------
-settings[bootstrap_pager_first_and_last] = 1
+settings[lpbs_pager_first_and_last] = 1
 
 ; Region Wells
 ; --------------
-settings[bootstrap_region_well-navigation] = ''
-settings[bootstrap_region_well-header] = ''
-settings[bootstrap_region_well-highlighted] = ''
-settings[bootstrap_region_well-help] = ''
-settings[bootstrap_region_well-content] = ''
-settings[bootstrap_region_well-sidebar_first] = 'well'
-settings[bootstrap_region_well-sidebar_second] = ''
-settings[bootstrap_region_well-footer] = ''
+settings[lpbs_region_well-navigation] = ''
+settings[lpbs_region_well-header] = ''
+settings[lpbs_region_well-highlighted] = ''
+settings[lpbs_region_well-help] = ''
+settings[lpbs_region_well-content] = ''
+settings[lpbs_region_well-sidebar_first] = 'well'
+settings[lpbs_region_well-sidebar_second] = ''
+settings[lpbs_region_well-footer] = ''
 
 ; Anchors
 ; --------------
-settings[bootstrap_anchors_fix] = 0
-settings[bootstrap_anchors_smooth_scrolling] = 0
+settings[lpbs_anchors_fix] = 0
+settings[lpbs_anchors_smooth_scrolling] = 0
 
 ; Forms
 ; --------------
-settings[bootstrap_forms_required_has_error] = 0
-settings[bootstrap_forms_has_error_value_toggle] = 1
-settings[bootstrap_forms_smart_descriptions] = 1
-settings[bootstrap_forms_smart_descriptions_limit] = 250
-settings[bootstrap_forms_smart_descriptions_allowed_tags] = 'b, code, em, i, kbd, span, strong'
+settings[lpbs_forms_required_has_error] = 0
+settings[lpbs_forms_has_error_value_toggle] = 1
+settings[lpbs_forms_smart_descriptions] = 1
+settings[lpbs_forms_smart_descriptions_limit] = 250
+settings[lpbs_forms_smart_descriptions_allowed_tags] = 'b, code, em, i, kbd, span, strong'
 
 ; Popovers
 ; --------------
-settings[bootstrap_popover_enabled] = 1
-settings[bootstrap_popover_animation] = 1
-settings[bootstrap_popover_html] = 0
-settings[bootstrap_popover_placement] = 'right'
-settings[bootstrap_popover_selector] = ''
-settings[bootstrap_popover_trigger]['hover'] = 0
-settings[bootstrap_popover_trigger]['focus'] = 0
-settings[bootstrap_popover_trigger]['click'] = 'click'
-settings[bootstrap_popover_trigger_autoclose] = 1
-settings[bootstrap_popover_title] = ''
-settings[bootstrap_popover_content] = ''
-settings[bootstrap_popover_delay] = 0
-settings[bootstrap_popover_container] = 'body'
+settings[lpbs_popover_enabled] = 1
+settings[lpbs_popover_animation] = 1
+settings[lpbs_popover_html] = 0
+settings[lpbs_popover_placement] = 'right'
+settings[lpbs_popover_selector] = ''
+settings[lpbs_popover_trigger]['hover'] = 0
+settings[lpbs_popover_trigger]['focus'] = 0
+settings[lpbs_popover_trigger]['click'] = 'click'
+settings[lpbs_popover_trigger_autoclose] = 1
+settings[lpbs_popover_title] = ''
+settings[lpbs_popover_content] = ''
+settings[lpbs_popover_delay] = 0
+settings[lpbs_popover_container] = 'body'
 
 ; Tooltips
 ; --------------
-settings[bootstrap_tooltip_enabled] = 1
-settings[bootstrap_tooltip_animation] = 1
-settings[bootstrap_tooltip_html] = 0
-settings[bootstrap_tooltip_placement] = 'auto left'
-settings[bootstrap_tooltip_selector] = ''
-settings[bootstrap_tooltip_trigger]['hover'] = 'hover'
-settings[bootstrap_tooltip_trigger]['focus'] = 'focus'
-settings[bootstrap_tooltip_trigger]['click'] = 0
-settings[bootstrap_tooltip_delay] = 0
-settings[bootstrap_tooltip_container] = 'body'
+settings[lpbs_tooltip_enabled] = 1
+settings[lpbs_tooltip_animation] = 1
+settings[lpbs_tooltip_html] = 0
+settings[lpbs_tooltip_placement] = 'auto left'
+settings[lpbs_tooltip_selector] = ''
+settings[lpbs_tooltip_trigger]['hover'] = 'hover'
+settings[lpbs_tooltip_trigger]['focus'] = 'focus'
+settings[lpbs_tooltip_trigger]['click'] = 0
+settings[lpbs_tooltip_delay] = 0
+settings[lpbs_tooltip_container] = 'body'
 
 ; Advanced
 ; --------------
-settings[bootstrap_cdn_provider] = 'jsdelivr'
-settings[bootstrap_cdn_custom_css] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css'
-settings[bootstrap_cdn_custom_css_min] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css'
-settings[bootstrap_cdn_custom_js] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js'
-settings[bootstrap_cdn_custom_js_min] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js'
-settings[bootstrap_cdn_jsdelivr_version] = '3.3.5'
-settings[bootstrap_cdn_jsdelivr_theme] = 'bootstrap'
+settings[lpbs_cdn_provider] = 'jsdelivr'
+settings[lpbs_cdn_custom_css] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css'
+settings[lpbs_cdn_custom_css_min] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css'
+settings[lpbs_cdn_custom_js] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js'
+settings[lpbs_cdn_custom_js_min] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js'
+settings[lpbs_cdn_jsdelivr_version] = '3.3.5'
+settings[lpbs_cdn_jsdelivr_theme] = 'lpbs'
 
 ; Global
 ; --------------

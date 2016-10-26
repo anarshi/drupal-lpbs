@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_bootstrap_dropdown().
+ * Stub file for lpbs_lpbs_dropdown().
  */
 
 /**
@@ -9,6 +9,6 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_bootstrap_dropdown($variables) {
+function lpbs_lpbs_dropdown($variables) {
   return drupal_render($variables['dropdown']);
 }

@@ -1,11 +1,11 @@
 <?php
 /**
  * @file
- * Stub file for "bootstrap_carousel" theme hook [pre]process functions.
+ * Stub file for "lpbs_carousel" theme hook [pre]process functions.
  */
 
 /**
- * Pre-processes variables for the "bootstrap_carousel" theme hook.
+ * Pre-processes variables for the "lpbs_carousel" theme hook.
  *
  * See template for list of available variables.
  *
@@ -13,7 +13,7 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_bootstrap_carousel(&$variables) {
+function lpbs_preprocess_lpbs_carousel(&$variables) {
   $variables['attributes']['class'][] = 'carousel';
   $variables['attributes']['class'][] = 'slide';
   $variables['attributes']['data-ride'] = 'carousel';
@@ -38,7 +38,7 @@ function bootstrap_preprocess_bootstrap_carousel(&$variables) {
 }
 
 /**
- * Processes variables for the "bootstrap_carousel" theme hook.
+ * Processes variables for the "lpbs_carousel" theme hook.
  *
  * See template for list of available variables.
  *
@@ -46,7 +46,7 @@ function bootstrap_preprocess_bootstrap_carousel(&$variables) {
  *
  * @ingroup theme_process
  */
-function bootstrap_process_bootstrap_carousel(&$variables) {
+function lpbs_process_lpbs_carousel(&$variables) {
   $variables['target'] = '#' . $variables['attributes']['id'];
   $variables['attributes'] = drupal_attributes($variables['attributes']);
 

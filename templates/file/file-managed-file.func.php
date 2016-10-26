@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_file_managed_file().
+ * Stub file for lpbs_file_managed_file().
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_file_managed_file($variables) {
+function lpbs_file_managed_file($variables) {
   $output = '';
   $element = $variables['element'];
 

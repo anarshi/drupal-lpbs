@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_container().
+ * Stub file for lpbs_container().
  */
 
 /**
@@ -23,7 +23,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_container($variables) {
+function lpbs_container($variables) {
   $element = $variables['element'];
 
   // Ensure #attributes is set.

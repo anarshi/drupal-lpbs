@@ -13,7 +13,7 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_html(&$variables) {
+function lpbs_preprocess_html(&$variables) {
   // Backport from Drupal 8 RDFa/HTML5 implementation.
   // @see https://www.drupal.org/node/1077566
   // @see https://www.drupal.org/node/1164926
@@ -43,7 +43,7 @@ function bootstrap_preprocess_html(&$variables) {
   $variables['body_attributes_array'] += $variables['attributes_array'];
 
   // Navbar position.
-  switch (bootstrap_setting('navbar_position')) {
+  switch (lpbs_setting('navbar_position')) {
     case 'fixed-top':
       $variables['body_attributes_array']['class'][] = 'navbar-is-fixed-top';
       break;
@@ -67,7 +67,7 @@ function bootstrap_preprocess_html(&$variables) {
  *
  * @ingroup theme_process
  */
-function bootstrap_process_html(&$variables) {
+function lpbs_process_html(&$variables) {
   $variables['html_attributes'] = drupal_attributes($variables['html_attributes_array']);
   $variables['body_attributes'] = drupal_attributes($variables['body_attributes_array']);
 }

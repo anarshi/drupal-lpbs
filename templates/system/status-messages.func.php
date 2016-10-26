@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_status_messages().
+ * Stub file for lpbs_status_messages().
  */
 
 /**
@@ -23,7 +23,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_status_messages($variables) {
+function lpbs_status_messages($variables) {
   $display = $variables['display'];
   $output = '';
 

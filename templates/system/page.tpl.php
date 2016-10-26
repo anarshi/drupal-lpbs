@@ -63,10 +63,10 @@
  * - $page['header']: Items for the header region.
  * - $page['footer']: Items for the footer region.
  *
- * @see bootstrap_preprocess_page()
+ * @see lpbs_preprocess_page()
  * @see template_preprocess()
  * @see template_preprocess_page()
- * @see bootstrap_process_page()
+ * @see lpbs_process_page()
  * @see template_process()
  * @see html.tpl.php
  *

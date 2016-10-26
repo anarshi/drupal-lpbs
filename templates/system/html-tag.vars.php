@@ -13,7 +13,7 @@
  *
  * @ingroup theme_process
  */
-function bootstrap_process_html_tag(&$variables) {
+function lpbs_process_html_tag(&$variables) {
   // Reference the element and tag name for easier coding below.
   $element = &$variables['element'];
   $tag = $element['#tag'];

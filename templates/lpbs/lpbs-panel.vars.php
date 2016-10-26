@@ -1,11 +1,11 @@
 <?php
 /**
  * @file
- * Stub file for "bootstrap_panel" theme hook [pre]process functions.
+ * Stub file for "lpbs_panel" theme hook [pre]process functions.
  */
 
 /**
- * Pre-processes variables for the "bootstrap_panel" theme hook.
+ * Pre-processes variables for the "lpbs_panel" theme hook.
  *
  * See template for list of available variables.
  *
@@ -13,14 +13,14 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_bootstrap_panel(&$variables) {
+function lpbs_preprocess_lpbs_panel(&$variables) {
   $element = &$variables['element'];
 
   // Set the element's attributes.
   element_set_attributes($element, array('id'));
 
   // Retrieve the attributes for the element.
-  $attributes = &_bootstrap_get_attributes($element);
+  $attributes = &_lpbs_get_attributes($element);
 
   // Add panel and panel-default classes.
   $attributes['class'][] = 'panel';
@@ -76,7 +76,7 @@ function bootstrap_preprocess_bootstrap_panel(&$variables) {
 }
 
 /**
- * Processes variables for the "bootstrap_panel" theme hook.
+ * Processes variables for the "lpbs_panel" theme hook.
  *
  * See template for list of available variables.
  *
@@ -84,6 +84,6 @@ function bootstrap_preprocess_bootstrap_panel(&$variables) {
  *
  * @ingroup theme_process
  */
-function bootstrap_process_bootstrap_panel(&$variables) {
+function lpbs_process_lpbs_panel(&$variables) {
   $variables['attributes'] = drupal_attributes($variables['attributes']);
 }

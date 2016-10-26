@@ -13,7 +13,7 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_block(&$variables) {
+function lpbs_preprocess_block(&$variables) {
   // Use a bare template for the page's main content.
   if ($variables['block_html_id'] == 'block-system-main') {
     $variables['theme_hook_suggestions'][] = 'block__no_wrapper';
@@ -30,7 +30,7 @@ function bootstrap_preprocess_block(&$variables) {
  *
  * @ingroup theme_process
  */
-function bootstrap_process_block(&$variables) {
+function lpbs_process_block(&$variables) {
   // Drupal 7 should use a $title variable instead of $block->subject.
   // Don't override an existing "title" variable, some modules may already it.
   if (!isset($variables['title'])) {

@@ -13,7 +13,7 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_views_view_table(&$variables) {
-  bootstrap_include('bootstrap', 'templates/system/table.vars.php');
-  _bootstrap_table_add_classes($variables['classes_array'], $variables);
+function lpbs_preprocess_views_view_table(&$variables) {
+  lpbs_include('lpbs', 'templates/system/table.vars.php');
+  _lpbs_table_add_classes($variables['classes_array'], $variables);
 }

@@ -13,7 +13,7 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_webform_element(&$variables) {
+function lpbs_preprocess_webform_element(&$variables) {
   $element = $variables['element'];
   $wrapper_attributes = array();
   if (isset($element['#wrapper_attributes'])) {

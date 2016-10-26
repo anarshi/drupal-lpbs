@@ -22,7 +22,7 @@ explicitly for use with this base theme and has maintainers in both projects.
 
 **Supported modules:**
 - [Admin Menu](https://www.drupal.org/project/admin_menu)
-- [Bootstrap Core](https://www.drupal.org/project/bootstrap_core)
+- [Bootstrap Core](https://www.drupal.org/project/lpbs_core)
 - [Disable Messages](https://www.drupal.org/project/disable_messages)
 - [jQuery Update](https://www.drupal.org/project/jquery_update)
 - [Icon API](https://www.drupal.org/project/icon)
@@ -49,13 +49,13 @@ you are attempting to integrate the base theme with.
 
 **"Un-supported" modules:**
 - Color module (in core)
-- [Bootstrap API](https://www.drupal.org/project/bootstrap_api)
-- [Bootstrap Library](https://www.drupal.org/project/bootstrap_library)
+- [Bootstrap API](https://www.drupal.org/project/lpbs_api)
+- [Bootstrap Library](https://www.drupal.org/project/lpbs_library)
 - [Display Suite](https://www.drupal.org/project/ds)
-- [Display Suite Bootstrap Layouts](https://www.drupal.org/project/ds_bootstrap_layouts)
+- [Display Suite Bootstrap Layouts](https://www.drupal.org/project/ds_lpbs_layouts)
 - [LESS module](https://drupal.org/project/less)
 - [Panels](https://www.drupal.org/project/panels)
-- [Panels Bootstrap Layouts](https://www.drupal.org/project/panels_bootstrap_layouts)
+- [Panels Bootstrap Layouts](https://www.drupal.org/project/panels_lpbs_layouts)
 
 ---
 
@@ -140,11 +140,11 @@ database on top of the settings found in the theme's `.info` file.
 
 You need to remove the variable `theme_[theme_name]_settings` from the database,
 where `[theme_name]` is your sub-theme's machine name (e.g. if your sub-theme
-machine name is `my_bootstrap_subtheme`, the variable name would be
-`theme_my_bootstrap_subtheme_settings`).
+machine name is `my_lpbs_subtheme`, the variable name would be
+`theme_my_lpbs_subtheme_settings`).
 
 The easiest way to do accomplish this task is to use the following [Drush]
-command: `theme_my_bootstrap_subtheme_settings`
+command: `theme_my_lpbs_subtheme_settings`
 
 If you do not have or use [Drush], you will either have to manually delete this
 variable from the database or create an [update hook](https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_update_N/7)
@@ -152,10 +152,10 @@ in a custom module that deletes the variable for you:
 
 ```php
 /**
-* Remove the 'theme_my_bootstrap_subtheme_settings' variable.
+* Remove the 'theme_my_lpbs_subtheme_settings' variable.
 */
 function hook_update_N() {
-  variable_del('theme_my_bootstrap_subtheme_settings');
+  variable_del('theme_my_lpbs_subtheme_settings');
 }
 ```
 

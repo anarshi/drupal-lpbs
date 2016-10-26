@@ -17,9 +17,9 @@
  *
  * @ingroup theme_preprocess
  */
-function bootstrap_preprocess_icon(&$variables) {
+function lpbs_preprocess_icon(&$variables) {
   $bundle = &$variables['bundle'];
-  if ($bundle['provider'] === 'bootstrap') {
+  if ($bundle['provider'] === 'lpbs') {
     $variables['attributes']['class'][] = 'glyphicon';
   }
 }

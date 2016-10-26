@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Stub file for bootstrap_menu_local_tasks().
+ * Stub file for lpbs_menu_local_tasks().
  */
 
 /**
@@ -20,7 +20,7 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_menu_local_tasks(&$variables) {
+function lpbs_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {

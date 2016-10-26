@@ -13,7 +13,7 @@
  * - $footer: The rendered footer of the modal.
  * - $size: The size of the modal. Can be empty, "sm" or "lg". This is
  *   automatically added in the $dialog_attributes. See
- *   bootstrap_preprocess_bootstrap_modal().
+ *   lpbs_preprocess_lpbs_modal().
  *
  * @ingroup templates
  */
