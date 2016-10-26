@@ -1,0 +1,35 @@
+#!/bin/bash
+
+if [[ "$1" == "-r" ]]; then
+    echo "Reverting changes"
+    mv templates/{lpbs,bootstrap}/
+    for file in $(find . -type f -name "lpbs*" ); do
+        echo $file
+        mv $file $(echo $file | sed s/lpbs/bootstrap/g)
+    done
+    for file in $(grep --exclude="make-lpbs" -r -l 'lpbs_'); do
+        sed -i 's/lpbs_/bootstrap_/g' $file
+        sed -i "s/'lpbs'/'bootstrap'/g" $file
+    done
+    exit 0
+fi
+
+
+
+echo "Turning Drupal Bootstrap theme into LP one"
+echo " (use $0 -r to revert changes)"
+echo " - rename theme files"
+if [ -d templates/bootstrap/ ]; then git mv templates/{bootstrap,lpbs}/; fi
+for file in $(find . -type f -name "bootstrap*" | grep -v .git); do
+    git mv $file $(echo $file | sed s/bootstrap/lpbs/g)
+done
+
+echo " - rename functions in php files"
+for file in $(grep --exclude-dir=".git" --exclude="make-lpbs" -r -l 'bootstrap'); do
+    sed -i 's/bootstrap_/lpbs_/g' $file
+    sed -i "s/'bootstrap'/'lpbs'/g" $file
+done
+sed -i 's/bootstrap.js/lpbs.js/' includes/alter.inc
+echo "All gone!"
+
+exit 0
