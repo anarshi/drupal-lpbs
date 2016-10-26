@@ -22,6 +22,17 @@ lpbs_include('lpbs', 'includes/process.inc');
 function lpbs_css_alter(&$css) {
   $theme_path = drupal_get_path('theme', 'lpbs');
 
+  $css[$theme_path . '/css/style.css'] = array(
+      'data' => $theme_path . '/css/style.css',
+      'type' => 'file',
+      'every_page' => TRUE,
+      'media' => 'all',
+      'preprocess' => TRUE,
+      'group' => CSS_THEME,
+      'browsers' => array('IE' => TRUE, '!IE' => TRUE),
+      'weight' => -1,
+  );
+
   // Exclude specified CSS files from theme.
   $excludes = lpbs_get_theme_info(NULL, 'exclude][css');
 
@@ -52,6 +63,7 @@ function lpbs_css_alter(&$css) {
     if (!$theme) {
       $theme = 'lpbs';
     }
+
     $theme = $theme === 'lpbs' || $theme === 'lpbs_theme' ? '' : "-$theme";
     $overrides = "$theme_path/css/$version/overrides$theme.min.css";
     if (file_exists($overrides)) {
@@ -71,6 +83,7 @@ function lpbs_css_alter(&$css) {
     $excludes = array_merge($excludes, str_replace('.css', '-rtl.css', $excludes));
     $css = array_diff_key($css, drupal_map_assoc($excludes));
   }
+  dpm($css);
 }
 
 /**

@@ -3,13 +3,13 @@
  * @file
  * theme-settings.php
  *
- * Provides theme settings for Bootstrap based themes when admin theme is not.
+ * Provides theme settings for LPBS based themes when admin theme is not.
  *
  * @see ./includes/settings.inc
  */
 
 /**
- * Include common Bootstrap functions.
+ * Include common LPBS functions.
  */
 include_once dirname(__FILE__) . '/includes/common.inc';
 lpbs_include('lpbs', 'includes/cdn.inc');
@@ -18,7 +18,7 @@ lpbs_include('lpbs', 'includes/cdn.inc');
  * Implements hook_form_FORM_ID_alter().
  */
 function lpbs_form_system_theme_settings_alter(&$form, $form_state, $form_id = NULL) {
-  // Do not add Bootstrap specific settings to non-bootstrap based themes,
+  // Do not add LPBS specific settings to non-bootstrap based themes,
   // including a work-around for a core bug affecting admin themes.
   // @see https://drupal.org/node/943212
   $theme = !empty($form_state['build_info']['args'][0]) ? $form_state['build_info']['args'][0] : FALSE;
@@ -38,7 +38,7 @@ function lpbs_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
 
     // Ensure the jQuery version is >= 1.9.
     if (!$jquery_version || !version_compare($jquery_version, '1.9', '>=')) {
-      $message = t('jQuery Update is not enabled, Bootstrap requires a minimum jQuery version of 1.9 or higher. Please enable the <a href="!jquery_update_project_url">jQuery Update</a> module. If you are seeing this message, then you must <a href="!jquery_update_configure">manually configuration</a> this setting or optionally <a href="!lpbs_suppress_jquery_error">suppress this message</a> instead.', array(
+      $message = t('jQuery Update is not enabled, LPBS requires a minimum jQuery version of 1.9 or higher. Please enable the <a href="!jquery_update_project_url">jQuery Update</a> module. If you are seeing this message, then you must <a href="!jquery_update_configure">manually configuration</a> this setting or optionally <a href="!lpbs_suppress_jquery_error">suppress this message</a> instead.', array(
         '!jquery_update_project_url' => check_plain('https://www.drupal.org/project/jquery_update'),
         '!jquery_update_configure' => check_plain(url('admin/config/development/jquery_update')),
         '!lpbs_suppress_jquery_error' => check_plain(url('admin/appearance/settings/' . $theme, array(
@@ -49,13 +49,13 @@ function lpbs_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
     }
   }
 
-  // Create vertical tabs for all Bootstrap related settings.
+  // Create vertical tabs for all LPBS related settings.
   $form['lpbs'] = array(
     '#type' => 'vertical_tabs',
     '#attached' => array(
       'js'  => array(drupal_get_path('theme', 'lpbs') . '/js/bootstrap.admin.js'),
     ),
-    '#prefix' => '<h2><small>' . t('Bootstrap Settings') . '</small></h2>',
+    '#prefix' => '<h2><small>' . t('LPBS Settings') . '</small></h2>',
     '#weight' => -10,
   );
 
@@ -185,7 +185,7 @@ function lpbs_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
     '#type' => 'checkbox',
     '#title' => t('Responsive Images'),
     '#default_value' => lpbs_setting('image_responsive', $theme),
-    '#description' => t('Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.'),
+    '#description' => t('Images in LPBS 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.'),
   );
 
   // Tables.
@@ -335,7 +335,7 @@ function lpbs_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
   $form['components']['region_wells'] = array(
     '#type' => 'fieldset',
     '#title' => t('Region wells'),
-    '#description' => t('Enable the <code>.well</code>, <code>.well-sm</code> or <code>.well-lg</code> classes for specified regions. See: documentation on <a href="!wells" target="_blank">Bootstrap Wells</a>.', array(
+    '#description' => t('Enable the <code>.well</code>, <code>.well-sm</code> or <code>.well-lg</code> classes for specified regions. See: documentation on <a href="!wells" target="_blank">LPBS Wells</a>.', array(
       '!wells' => 'http://getbootstrap.com/components/#wells',
     )),
     '#collapsible' => TRUE,
@@ -519,7 +519,7 @@ function lpbs_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
   $form['javascript']['tooltips'] = array(
     '#type' => 'fieldset',
     '#title' => t('Tooltips'),
-    '#description' => t('Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don\'t rely on images, use CSS3 for animations, and data-attributes for local title storage. See <a href="!url" target="_blank">Bootstrap tooltips</a> for more documentation.', array(
+    '#description' => t('Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don\'t rely on images, use CSS3 for animations, and data-attributes for local title storage. See <a href="!url" target="_blank">LPBS tooltips</a> for more documentation.', array(
       '!url' => 'http://getbootstrap.com/javascript/#tooltips',
     )),
     '#collapsible' => TRUE,

@@ -262,7 +262,7 @@ function _lpbs_cdn_provider_jsdelivr_extract_themes($files, $base_url = '') {
       // Determine the "theme" name.
       if ($path === 'css' || $path === 'js') {
         $theme = 'lpbs';
-        $title = t('Bootstrap');
+        $title = t('LPBS');
       }
       else {
         $theme = $path;
@@ -270,7 +270,7 @@ function _lpbs_cdn_provider_jsdelivr_extract_themes($files, $base_url = '') {
       }
       if ($matches[2]) {
         $theme = 'lpbs_theme';
-        $title = t('Bootstrap Theme');
+        $title = t('LPBS Theme');
       }
 
       $themes[$theme]['title'] = $title;
@@ -438,7 +438,7 @@ function lpbs_lpbs_cdn_provider_custom_settings_form_alter(&$element, &$form_sta
     $setting_min = lpbs_setting('cdn_custom_' . $type . '_min', $theme);
     $element['lpbs_cdn_custom_' . $type] = array(
       '#type' => 'textfield',
-      '#title' => t('Bootstrap @type URL', array(
+      '#title' => t('LP Bootstrap @type URL', array(
         '@type' => drupal_strtoupper($type),
       )),
       '#description' => t('It is best to use protocol relative URLs (i.e. without http: or https:) here as it will allow more flexibility if the need ever arises.'),
@@ -446,7 +446,7 @@ function lpbs_lpbs_cdn_provider_custom_settings_form_alter(&$element, &$form_sta
     );
     $element['lpbs_cdn_custom_' . $type . '_min'] = array(
       '#type' => 'textfield',
-      '#title' => t('Minified Bootstrap @type URL', array(
+      '#title' => t('Minified LP Bootstrap @type URL', array(
         '@type' => drupal_strtoupper($type),
       )),
       '#description' => t('Additionally, you can provide the minimized version of the file. It will be used instead if site aggregation is enabled.'),
@@ -486,13 +486,13 @@ function lpbs_lpbs_cdn_provider_jsdelivr_settings_form_alter(&$element, &$form_s
   $element['lpbs_cdn_jsdelivr_theme'] = array(
     '#type' => 'select',
     '#title' => t('Theme'),
-    '#description' => t('Choose the example <a href="!lpbs_theme" target="_blank">Bootstrap Theme</a> provided by Bootstrap or one of the many, many <a href="!bootswatch" target="_blank">Bootswatch</a> themes!', array(
+    '#description' => t('Choose the example <a href="!lpbs_theme" target="_blank">LPBS Theme</a> provided by Bootstrap or one of the many, many <a href="!bootswatch" target="_blank">Bootswatch</a> themes!', array(
       '!bootswatch' => 'https://bootswatch.com',
       '!lpbs_theme' => 'http://getbootstrap.com/examples/theme/',
     )),
     '#default_value' => lpbs_setting('cdn_jsdelivr_theme', $theme),
     '#options' => $themes,
-    '#empty_option' => t('Bootstrap (default)'),
+    '#empty_option' => t('LPBS (default)'),
     '#empty_value' => 'lpbs',
     '#suffix' => '<div id="bootstrap-theme-preview"></div>',
   );
