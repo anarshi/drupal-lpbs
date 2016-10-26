@@ -96,7 +96,7 @@
       <?php endif; ?>
     </div>
 
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+<?php if (!empty($primary_nav) || !empty($secondary_nav)): ?>
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
@@ -105,16 +105,20 @@
           <?php if (!empty($secondary_nav)): ?>
             <?php print render($secondary_nav); ?>
           <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
         </nav>
       </div>
     <?php endif; ?>
   </div>
+<?php if(!empty($page['navigation'])): ?>
+    <div >
+      <?php print render($page['navigation']); ?>
+    </div>
+<?php endif; ?>
 </header>
 
+
 <div class="main-container <?php print $container_class; ?>">
+  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -123,6 +127,12 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
+
+<?php if (!empty($page['highlighted'])): ?>
+  <div class="row">
+    <div class="highlighted"><?php print render($page['highlighted']); ?></div>
+  </div>
+<?php endif; ?>
 
   <div class="row">
 
@@ -133,10 +143,6 @@
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
