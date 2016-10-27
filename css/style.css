@@ -13547,7 +13547,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 
 /* line 6, ../scss/modules/_menus.scss */
-.region-navigation .leaf {
+.region-header .block-menu .leaf {
   float: left;
 }
 
