@@ -83,7 +83,6 @@ function lpbs_css_alter(&$css) {
     $excludes = array_merge($excludes, str_replace('.css', '-rtl.css', $excludes));
     $css = array_diff_key($css, drupal_map_assoc($excludes));
   }
-  dpm($css);
 }
 
 /**
