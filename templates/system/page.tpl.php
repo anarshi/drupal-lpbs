@@ -106,14 +106,12 @@
             <?php print render($secondary_nav); ?>
           <?php endif; ?>
         </nav>
-      </div>
-    <?php endif; ?>
-  </div>
 <?php if(!empty($page['navigation'])): ?>
-    <div >
       <?php print render($page['navigation']); ?>
-    </div>
 <?php endif; ?>
+      </div>
+<?php endif; ?>
+  </div>
 </header>
 
 

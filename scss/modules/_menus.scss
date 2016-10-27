@@ -1,3 +1,7 @@
+body>header.navbar .navbar-brand {
+    @extend .sr-only;
+}
+
 .region-navigation {
     .leaf {
         float: left;
