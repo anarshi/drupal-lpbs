@@ -1,0 +1,24 @@
+// Landportal Sections header
+.page-debate #page-header .block-menu {
+    background-color: $blue;
+    background-image: image-url('header/pebbles-medium.png');
+}
+
+#block-menu-menu-landlibrary-menu,
+.page-library #page-header .block-menu {
+    background-color: $red;
+    background-image: image-url('header/rocky-land-medium.png');
+}
+
+.page-book #page-header .block-menu {
+    background-color: $green;
+    background-image: image-url('header/grass-medium.png');
+}
+
+#page-header .block-menu {
+    font-family: $headings-font-family;
+    color: white;
+    h2 {
+        color: white;
+    }
+}

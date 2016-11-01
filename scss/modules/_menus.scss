@@ -1,11 +1,49 @@
-body>header.navbar .navbar-brand {
-    @extend .sr-only;
+/* .block-menu { */
+/*     h2 { */
+/*         margin: 0; */
+/*     } */
+/* } */
+
+body>header.navbar {
+    margin: 0 !important;
+    height: 70px;
+    border: 0;
+    @include border-radius(0);
+    border-bottom: 5px solid $brand-secondary;
+    .navbar-brand {
+        @extend .sr-only;
+    }
 }
 
-.region-navigation .block-menu {
-    // nav menu
-    ul li.leaf {
-        float: left;
+.main-container {
+    &>header {
+        @extend .row;
+        .block-menu {
+            //position: relative;
+            @extend .col-xs-12;
+            min-height: 150px;
+            //padding-bottom: 40px;
+            ul.menu {
+                //position: absolute;
+                //bottom: 0;
+                //height: 40px;
+                //width: 100%;
+                @extend .row;
+                @extend .text-center;
+                background-color: $brown;
+                border-top: 1px solid $white;
+                a {
+                    color: $white;
+                    text-transform: uppercase;
+                }
+                li.leaf {
+                    @extend .col-xs-4;
+                    @extend .col-sm-3;
+                    @extend .col-md-2;
+                    //@extend .col-lg-1;
+                }
+            }
+        }
     }
 }
 
