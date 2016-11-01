@@ -67,6 +67,17 @@ function lpbs_preprocess_page(&$variables) {
   else {
     $variables['navbar_classes_array'][] = 'navbar-default';
   }
+  // Add block descriptions to Land debate/book/library header menu
+  if ($variables['page']['header']) {
+    $pheader = $variables['page']['header'];
+    foreach (array('landbook-menu', 'landdebate-menu', 'menu-landlibrary-menu', 'user-signin') as $i) {
+      if ($pheader['menu_'.$i]) {
+        $menu = menu_load($i);
+        $desc = i18n_string_translate('menu:menu:'.$i.':description', $menu['description']);
+        $pheader['menu_'.$i]['#block']->description = $desc;
+      }
+    }
+  }
 }
 
 /**
