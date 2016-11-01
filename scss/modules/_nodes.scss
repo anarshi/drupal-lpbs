@@ -1,0 +1,17 @@
+.node-teaser {
+    .submitted {
+        @extend .sr-only;
+    }
+    &:not(.node-organization).field-type-image img {
+        @include box-shadow(5px 5px 10px 0 rgba($black, 0.4));
+    }
+
+    // Organization teasers
+    // do not show title
+    &.node-organization {
+        footer .links,
+        header h2 {
+            @extend .sr-only;
+        }
+    }
+}

@@ -2,9 +2,25 @@ body>header.navbar .navbar-brand {
     @extend .sr-only;
 }
 
-.region-header .block-menu {
+.region-navigation .block-menu {
     // nav menu
-    li.leaf {
+    ul li.leaf {
         float: left;
+    }
+}
+
+body>footer {
+    @extend .row;
+    .block {
+        @extend .col-sm-4;
+    }
+    .block-menu {
+        @extend .col-sm-8;
+        &>ul.menu {
+            @extend .row;
+            &>li {
+                @extend .col-sm-3;
+            }
+        }
     }
 }

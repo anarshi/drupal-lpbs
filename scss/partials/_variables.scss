@@ -1,0 +1,35 @@
+/* Colors */
+$grey:          #666666;
+$black:         #333333;
+$white:         #FFFFFF;
+
+$green:         #8FCD1F;
+$green-dark:    #617724;
+$green-light:	#A3C642;
+
+$blue:          #0165C3;
+$blue-light:    #428BCA;
+$blue-dark:     #2A6496;
+
+$red:           #91594D;
+
+$brown:         #634C40;
+
+/* For Debates */
+$status-red:    #fe2e2e;
+$status-green:  #01df3a;
+$status-grey:   #CCCCCC;
+
+/* Bootstrap overrides */
+$brand-primary:         $green;
+$brand-secondary:       $brown;
+$link-color:            $green;
+$text-color:            $black;
+$headings-color:        $green;
+
+
+$font-family-serif:             "Merriweather", serif;
+$font-family-sans-serif:        "Open Sans", sans-serif;
+
+$headings-font-family:          $font-family-sans-serif;
+$font-family-base:              $font-family-serif !default;
