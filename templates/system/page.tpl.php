@@ -87,7 +87,7 @@
       <?php endif; ?>
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -95,27 +95,26 @@
         </button>
       <?php endif; ?>
     </div>
-<?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-    <div class="navbar-collapse collapse" id="navbar-collapse">
-      <nav role="navigation">
+
+    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <div class="navbar-collapse collapse">
+        <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($secondary_nav)): ?>
             <?php print render($secondary_nav); ?>
           <?php endif; ?>
-      </nav>
-    </div>
-<?php endif; ?>
-<?php if(!empty($page['navigation'])): ?>
-      <?php print render($page['navigation']); ?>
-<?php endif; ?>
+          <?php if (!empty($page['navigation'])): ?>
+            <?php print render($page['navigation']); ?>
+          <?php endif; ?>
+        </nav>
+      </div>
+    <?php endif; ?>
   </div>
 </header>
 
-
 <div class="main-container <?php print $container_class; ?>">
-  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -125,13 +124,11 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
+  <div class="row">
+<?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 <?php if (!empty($page['highlighted'])): ?>
-  <div class="row">
     <div class="highlighted"><?php print render($page['highlighted']); ?></div>
-  </div>
 <?php endif; ?>
-
-  <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">

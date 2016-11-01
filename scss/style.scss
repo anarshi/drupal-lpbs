@@ -22,6 +22,7 @@ $fa-font-path: "font-awesome/"; // will prepend 'fonts_path' variable from confi
 
 // default Drupal Bootstrap theme overrides
 @import 'partials/overrides';
+@import 'partials/elements';
 
 // Land Portal stuff
 @import 'modules/lists';

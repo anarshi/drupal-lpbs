@@ -4,14 +4,16 @@ $black:         #333333;
 $white:         #FFFFFF;
 
 $green:         #8FCD1F;
-$green-dark:    #617724;
-$green-light:	#A3C642;
+$green-light:	lighten($green, 10);
+$green-dark:    darken($green, 10);
 
 $blue:          #0165C3;
-$blue-light:    #428BCA;
-$blue-dark:     #2A6496;
+$blue-light:    lighten($blue, 10);
+$blue-dark:     darken($blue, 10);
 
 $red:           #91594D;
+$red-light:     lighten($red, 10);
+$red-dark:      darken($red, 10);
 
 $brown:         #634C40;
 
@@ -26,7 +28,6 @@ $brand-secondary:       $brown;
 $link-color:            $green;
 $text-color:            $black;
 $headings-color:        $green;
-
 
 $font-family-serif:             "Merriweather", serif;
 $font-family-sans-serif:        "Open Sans", sans-serif;

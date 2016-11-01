@@ -1,8 +1,17 @@
+// Landportal footer social channels
 #block-landportal-blocks-lp-footer-social {
-    li {
-        height: 50px;
-        width: 50px;
-        @include border-radius(50%);
-        border: 2px solid $white;
+    ul {
+        @extend .list-unstyled;
+        @extend .text-center;
+        li {
+            float: left;
+            font-size: 30px;
+            padding-top: 3px;
+            height: 50px;
+            width: 50px;
+            @include border-radius(50%);
+            border: 2px solid $white;
+            margin-right: .5em;
+        }
     }
 }

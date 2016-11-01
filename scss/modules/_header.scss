@@ -1,3 +1,34 @@
+// General Landportal elements
+body>footer {
+    @extend .bg-primary;
+    // First level menu
+    .block-menu>ul.menu>li>a {
+        @extend .top-menu-title;
+    }
+}
+body>header {
+    a {
+        @extend .top-menu-title;
+    }
+    a[href='/library'] {
+        color: $red !important;
+    }
+    a[href='/book'] {
+        color: $green !important;
+    }
+    a[href='/debate'] {
+        color: $blue !important;
+    }
+
+    // Fix search form-group
+    &.navbar #block-search-form {
+        margin: ($grid-gutter-width / 4) ($grid-gutter-width / 4) 0;
+        .form-group {
+            margin-bottom: 0;
+        }
+    }
+}
+
 // Landportal Sections header
 .page-debate #page-header .block-menu {
     background-color: $blue;
@@ -20,5 +51,17 @@
     color: white;
     h2 {
         color: white;
+        @extend .col-xs-12;
+        //@extend .col-md-2;
+        @extend .col-lg-4;
+    }
+    p {
+        font-size: 1.2em;
+        @extend .col-xs-12;
+        //@extend .col-md-2;
+        @extend .col-lg-8;
+        @media (min-width: $screen-lg-min) {
+            padding: 2em;
+        }
     }
 }

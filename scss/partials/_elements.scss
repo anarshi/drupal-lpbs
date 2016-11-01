@@ -1,0 +1,15 @@
+.bg-primary {
+    background-color: $brand-primary;
+    h1, h2, h3, p, a, a:hover {
+        color: $white;
+    }
+}
+
+.top-menu-title {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        background-color: rgba($white, .1);
+    }
+}
