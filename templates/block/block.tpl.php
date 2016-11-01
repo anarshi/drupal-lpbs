@@ -44,6 +44,10 @@
  *
  * @ingroup templates
  */
+/* if ($block->region == "header") { */
+/*     dpm($block); */
+/*     dpm($content); */
+/* } */
 ?>
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -52,6 +56,9 @@
     <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
   <?php endif;?>
   <?php print render($title_suffix); ?>
+  <?php if ($block->description): ?>
+    <p><?php print $block->description; ?></p>
+  <?php endif;?>
 
   <?php print $content ?>
 
