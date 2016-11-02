@@ -1,0 +1,27 @@
+.view-promoted {
+    .view-content {
+        @external .clearfix;
+        &>div {
+            padding: 0;
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+            .views-field-title {
+                position: absolute;
+                bottom: 0;
+                padding: .5em;
+                width: 100%;
+                background-color: rgba($black, .8);
+                a, a:hover {
+                       color: $white;
+                       display: block;
+                       min-height: 3em;
+                       text-decoration: none;
+                   }
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
