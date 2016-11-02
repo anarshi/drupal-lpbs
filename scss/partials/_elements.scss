@@ -4,8 +4,11 @@
     a:hover {
         color: $white;
     }
-    a {
+    .nav li a {
         white-space: nowrap;
+        &:hover {
+            background-color: rgba($white, .1);
+        }
     }
 }
 
