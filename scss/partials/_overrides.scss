@@ -222,9 +222,9 @@ form#search-block-form {
 .navbar #block-search-form {
   float: none;
   margin: 5px 0 5px 5px;
-  @media #{$normal} {
+//  @media #{$normal} {
     float: right;
-  }
+//  }
 
   .input-group-btn {
     width: auto;

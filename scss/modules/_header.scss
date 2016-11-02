@@ -19,10 +19,31 @@ body>header {
     a[href='/debate'] {
         color: $blue !important;
     }
+    a[href='/user'] {
+        //color: $blue !important;
+        line-height: initial;
+        font-size: 0px;
+        padding: 10px;
+        &:after {
+            @extend .glyphicon;
+            content: "\e008";
+            font-size: 22px;
+            //@extend .glyphicon-off;
+        }
+    }
 
     // Fix search form-group
     &.navbar #block-search-form {
-        margin: ($grid-gutter-width / 4) ($grid-gutter-width / 4) 0;
+        margin: 0;
+        .input-group {
+            margin: ($grid-gutter-width / 4) ($grid-gutter-width / 4) 0;
+            @media (max-width: $screen-sm-max) {
+                .form-control {
+                    width: 90%;
+                    float: right;
+                }
+            }
+        }
         .form-group {
             margin-bottom: 0;
         }
@@ -52,16 +73,21 @@ body>header {
     h2 {
         color: white;
         @extend .col-xs-12;
-        //@extend .col-md-2;
+        @extend .col-md-10;
+        @extend .col-md-offset-1;
         @extend .col-lg-4;
+        @extend .col-lg-offset-1;
     }
     p {
         font-size: 1.2em;
         @extend .col-xs-12;
-        //@extend .col-md-2;
-        @extend .col-lg-8;
+        @extend .col-md-10;
+        @extend .col-md-offset-1;
+        @extend .col-lg-6;
+        @extend .col-lg-offset-0;
+        padding-bottom: 1em;
         @media (min-width: $screen-lg-min) {
-            padding: 2em;
+            padding: 1.6em 0;
         }
     }
 }

@@ -1,7 +1,11 @@
 .bg-primary {
     background-color: $brand-primary;
-    h1, h2, h3, p, a, a:hover {
+    h1, h2, h3, p, a,
+    a:hover {
         color: $white;
+    }
+    a {
+        white-space: nowrap;
     }
 }
 
