@@ -337,12 +337,16 @@ function lpbs_js_alter(&$js) {
     $js['misc/jquery.once.js'] = $jquery_once['js']['misc/jquery.once.js'];
     $js['misc/jquery.once.js'] += drupal_js_defaults('misc/jquery.once.js');
   }
-
-  // Always add lpbs.js last.
-  $bootstrap = $theme_path . '/js/lpbs.js';
+  // Add Bootstrap JS
+  $bootstrap = $theme_path . '/js/bootstrap.min.js';
   $js[$bootstrap] = drupal_js_defaults($bootstrap);
   $js[$bootstrap]['group'] = JS_THEME;
-  $js[$bootstrap]['scope'] = 'footer';
+
+  // Add theme JS (lpbs.js) last.
+  $lpbs = $theme_path . '/js/lpbs.js';
+  $js[$lpbs] = drupal_js_defaults($lpbs);
+  $js[$lpbs]['group'] = JS_THEME;
+  $js[$lpbs]['scope'] = 'footer';
 
   if (!empty($excludes)) {
     $js = array_diff_key($js, drupal_map_assoc($excludes));
