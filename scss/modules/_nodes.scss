@@ -1,7 +1,10 @@
+.node,
 .node-teaser {
     .submitted {
         @extend .sr-only;
     }
+}
+.node-teaser {
     &:not(.node-organization).field-type-image img {
         @include box-shadow(5px 5px 10px 0 rgba($black, 0.4));
     }
