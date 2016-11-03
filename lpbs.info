@@ -123,13 +123,13 @@ settings[lpbs_tooltip_container] = 'body'
 
 ; Advanced
 ; --------------
-settings[lpbs_cdn_provider] = 'jsdelivr'
+settings[lpbs_cdn_provider] = ''
 settings[lpbs_cdn_custom_css] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css'
 settings[lpbs_cdn_custom_css_min] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css'
 settings[lpbs_cdn_custom_js] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js'
 settings[lpbs_cdn_custom_js_min] = 'https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js'
-settings[lpbs_cdn_jsdelivr_version] = '3.3.5'
-settings[lpbs_cdn_jsdelivr_theme] = 'lpbs'
+; settings[lpbs_cdn_jsdelivr_version] = '3.3.5'
+; settings[lpbs_cdn_jsdelivr_theme] = 'lpbs'
 
 ; Global
 ; --------------

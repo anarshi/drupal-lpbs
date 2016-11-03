@@ -33,52 +33,62 @@ function lpbs_css_alter(&$css) {
       'weight' => -1,
   );
 
+  $css[$theme_path . '/css/bootstrap-select.min.css'] = array(
+      'data' => $theme_path . '/css/bootstrap-select.min.css',
+      'type' => 'file',
+      'every_page' => TRUE,
+      'media' => 'screen',
+      'preprocess' => TRUE,
+      'group' => CSS_THEME,
+      'browsers' => array('IE' => TRUE, '!IE' => TRUE),
+      'weight' => -1,
+  );
   // Exclude specified CSS files from theme.
   $excludes = lpbs_get_theme_info(NULL, 'exclude][css');
 
-  // Add CDN assets, if any.
-  $provider = lpbs_setting('cdn_provider');
-  if ($cdn_assets = lpbs_get_cdn_assets('css', $provider)) {
-    $cdn_weight = -2.99;
-    foreach ($cdn_assets as $cdn_asset) {
-      $cdn_weight += .01;
-      $css[$cdn_asset] = array(
-        'data' => $cdn_asset,
-        'type' => 'external',
-        'every_page' => TRUE,
-        'media' => 'all',
-        'preprocess' => FALSE,
-        'group' => CSS_THEME,
-        'browsers' => array('IE' => TRUE, '!IE' => TRUE),
-        'weight' => $cdn_weight,
-      );
-    }
+  /* // Add CDN assets, if any. */
+  /* $provider = lpbs_setting('cdn_provider'); */
+  /* if ($cdn_assets = lpbs_get_cdn_assets('css', $provider)) { */
+  /*   $cdn_weight = -2.99; */
+  /*   foreach ($cdn_assets as $cdn_asset) { */
+  /*     $cdn_weight += .01; */
+  /*     $css[$cdn_asset] = array( */
+  /*       'data' => $cdn_asset, */
+  /*       'type' => 'external', */
+  /*       'every_page' => TRUE, */
+  /*       'media' => 'all', */
+  /*       'preprocess' => FALSE, */
+  /*       'group' => CSS_THEME, */
+  /*       'browsers' => array('IE' => TRUE, '!IE' => TRUE), */
+  /*       'weight' => $cdn_weight, */
+  /*     ); */
+  /*   } */
 
-    // Add a specific version and theme CSS overrides file.
-    $version = lpbs_setting('cdn_' . $provider . '_version');
-    if (!$version) {
-      $version = BOOTSTRAP_VERSION;
-    }
-    $theme = lpbs_setting('cdn_' . $provider . '_theme');
-    if (!$theme) {
-      $theme = 'lpbs';
-    }
+    /* // Add a specific version and theme CSS overrides file. */
+    /* $version = lpbs_setting('cdn_' . $provider . '_version'); */
+    /* if (!$version) { */
+    /*   $version = BOOTSTRAP_VERSION; */
+    /* } */
+    /* $theme = lpbs_setting('cdn_' . $provider . '_theme'); */
+    /* if (!$theme) { */
+    /*   $theme = 'lpbs'; */
+    /* } */
 
-    $theme = $theme === 'lpbs' || $theme === 'lpbs_theme' ? '' : "-$theme";
-    $overrides = "$theme_path/css/$version/overrides$theme.min.css";
-    if (file_exists($overrides)) {
-      $css[$overrides] = array(
-        'data' => $overrides,
-        'type' => 'file',
-        'every_page' => TRUE,
-        'media' => 'all',
-        'preprocess' => TRUE,
-        'group' => CSS_THEME,
-        'browsers' => array('IE' => TRUE, '!IE' => TRUE),
-        'weight' => -1,
-      );
-    }
-  }
+  /*   $theme = $theme === 'lpbs' || $theme === 'lpbs_theme' ? '' : "-$theme"; */
+  /*   $overrides = "$theme_path/css/$version/overrides$theme.min.css"; */
+  /*   if (file_exists($overrides)) { */
+  /*     $css[$overrides] = array( */
+  /*       'data' => $overrides, */
+  /*       'type' => 'file', */
+  /*       'every_page' => TRUE, */
+  /*       'media' => 'all', */
+  /*       'preprocess' => TRUE, */
+  /*       'group' => CSS_THEME, */
+  /*       'browsers' => array('IE' => TRUE, '!IE' => TRUE), */
+  /*       'weight' => -1, */
+  /*     ); */
+  /*   } */
+  /* } */
   if (!empty($excludes)) {
     $excludes = array_merge($excludes, str_replace('.css', '-rtl.css', $excludes));
     $css = array_diff_key($css, drupal_map_assoc($excludes));
@@ -342,6 +352,10 @@ function lpbs_js_alter(&$js) {
   $js[$bootstrap] = drupal_js_defaults($bootstrap);
   $js[$bootstrap]['group'] = JS_THEME;
 
+  $bootstrap = $theme_path . '/js/bootstrap-select.min.js';
+  $js[$bootstrap] = drupal_js_defaults($bootstrap);
+  $js[$bootstrap]['group'] = JS_THEME;
+
   // Add theme JS (lpbs.js) last.
   $lpbs = $theme_path . '/js/lpbs.js';
   $js[$lpbs] = drupal_js_defaults($lpbs);
@@ -382,17 +396,17 @@ function lpbs_js_alter(&$js) {
     ),
   );
 
-  // Add CDN assets, if any.
-  if ($cdn_assets = lpbs_get_cdn_assets('js')) {
-    $cdn_weight = -99.99;
-    foreach ($cdn_assets as $cdn_asset) {
-      $cdn_weight += .01;
-      $js[$cdn_asset] = drupal_js_defaults($cdn_asset);
-      $js[$cdn_asset]['type'] = 'external';
-      $js[$cdn_asset]['every_page'] = TRUE;
-      $js[$cdn_asset]['weight'] = $cdn_weight;
-    }
-  }
+  /* // Add CDN assets, if any. */
+  /* if ($cdn_assets = lpbs_get_cdn_assets('js')) { */
+  /*   $cdn_weight = -99.99; */
+  /*   foreach ($cdn_assets as $cdn_asset) { */
+  /*     $cdn_weight += .01; */
+  /*     $js[$cdn_asset] = drupal_js_defaults($cdn_asset); */
+  /*     $js[$cdn_asset]['type'] = 'external'; */
+  /*     $js[$cdn_asset]['every_page'] = TRUE; */
+  /*     $js[$cdn_asset]['weight'] = $cdn_weight; */
+  /*   } */
+  /* } */
 }
 
 /**
