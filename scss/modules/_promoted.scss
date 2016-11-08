@@ -1,6 +1,6 @@
 .view-promoted {
     .view-content {
-        @external .clearfix;
+        //@extend .clearfix;
         &>div {
             padding: 0;
             position: relative;

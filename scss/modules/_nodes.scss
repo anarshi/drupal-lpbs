@@ -1,24 +1,21 @@
-.group-topics-regions {
-    border: 0;
-    clear: left;
-    @include box-shadow(none);
-    .panel-body {
-        padding: 0;
-    }
-}
 
 .node,
 .node-teaser {
+    // Header
     .submitted {
         @extend .sr-only;
     }
-    .group-topics-regions,
-    .field-name-field-doc-thumb,
-    .field-name-field-image {
-        @extend .col-xs-4;
-        @extend .col-md-3;
+
+    // Body / main content
+    .field-group-fieldset.panel {
+        border: 0;
+        @include box-shadow(none);
+        .panel-body {
+            padding: 0;
+        }
     }
-        
+
+    // Node image
     .field-name-field-doc-thumb,
     .field-name-field-image {
         padding-right: 2em;
@@ -27,11 +24,36 @@
             @include box-shadow(5px 5px 10px 0 rgba($black, 0.4));
         }
     }
+
     footer {
         .links {
             @extend .pull-right;
             font-style: italic;
         }
+    }
+}
+
+.node {
+    // Display settings for node fieldgroup to emulate 'responsive columns'
+    // Warning: order in which fieldgroups (meta and editors-pub)
+    //  are displayed (node: manage display) matters!
+    .group-topics-regions,
+    .field-name-field-doc-thumb,
+    .field-name-field-image {
+        @extend .col-xs-4;
+        @extend .col-md-3;
+    }
+    .group-topics-regions {
+        clear: left;
+    }
+    .group-meta,
+    .group-editors-pub {
+        @extend .col-xs-4;
+        @extend .col-md-3;
+        @extend .pull-right;
+    }
+    .group-editors-pub {
+        clear: right;
     }
 }
 
