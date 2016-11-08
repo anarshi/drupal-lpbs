@@ -33,27 +33,47 @@
     }
 }
 
+#block-system-main>.node-form {
+    // Display settings for node fieldgroup to emulate 'responsive columns'
+    // Warning: order in which fieldgroups (meta and editors-pub)
+    //  are displayed (node: manage display) matters!
+    .group-topics-regions,
+    .group-meta,
+    .group-access,
+    .group-editors-pub {
+        @extend .col-xs-4;
+        @extend .col-md-3;
+    }
+}
+
+.views-row>.node-teaser>,
 #block-system-main>.node> {
     // Display settings for node fieldgroup to emulate 'responsive columns'
     // Warning: order in which fieldgroups (meta and editors-pub)
     //  are displayed (node: manage display) matters!
     .group-topics-regions,
     .field-name-field-doc-thumb,
-    .field-name-field-image {
+    .field-name-field-image,
+    .group-meta,
+    .group-access,
+    .group-editors-pub {
         @extend .col-xs-4;
         @extend .col-md-3;
     }
+}
+
+#block-system-main>.node> {
+    .group-meta,
+    .group-editors-pub,
     .group-topics-regions {
         clear: left;
     }
-    .group-meta,
-    .group-editors-pub {
-        @extend .col-xs-4;
-        @extend .col-md-3;
-        @extend .pull-right;
-    }
-    .group-editors-pub {
-        clear: right;
+    @media (min-width: $screen-md-min) {        
+        .group-meta,
+        .group-editors-pub {
+            float: right;
+            clear: right;
+        }
     }
 }
 
