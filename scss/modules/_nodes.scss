@@ -1,12 +1,44 @@
+.group-topics-regions {
+    border: 0;
+    clear: left;
+    @include box-shadow(none);
+    .panel-body {
+        padding: 0;
+    }
+}
+
 .node,
 .node-teaser {
     .submitted {
         @extend .sr-only;
     }
+    .group-topics-regions,
+    .field-name-field-doc-thumb,
+    .field-name-field-image {
+        @extend .col-xs-4;
+        @extend .col-md-3;
+    }
+        
+    .field-name-field-doc-thumb,
+    .field-name-field-image {
+        padding-right: 2em;
+        padding-bottom: 2em;
+        img {
+            @include box-shadow(5px 5px 10px 0 rgba($black, 0.4));
+        }
+    }
+    footer {
+        .links {
+            @extend .pull-right;
+            font-style: italic;
+        }
+    }
 }
+
 .node-teaser {
-    &:not(.node-organization).field-type-image img {
-        @include box-shadow(5px 5px 10px 0 rgba($black, 0.4));
+    // For organization that appears inside another teaser
+    &.node-organization .field-type-image img {
+        @include box-shadow(0);
     }
 
     // Organization teasers

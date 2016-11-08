@@ -22,10 +22,16 @@ $status-red:    #fe2e2e;
 $status-green:  #01df3a;
 $status-grey:   #CCCCCC;
 
+/* For Landvoc and Terms */
+$label-geo:     #428B3F;
+$label-category:#42B7CA;
+$label-theme:   #42B7CA;
+$label-concept: #428BCA;
+
 /* Bootstrap overrides */
-$brand-primary:         $green;
+$brand-primary:         $green-dark;
 $brand-secondary:       $brown;
-$link-color:            $green;
+$link-color:            $green-dark;
 $text-color:            $black;
 $headings-color:        $green;
 

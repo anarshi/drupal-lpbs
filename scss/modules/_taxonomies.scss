@@ -1,0 +1,38 @@
+.group-topics-regions {
+    .field-item {
+        @extend .label;
+        display: inline-block;
+        padding: .4em .6em .3em;
+        margin: 1px 2px;
+        margin-left: 0;
+        a,
+        a:hover {
+            color: $white;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+
+    .field-name-field-geographical-focus {
+        .field-item {
+            background-color: $label-geo;
+        }
+    }
+    .field-name-field-related-themes {
+        .field-item {
+            background-color: $label-theme;
+        }
+    }
+    .field-name-field-related-domains {
+        .field-item {
+            background-color: $label-category;
+        }
+    }
+    .field-name-field-related-topics {
+        .field-item {
+            background-color: $label-concept;
+        }
+    }
+
+}

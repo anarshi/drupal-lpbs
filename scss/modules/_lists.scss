@@ -16,4 +16,10 @@
             clear: left;
         }
     }
+    .views-row {
+        border-bottom: 1px dotted $grey;
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
 }
