@@ -29,6 +29,7 @@ $fa-font-path: "font-awesome/"; // will prepend 'fonts_path' variable from confi
 //   (from the lowest to higher concept)
 @import 'modules/lists';
 @import 'modules/menus';
+@import 'modules/forms';
 @import 'modules/header';
 @import 'modules/social';
 @import 'modules/taxonomies';

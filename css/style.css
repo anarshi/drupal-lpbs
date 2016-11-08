@@ -3943,6 +3943,9 @@ body > header.navbar { margin: 0 !important; border: 0; -moz-border-radius: 0; -
 .main-container .nav-tabs li a.active, .main-container .nav-tabs li a:hover { color: #425e0e; background-color: rgba(102, 102, 102, 0.1); }
 .main-container .breadcrumb { display: none; }
 
+form li.vertical-tab-button { overflow: hidden; }
+form .form-type-select.form-group { position: relative; }
+
 body > header a[href='/library'] { color: #91594D !important; }
 body > header a[href='/book'] { color: #8FCD1F !important; }
 body > header a[href='/debate'] { color: #0165C3 !important; }
