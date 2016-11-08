@@ -10,8 +10,32 @@ var Drupal = Drupal || {};
 (function($, Drupal){
   "use strict";
 
+  Drupal.behaviors.lpbs = {
+      attach: function(context) {
+          console.log('hallo from lpbs');
+          $([
+              'field-geographical-focus',
+              'field-related-topics',
+              'field-related-domains',
+              'field-orgref',
+              'field-doc-publisher',
+              'field-doc-provider',
+              'field-related-themes'
+          ]).each(function (n, item) {
+              var select = $('.field-name-' + item + ' select');
+              if (select.length > 0) {
+                  console.log('Apply selectpicker to ' + item, select);
+                  select.selectpicker({
+                      container: '.form-item-' + item + '-und',
+                      size: 4,
+                      liveSearch: true
+                  });
+              }
+          });
+      }
+  };
   Drupal.behaviors.bootstrap = {
-    attach: function(context) {
+      attach: function(context) {
       // Provide some Bootstrap tab/Drupal integration.
       $(context).find('.tabbable').once('bootstrap-tabs', function () {
         var $wrapper = $(this);
