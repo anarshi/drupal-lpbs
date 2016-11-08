@@ -33,19 +33,6 @@
     }
 }
 
-#block-system-main>.node-form {
-    // Display settings for node fieldgroup to emulate 'responsive columns'
-    // Warning: order in which fieldgroups (meta and editors-pub)
-    //  are displayed (node: manage display) matters!
-    .group-topics-regions,
-    .group-meta,
-    .group-access,
-    .group-editors-pub {
-        @extend .col-xs-4;
-        @extend .col-md-3;
-    }
-}
-
 .views-row>.node-teaser>,
 #block-system-main>.node> {
     // Display settings for node fieldgroup to emulate 'responsive columns'
@@ -60,9 +47,7 @@
         @extend .col-xs-4;
         @extend .col-md-3;
     }
-}
 
-#block-system-main>.node> {
     .group-meta,
     .group-editors-pub,
     .group-topics-regions {
@@ -79,8 +64,11 @@
 
 .node-teaser {
     // For organization that appears inside another teaser
-    &.node-organization .field-type-image img {
-        @include box-shadow(0);
+    .node-organization {
+        float: right;
+        /* .field-type-image img { */
+        /*     @include box-shadow(0); */
+        /* } */
     }
 
     // Organization teasers
@@ -92,3 +80,17 @@
         }
     }
 }
+
+.field-collection-view {
+    margin: 0;
+    padding: 0 0 1em 0;
+    .field-item,
+    .field-collection-item {
+        padding: 0;
+    }
+    .field-name-field-info-title {
+        @extend .h2;
+        margin: .5em 0;
+    }
+}
+

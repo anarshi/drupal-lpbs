@@ -1,5 +1,8 @@
 /* Colors */
+$grey-dark:     #444444;
 $grey:          #666666;
+$grey-light:    #CCCCCC;
+$grey-lighter:  #F0F0F0;
 $black:         #333333;
 $white:         #FFFFFF;
 
@@ -20,7 +23,7 @@ $brown:         #634C40;
 /* For Debates */
 $status-red:    #fe2e2e;
 $status-green:  #01df3a;
-$status-grey:   #CCCCCC;
+$status-grey:   $grey-light;
 
 /* For Landvoc and Terms */
 $label-geo:     #428B3F;

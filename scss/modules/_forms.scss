@@ -6,3 +6,16 @@ form {
         position: relative;
     }
 }
+
+#block-system-main>.node-form {
+    // Display settings for node fieldgroup to emulate 'responsive columns'
+    // Warning: order in which fieldgroups (meta and editors-pub)
+    //  are displayed (node: manage display) matters!
+    .group-topics-regions,
+    .group-meta,
+    .group-access,
+    .group-editors-pub {
+        @extend .col-sm-4;
+        @extend .col-md-3;
+    }
+}

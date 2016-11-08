@@ -1,0 +1,59 @@
+.page-book-countries {
+    #country-navigation,
+    #block-system-main {
+        background-color: $grey-lighter;
+        color: $grey-dark;
+    }
+    #country-navigation {
+        @extend .clearfix;
+    }
+
+    #block-system-main {
+        @extend .row;
+        font-family: $font-family-serif;
+        .view-landbook-countries {
+            @extend .col-sm-offset-1;
+            @extend .col-sm-10;
+            @extend .col-md-offset-2;
+            @extend .col-md-8;
+        }
+        // Country page 'header' (country name + flag) is shown by
+        // country navigation block in the highlight section
+        .node-landbook-country {
+            header {
+                display: none;
+            }
+        }
+    }
+    .main-container section .block-title {
+        @extend .text-center;
+    }
+}
+
+#block-media,
+#block-compare,
+#block-views-country-content-partners,
+#content-related-links {
+    background-color: $grey-lighter;
+    @extend .clearfix;
+    @extend .row;
+}
+#content-related-links {
+    padding: 2em 0;
+    span {
+        display: block;
+        font-weight: bold;
+    }
+}
+#block-landbook-disclaimer-block {
+    background-color: $green;
+    color: $white;
+    @extend .clearfix;
+    @extend .row;
+    p {
+        text-align: justify;
+        padding: 1em;
+        @extend .col-md-offset-1;
+        @extend .col-md-10;
+    }
+}
