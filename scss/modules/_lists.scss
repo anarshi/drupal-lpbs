@@ -1,5 +1,6 @@
 // Views that displays unformatted lists in a grid way
 // Some automatic float clear breakpoints
+.search-results,
 .view {
     @media (min-width: $screen-xs) and (max-width: $screen-sm) {
         .col-xs-6:nth-child(2n+1) {
@@ -16,6 +17,7 @@
             clear: left;
         }
     }
+    .search-result,
     .views-row {
         border-bottom: 1px dotted $grey;
         &:last-of-type {

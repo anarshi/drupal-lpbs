@@ -26,6 +26,7 @@
     }
 
     footer {
+        @extend .clearfix;
         .links {
             @extend .pull-right;
             font-style: italic;
@@ -33,6 +34,7 @@
     }
 }
 
+.search-result>article>,
 .views-row>.node-teaser>,
 #block-system-main>.node> {
     // Display settings for node fieldgroup to emulate 'responsive columns'
@@ -66,9 +68,6 @@
     // For organization that appears inside another teaser
     .node-organization {
         float: right;
-        /* .field-type-image img { */
-        /*     @include box-shadow(0); */
-        /* } */
     }
 
     // Organization teasers
