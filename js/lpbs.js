@@ -10,9 +10,10 @@ var Drupal = Drupal || {};
 (function($, Drupal){
   "use strict";
 
-  Drupal.behaviors.lpbs = {
+    Drupal.behaviors.lpbs = {
+
+        // Init BS selectpicked for know fields
       attach: function(context) {
-          console.log('hallo from lpbs');
           $([
               'field-geographical-focus',
               'field-related-topics',
@@ -24,13 +25,28 @@ var Drupal = Drupal || {};
           ]).each(function (n, item) {
               var select = $('.field-name-' + item + ' select');
               if (select.length > 0) {
-                  console.log('Apply selectpicker to ' + item, select);
+                  //console.log('Apply selectpicker to ' + item, select);
                   select.selectpicker({
                       container: '.form-item-' + item + '-und',
                       size: 4,
                       liveSearch: true
                   });
               }
+              // Also for search
+              select = $('.form-item-search-im-' + item + ' select');
+              if (select.length > 0) {
+                  select.selectpicker({
+                      // TODO: fix container
+                      //container: '.form-item-' + item + '-und',
+                      size: 4,
+                      liveSearch: true
+                  });
+              }
+          });
+          // Search form
+          var select = $('.form-item-search-content-type select').selectpicker({
+                      size: 4,
+                      liveSearch: true
           });
       }
   };
