@@ -7,7 +7,7 @@
     }
 
     // Body / main content
-    .field-group-fieldset.panel {
+    >fieldset.panel {
         border: 0;
         @include box-shadow(none);
         .panel-body {
@@ -40,7 +40,7 @@
     // Display settings for node fieldgroup to emulate 'responsive columns'
     // Warning: order in which fieldgroups (meta and editors-pub)
     //  are displayed (node: manage display) matters!
-    .group-topics-regions,
+//    .group-topics-regions,
     .field-name-field-doc-thumb,
     .field-name-field-image,
     .group-meta,
@@ -50,9 +50,9 @@
         @extend .col-md-3;
     }
 
+    //.group-topics-regions,
     .group-meta,
-    .group-editors-pub,
-    .group-topics-regions {
+    .group-editors-pub {
         clear: left;
     }
     @media (min-width: $screen-md-min) {        

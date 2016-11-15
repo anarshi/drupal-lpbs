@@ -1,4 +1,8 @@
 .group-topics-regions {
+    .field-items,
+    .field {
+        display: inline;
+    }
     .field-item {
         @extend .label;
         display: inline-block;
