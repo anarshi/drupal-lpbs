@@ -1,0 +1,44 @@
+.page-search {
+
+    header .block-search {
+        display: none;
+    }
+    
+    .page-header {
+        @extend .sr-only;
+    }
+
+    .form-inline {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @extend .row;
+        .form-item {
+            @extend .col-xs-10;
+            input {
+                width: 100%;
+            }
+        }
+        .form-submit {
+            @extend .btn-primary;
+        }
+        // TODO: bugged in theme, drupal search or blocks?
+        .spelling-suggestions {
+            display: none;
+        }
+    }
+    .panel {
+        .form-item {
+            margin-top: 15px;
+            @extend .col-sm-6;
+            &:nth-of-type(2n+1) {
+                clear: left;
+            }
+        }
+    }
+    ol.search-results {
+        @extend .list-unstyled;
+        article footer .links {
+            display: none;
+        }
+    }
+}

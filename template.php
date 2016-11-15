@@ -66,3 +66,4 @@ drupal_static_reset('element_info');
  * they are properly detected when drupal_alter() is invoked.
  */
 lpbs_include('lpbs', 'includes/alter.inc');
+lpbs_include('lpbs', 'includes/search.inc');
