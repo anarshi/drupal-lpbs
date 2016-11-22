@@ -53,7 +53,7 @@ function lpbs_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
   $form['lpbs'] = array(
     '#type' => 'vertical_tabs',
     '#attached' => array(
-      'js'  => array(drupal_get_path('theme', 'lpbs') . '/js/bootstrap.admin.js'),
+      'js'  => array(drupal_get_path('theme', 'lpbs') . '/js/lpbs.admin.js'),
     ),
     '#prefix' => '<h2><small>' . t('LPBS Settings') . '</small></h2>',
     '#weight' => -10,
