@@ -101,8 +101,8 @@
 #comments {
     .indented {
         border-left: .5em solid $grey-light;
-        margin: 1em;
-        padding: 0 1em;
+        margin: 1em 0 1em 1em;
+        padding: 0 0 0 1em;
         .comment:first-of-type {
             border-top: 1px dotted $grey;
         }

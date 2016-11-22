@@ -14235,8 +14235,8 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
 /* line 102, ../scss/modules/_nodes.scss */
 #comments .indented {
   border-left: 0.5em solid #CCCCCC;
-  margin: 1em;
-  padding: 0 1em;
+  margin: 1em 0 1em 1em;
+  padding: 0 0 0 1em;
 }
 /* line 106, ../scss/modules/_nodes.scss */
 #comments .indented .comment:first-of-type {
