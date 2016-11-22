@@ -1,0 +1,13 @@
+.entity-profile2 {
+    &>h2 {
+        @extend .sr-only;
+    }
+    .content {
+        .field-name-field-firstname,
+        .field-name-field-lastname,
+        .field-name-field-title {
+            float: left;
+            padding-right: .2em;
+        }
+    }
+}
