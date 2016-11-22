@@ -103,16 +103,19 @@
         border-left: .5em solid $grey-light;
         margin: 1em;
         padding: 0 1em;
+        .comment:first-of-type {
+            border-top: 1px dotted $grey;
+        }
     }
     &>h2,
     &>form {
         background-color: $grey-lighter;
-        @extend .col-sm-10;
-        @extend .col-sm-offset-1;
-        @extend .col-md-8;
-        @extend .col-md-offset-2;
-        @extend .col-lg-6;
-        @extend .col-lg-offset-2;
+        @extend .col-sm-12;
+    /*     @extend .col-sm-offset-1; */
+    /*     @extend .col-md-8; */
+    /*     @extend .col-md-offset-2; */
+    /*     @extend .col-lg-6; */
+    /*     @extend .col-lg-offset-2; */
     }
     &>h2 {
         margin-top: 0;
@@ -132,6 +135,13 @@
         &>h3 {
             @extend .col-sm-12;
             @extend .col-md-8;
+        }
+        .field-name-comment-body {
+            img {
+                float: left;
+                padding: 2em;
+                padding-left: 0;
+            }
         }
         .user-picture {
             @extend .pull-right;

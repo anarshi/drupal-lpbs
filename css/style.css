@@ -6280,8 +6280,8 @@ pre code {
 #block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .node-type-debate #block-system-main > .node > .field-name-field-image,
 .node-type-debate .field-name-field-status,
 .node-type-debate .field-name-field-date,
-.node-type-debate .field-name-field-facilitators, .col-md-4, #comments .comment .submitted, .col-lg-4, #page-header .block-menu h2, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, body > footer .block-menu > ul.menu > li, .col-sm-6, .page-search .panel .form-item, .col-md-6, .col-lg-6, #page-header .block-menu p, #comments > h2, #comments > form, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, body > footer .block-menu, #comments .comment .submitted, .col-md-8, #comments > h2, #comments > form, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-lg-8, .col-xs-9, .col-sm-9, .view-country-content .view-content,
-.view-by-providers .view-content, .col-md-9, .col-lg-9, .col-xs-10, .page-search .form-inline .form-item, .col-sm-10, #comments > h2, #comments > form, .page-book-countries #block-system-main .view-landbook-countries, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .main-container > header .block-menu, #page-header .block-menu h2, #page-header .block-menu p, .col-sm-12, #comments .comment > h3, #comments .comment .content, .col-md-12, .col-lg-12 {
+.node-type-debate .field-name-field-facilitators, .col-md-4, #comments .comment .submitted, .col-lg-4, #page-header .block-menu h2, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, body > footer .block-menu > ul.menu > li, .col-sm-6, .page-search .panel .form-item, .col-md-6, .col-lg-6, #page-header .block-menu p, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, body > footer .block-menu, #comments .comment .submitted, .col-md-8, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-lg-8, .col-xs-9, .col-sm-9, .view-country-content .view-content,
+.view-by-providers .view-content, .col-md-9, .col-lg-9, .col-xs-10, .page-search .form-inline .form-item, .col-sm-10, .page-book-countries #block-system-main .view-landbook-countries, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .main-container > header .block-menu, #page-header .block-menu h2, #page-header .block-menu p, .col-sm-12, #comments > h2, #comments > form, #comments .comment > h3, #comments .comment .content, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -6586,7 +6586,7 @@ pre code {
   .node-type-debate .field-name-field-status,
   .node-type-debate .field-name-field-date,
   .node-type-debate .field-name-field-facilitators, .col-sm-5, .col-sm-6, .page-search .panel .form-item, .col-sm-7, .col-sm-8, body > footer .block-menu, #comments .comment .submitted, .col-sm-9, .view-country-content .view-content,
-  .view-by-providers .view-content, .col-sm-10, #comments > h2, #comments > form, .page-book-countries #block-system-main .view-landbook-countries, .col-sm-11, .col-sm-12, #comments .comment > h3, #comments .comment .content {
+  .view-by-providers .view-content, .col-sm-10, .page-book-countries #block-system-main .view-landbook-countries, .col-sm-11, .col-sm-12, #comments > h2, #comments > form, #comments .comment > h3, #comments .comment .content {
     float: left;
   }
 
@@ -6644,7 +6644,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-10, #comments > h2, #comments > form, .page-book-countries #block-system-main .view-landbook-countries {
+  .col-sm-10, .page-book-countries #block-system-main .view-landbook-countries {
     width: 83.33333333%;
   }
 
@@ -6654,7 +6654,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-12, #comments .comment > h3, #comments .comment .content {
+  .col-sm-12, #comments > h2, #comments > form, #comments .comment > h3, #comments .comment .content {
     width: 100%;
   }
 
@@ -6794,7 +6794,7 @@ pre code {
   }
 
   /* line 60, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-offset-1, #comments > h2, #comments > form, .page-book-countries #block-system-main .view-landbook-countries {
+  .col-sm-offset-1, .page-book-countries #block-system-main .view-landbook-countries {
     margin-left: 8.33333333%;
   }
 
@@ -6872,7 +6872,7 @@ pre code {
   #block-system-main > .node > .field-name-field-image,
   #block-system-main > .node > .group-meta,
   #block-system-main > .node > .group-access,
-  #block-system-main > .node > .group-editors-pub, .col-md-4, #comments .comment .submitted, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #comments > h2, #comments > form, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-md-9, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-md-11, .col-md-12 {
+  #block-system-main > .node > .group-editors-pub, .col-md-4, #comments .comment .submitted, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-md-9, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -6929,7 +6929,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-8, #comments > h2, #comments > form, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries {
+  .col-md-8, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries {
     width: 66.66666667%;
   }
 
@@ -7094,7 +7094,7 @@ pre code {
   }
 
   /* line 60, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-offset-2, #comments > h2, #comments > form, .page-book-countries #block-system-main .view-landbook-countries {
+  .col-md-offset-2, .page-book-countries #block-system-main .view-landbook-countries {
     margin-left: 16.66666667%;
   }
 
@@ -7150,7 +7150,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   /* line 27, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, #page-header .block-menu h2, .col-lg-5, .col-lg-6, #page-header .block-menu p, #comments > h2, #comments > form, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, #page-header .block-menu h2, .col-lg-5, .col-lg-6, #page-header .block-menu p, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
 
@@ -7180,7 +7180,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-6, #page-header .block-menu p, #comments > h2, #comments > form {
+  .col-lg-6, #page-header .block-menu p {
     width: 50%;
   }
 
@@ -7355,7 +7355,7 @@ pre code {
   }
 
   /* line 60, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-offset-2, #comments > h2, #comments > form {
+  .col-lg-offset-2 {
     margin-left: 16.66666667%;
   }
 
@@ -14238,51 +14238,70 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
   margin: 1em;
   padding: 0 1em;
 }
-/* line 107, ../scss/modules/_nodes.scss */
+/* line 106, ../scss/modules/_nodes.scss */
+#comments .indented .comment:first-of-type {
+  border-top: 1px dotted #666666;
+}
+/* line 110, ../scss/modules/_nodes.scss */
 #comments > h2, #comments > form {
   background-color: #F0F0F0;
+  /*     @extend .col-sm-offset-1; */
+  /*     @extend .col-md-8; */
+  /*     @extend .col-md-offset-2; */
+  /*     @extend .col-lg-6; */
+  /*     @extend .col-lg-offset-2; */
 }
-/* line 117, ../scss/modules/_nodes.scss */
+/* line 120, ../scss/modules/_nodes.scss */
 #comments > h2 {
   margin-top: 0;
   margin-bottom: 0;
   padding: 1em;
 }
-/* line 122, ../scss/modules/_nodes.scss */
+/* line 125, ../scss/modules/_nodes.scss */
 #comments .comment {
   padding: 1em;
   border-top: 1px dotted #666666;
 }
-/* line 126, ../scss/modules/_nodes.scss */
+/* line 129, ../scss/modules/_nodes.scss */
 #comments .comment:first-of-type {
   border-top: 0;
 }
-/* line 129, ../scss/modules/_nodes.scss */
+/* line 132, ../scss/modules/_nodes.scss */
 #comments .comment h1 {
   font-size: 1.4em;
 }
-/* line 136, ../scss/modules/_nodes.scss */
+/* line 140, ../scss/modules/_nodes.scss */
+#comments .comment .field-name-comment-body img {
+  float: left;
+  padding: 2em;
+  padding-left: 0;
+}
+/* line 146, ../scss/modules/_nodes.scss */
 #comments .comment .user-picture {
   text-align: right;
 }
-/* line 140, ../scss/modules/_nodes.scss */
+/* line 150, ../scss/modules/_nodes.scss */
 #comments .comment .user-picture img {
   display: inline;
   height: 100px;
 }
-/* line 146, ../scss/modules/_nodes.scss */
+/* line 156, ../scss/modules/_nodes.scss */
 #comments .comment .submitted {
   clear: right;
   text-align: right;
   margin-top: 20px;
   font-size: .9em;
 }
-/* line 155, ../scss/modules/_nodes.scss */
+/* line 165, ../scss/modules/_nodes.scss */
 #comments .comment .content {
   float: none;
 }
 
 /* line 6, ../scss/modules/_users.scss */
+.entity-profile2 .content .field-name-field-image {
+  display: none;
+}
+/* line 9, ../scss/modules/_users.scss */
 .entity-profile2 .content .field-name-field-firstname,
 .entity-profile2 .content .field-name-field-lastname,
 .entity-profile2 .content .field-name-field-title {
