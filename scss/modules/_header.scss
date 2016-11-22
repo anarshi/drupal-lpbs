@@ -93,3 +93,40 @@ body>header {
         }
     }
 }
+
+// Blocks and 'sections' headers
+body[class*="page-book-countries-"],
+body[class*="node-type-thematic-narrative"]{
+    #table-indicators header h2 {
+        background:url('../images/titles/indicators.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+    #map-global header h2 {
+        background:url('../images/titles/mapping.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+    #block-compare header h2 {
+        background:url('../images/titles/infographics.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+    #ranking header h2 {
+        background:url('../images/titles/ranking.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+    #lgaf header h2 {
+        background:url('../images/titles/pie.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+    #block-landbook-media-block h2.block-title {
+        background:url('../images/titles/media.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+    #block-views-country-content-partners h2.block-title {
+        background:url('../images/titles/partners.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+    #block-views-country-content-library h2.block-title {
+        background:url('../images/titles/library.png') no-repeat 50% 0;
+        @extend .title-decorated;
+    }
+}
