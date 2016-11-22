@@ -26,3 +26,7 @@ Visit the project's [official documentation site](http://drupal-bootstrap.org)
 or the markdown files inside the `./docs` folder.
 
 [Bootstrap Framework]: http://getbootstrap.com
+
+### License
+This software project is under MIT license (see LICENSE)
+
