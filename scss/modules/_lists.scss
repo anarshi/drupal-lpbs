@@ -25,3 +25,25 @@
         }
     }
 }
+.view-organizations-overview {
+    .view-content {
+        @extend .clearfix;
+    }
+    .attachment {
+        @extend .text-center;
+    }
+}
+
+// Views with exposed filters
+.view-country-content,
+.view-by-providers {
+    .view-filters {
+        @extend .col-sm-3;
+//        @extend .col-md-4;
+        @extend .pull-right;
+    }
+    .view-content {
+        @extend .col-sm-9;
+//        @extend .col-md-8;
+    }
+}
