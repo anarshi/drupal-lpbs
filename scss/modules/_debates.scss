@@ -1,6 +1,8 @@
-.node-type-debate {
+.node-debate.node-teaser,
+.node-type-debate .node {
 
-    #block-system-main>.node>.field-name-field-image,
+    //#block-system-main>.node>.field-name-field-image,
+    .field-name-field-image,
     .field-name-field-status,
     .field-name-field-date,
     .field-name-field-facilitators {
@@ -14,7 +16,7 @@
     .field-name-field-status {
         @extend .text-center;
         .field-item {
-            font-size: 2em;
+            font-size: 1.4em;
             @extend .btn;
             @extend .btn-primary;
         }
