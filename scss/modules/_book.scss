@@ -6,8 +6,15 @@
     }
     #country-navigation {
         @extend .clearfix;
+        header {
+            margin-top: -20px;
+            h2 {
+                margin-top: 0;
+                font-size: 2em;
+            }
+        }
     }
-
+    // In a country narrative page
     #block-system-main {
         @extend .row;
         font-family: $font-family-serif;
@@ -34,6 +41,7 @@
 
 #block-media,
 #block-compare,
+#lgaf,
 #block-views-country-content-partners,
 #content-related-links {
     background-color: $grey-lighter;
