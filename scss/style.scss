@@ -36,10 +36,10 @@ $flag-icon-square-path: '/1x1' !default;
 // Land Portal stuff
 //
 // default Drupal Bootstrap theme overrides
+@import 'partials/iso-mapping';
 @import 'partials/overrides';
 @import 'partials/elements';
 @import 'partials/labels';
-@import 'partials/iso-mapping';
 
 // Land Portal stuff
 //   (from the lowest to higher concept)

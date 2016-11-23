@@ -5735,7 +5735,7 @@ mark,
 }
 
 /* line 92, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_type.scss */
-.text-center, .date-display-range, .view-organizations-overview .attachment, .main-container > header .block-menu ul.menu, #block-landportal-blocks-lp-footer-social ul, .page-book-countries .main-container section .block-title, .node-debate.node-teaser .field-name-field-image .field-label,
+.text-center, .date-display-range, .view-organizations-overview .attachment, .main-container > header .block-menu ul.menu, #block-landportal-blocks-lp-footer-social ul, .page-book-countries .main-container section .block-title, .view.grid, .node-debate.node-teaser .field-name-field-image .field-label,
 .node-debate.node-teaser .field-name-field-status .field-label,
 .node-debate.node-teaser .field-name-field-date .field-label,
 .node-debate.node-teaser .field-name-field-facilitators .field-label,
@@ -6261,7 +6261,7 @@ pre code {
 .node-teaser .field-name-field-image,
 .node-teaser .group-meta,
 .node-teaser .group-access,
-.node-teaser .group-editors-pub, .col-lg-3, .col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb,
+.node-teaser .group-editors-pub, .view.grid .view-content > div, .col-lg-3, .col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb,
 .node .field-name-field-image,
 .node .group-meta,
 .node .group-access,
@@ -6272,7 +6272,7 @@ pre code {
 .node-teaser .group-editors-pub, .col-sm-4, body > footer .block, #block-system-main > .node-form .group-topics-regions,
 #block-system-main > .node-form .group-meta,
 #block-system-main > .node-form .group-access,
-#block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .node-debate.node-teaser .field-name-field-image,
+#block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .view.grid .view-content > div, .node-debate.node-teaser .field-name-field-image,
 .node-debate.node-teaser .field-name-field-status,
 .node-debate.node-teaser .field-name-field-date,
 .node-debate.node-teaser .field-name-field-facilitators,
@@ -6569,7 +6569,7 @@ pre code {
   .view-by-providers .view-filters, .main-container > header .block-menu ul.menu li.leaf, body > footer .block-menu > ul.menu > li, .col-sm-4, body > footer .block, #block-system-main > .node-form .group-topics-regions,
   #block-system-main > .node-form .group-meta,
   #block-system-main > .node-form .group-access,
-  #block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .node-debate.node-teaser .field-name-field-image,
+  #block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .view.grid .view-content > div, .node-debate.node-teaser .field-name-field-image,
   .node-debate.node-teaser .field-name-field-status,
   .node-debate.node-teaser .field-name-field-date,
   .node-debate.node-teaser .field-name-field-facilitators,
@@ -6601,7 +6601,7 @@ pre code {
   .col-sm-4, body > footer .block, #block-system-main > .node-form .group-topics-regions,
   #block-system-main > .node-form .group-meta,
   #block-system-main > .node-form .group-access,
-  #block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .node-debate.node-teaser .field-name-field-image,
+  #block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .view.grid .view-content > div, .node-debate.node-teaser .field-name-field-image,
   .node-debate.node-teaser .field-name-field-status,
   .node-debate.node-teaser .field-name-field-date,
   .node-debate.node-teaser .field-name-field-facilitators,
@@ -6861,7 +6861,7 @@ pre code {
   .node-teaser .field-name-field-image,
   .node-teaser .group-meta,
   .node-teaser .group-access,
-  .node-teaser .group-editors-pub, .col-md-4, #comments .comment .submitted, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-md-9, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-md-11, .col-md-12 {
+  .node-teaser .group-editors-pub, .view.grid .view-content > div, .col-md-4, #comments .comment .submitted, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-md-9, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -6887,7 +6887,7 @@ pre code {
   .node-teaser .field-name-field-image,
   .node-teaser .group-meta,
   .node-teaser .group-access,
-  .node-teaser .group-editors-pub {
+  .node-teaser .group-editors-pub, .view.grid .view-content > div {
     width: 25%;
   }
 
@@ -12972,7 +12972,7 @@ button.close {
   content: '\00a0';
 }
 /* line 16, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon.flag-icon-squared {
+.flag-icon.flag-icon-squared, .flag-icon.flag-icon-rounded {
   width: 1em;
 }
 
@@ -12981,7 +12981,7 @@ button.close {
   background-image: url(../images/flags/4x3/ad.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ad.flag-icon-squared, .flag-icon-squared.flag-AND, .flag-icon-squared.flag-icon-and {
+.flag-icon-ad.flag-icon-squared, .flag-icon-squared.flag-AND, .flag-AND.flag-icon-rounded, .flag-icon-squared.flag-icon-and, .flag-icon-and.flag-icon-rounded, .flag-icon-ad.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ad.svg);
 }
 
@@ -12990,7 +12990,7 @@ button.close {
   background-image: url(../images/flags/4x3/ae.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ae.flag-icon-squared, .flag-icon-squared.flag-ARE, .flag-icon-squared.flag-icon-are {
+.flag-icon-ae.flag-icon-squared, .flag-icon-squared.flag-ARE, .flag-ARE.flag-icon-rounded, .flag-icon-squared.flag-icon-are, .flag-icon-are.flag-icon-rounded, .flag-icon-ae.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ae.svg);
 }
 
@@ -12999,7 +12999,7 @@ button.close {
   background-image: url(../images/flags/4x3/af.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-af.flag-icon-squared, .flag-icon-squared.flag-AFG, .flag-icon-squared.flag-icon-afg {
+.flag-icon-af.flag-icon-squared, .flag-icon-squared.flag-AFG, .flag-AFG.flag-icon-rounded, .flag-icon-squared.flag-icon-afg, .flag-icon-afg.flag-icon-rounded, .flag-icon-af.flag-icon-rounded {
   background-image: url(../images/flags/1x1/af.svg);
 }
 
@@ -13008,7 +13008,7 @@ button.close {
   background-image: url(../images/flags/4x3/ag.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ag.flag-icon-squared, .flag-icon-squared.flag-ATG, .flag-icon-squared.flag-icon-atg {
+.flag-icon-ag.flag-icon-squared, .flag-icon-squared.flag-ATG, .flag-ATG.flag-icon-rounded, .flag-icon-squared.flag-icon-atg, .flag-icon-atg.flag-icon-rounded, .flag-icon-ag.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ag.svg);
 }
 
@@ -13017,7 +13017,7 @@ button.close {
   background-image: url(../images/flags/4x3/ai.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ai.flag-icon-squared, .flag-icon-squared.flag-AIA, .flag-icon-squared.flag-icon-aia {
+.flag-icon-ai.flag-icon-squared, .flag-icon-squared.flag-AIA, .flag-AIA.flag-icon-rounded, .flag-icon-squared.flag-icon-aia, .flag-icon-aia.flag-icon-rounded, .flag-icon-ai.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ai.svg);
 }
 
@@ -13026,7 +13026,7 @@ button.close {
   background-image: url(../images/flags/4x3/al.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-al.flag-icon-squared, .flag-icon-squared.flag-ALB, .flag-icon-squared.flag-icon-alb {
+.flag-icon-al.flag-icon-squared, .flag-icon-squared.flag-ALB, .flag-ALB.flag-icon-rounded, .flag-icon-squared.flag-icon-alb, .flag-icon-alb.flag-icon-rounded, .flag-icon-al.flag-icon-rounded {
   background-image: url(../images/flags/1x1/al.svg);
 }
 
@@ -13035,7 +13035,7 @@ button.close {
   background-image: url(../images/flags/4x3/am.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-am.flag-icon-squared, .flag-icon-squared.flag-ARM, .flag-icon-squared.flag-icon-arm {
+.flag-icon-am.flag-icon-squared, .flag-icon-squared.flag-ARM, .flag-ARM.flag-icon-rounded, .flag-icon-squared.flag-icon-arm, .flag-icon-arm.flag-icon-rounded, .flag-icon-am.flag-icon-rounded {
   background-image: url(../images/flags/1x1/am.svg);
 }
 
@@ -13044,7 +13044,7 @@ button.close {
   background-image: url(../images/flags/4x3/ao.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ao.flag-icon-squared, .flag-icon-squared.flag-AGO, .flag-icon-squared.flag-icon-ago {
+.flag-icon-ao.flag-icon-squared, .flag-icon-squared.flag-AGO, .flag-AGO.flag-icon-rounded, .flag-icon-squared.flag-icon-ago, .flag-icon-ago.flag-icon-rounded, .flag-icon-ao.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ao.svg);
 }
 
@@ -13053,7 +13053,7 @@ button.close {
   background-image: url(../images/flags/4x3/aq.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-aq.flag-icon-squared, .flag-icon-squared.flag-ATA, .flag-icon-squared.flag-icon-ata {
+.flag-icon-aq.flag-icon-squared, .flag-icon-squared.flag-ATA, .flag-ATA.flag-icon-rounded, .flag-icon-squared.flag-icon-ata, .flag-icon-ata.flag-icon-rounded, .flag-icon-aq.flag-icon-rounded {
   background-image: url(../images/flags/1x1/aq.svg);
 }
 
@@ -13062,7 +13062,7 @@ button.close {
   background-image: url(../images/flags/4x3/ar.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ar.flag-icon-squared, .flag-icon-squared.flag-ARG, .flag-icon-squared.flag-icon-arg {
+.flag-icon-ar.flag-icon-squared, .flag-icon-squared.flag-ARG, .flag-ARG.flag-icon-rounded, .flag-icon-squared.flag-icon-arg, .flag-icon-arg.flag-icon-rounded, .flag-icon-ar.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ar.svg);
 }
 
@@ -13071,7 +13071,7 @@ button.close {
   background-image: url(../images/flags/4x3/as.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-as.flag-icon-squared, .flag-icon-squared.flag-ASM, .flag-icon-squared.flag-icon-asm {
+.flag-icon-as.flag-icon-squared, .flag-icon-squared.flag-ASM, .flag-ASM.flag-icon-rounded, .flag-icon-squared.flag-icon-asm, .flag-icon-asm.flag-icon-rounded, .flag-icon-as.flag-icon-rounded {
   background-image: url(../images/flags/1x1/as.svg);
 }
 
@@ -13080,7 +13080,7 @@ button.close {
   background-image: url(../images/flags/4x3/at.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-at.flag-icon-squared, .flag-icon-squared.flag-AUT, .flag-icon-squared.flag-icon-aut {
+.flag-icon-at.flag-icon-squared, .flag-icon-squared.flag-AUT, .flag-AUT.flag-icon-rounded, .flag-icon-squared.flag-icon-aut, .flag-icon-aut.flag-icon-rounded, .flag-icon-at.flag-icon-rounded {
   background-image: url(../images/flags/1x1/at.svg);
 }
 
@@ -13089,7 +13089,7 @@ button.close {
   background-image: url(../images/flags/4x3/au.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-au.flag-icon-squared, .flag-icon-squared.flag-AUS, .flag-icon-squared.flag-icon-aus {
+.flag-icon-au.flag-icon-squared, .flag-icon-squared.flag-AUS, .flag-AUS.flag-icon-rounded, .flag-icon-squared.flag-icon-aus, .flag-icon-aus.flag-icon-rounded, .flag-icon-au.flag-icon-rounded {
   background-image: url(../images/flags/1x1/au.svg);
 }
 
@@ -13098,7 +13098,7 @@ button.close {
   background-image: url(../images/flags/4x3/aw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-aw.flag-icon-squared, .flag-icon-squared.flag-ABW, .flag-icon-squared.flag-icon-abw {
+.flag-icon-aw.flag-icon-squared, .flag-icon-squared.flag-ABW, .flag-ABW.flag-icon-rounded, .flag-icon-squared.flag-icon-abw, .flag-icon-abw.flag-icon-rounded, .flag-icon-aw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/aw.svg);
 }
 
@@ -13107,7 +13107,7 @@ button.close {
   background-image: url(../images/flags/4x3/ax.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ax.flag-icon-squared, .flag-icon-squared.flag-ALA, .flag-icon-squared.flag-icon-ala {
+.flag-icon-ax.flag-icon-squared, .flag-icon-squared.flag-ALA, .flag-ALA.flag-icon-rounded, .flag-icon-squared.flag-icon-ala, .flag-icon-ala.flag-icon-rounded, .flag-icon-ax.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ax.svg);
 }
 
@@ -13116,7 +13116,7 @@ button.close {
   background-image: url(../images/flags/4x3/az.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-az.flag-icon-squared, .flag-icon-squared.flag-AZE, .flag-icon-squared.flag-icon-aze {
+.flag-icon-az.flag-icon-squared, .flag-icon-squared.flag-AZE, .flag-AZE.flag-icon-rounded, .flag-icon-squared.flag-icon-aze, .flag-icon-aze.flag-icon-rounded, .flag-icon-az.flag-icon-rounded {
   background-image: url(../images/flags/1x1/az.svg);
 }
 
@@ -13125,7 +13125,7 @@ button.close {
   background-image: url(../images/flags/4x3/ba.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ba.flag-icon-squared, .flag-icon-squared.flag-BIH, .flag-icon-squared.flag-icon-bih {
+.flag-icon-ba.flag-icon-squared, .flag-icon-squared.flag-BIH, .flag-BIH.flag-icon-rounded, .flag-icon-squared.flag-icon-bih, .flag-icon-bih.flag-icon-rounded, .flag-icon-ba.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ba.svg);
 }
 
@@ -13134,7 +13134,7 @@ button.close {
   background-image: url(../images/flags/4x3/bb.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bb.flag-icon-squared, .flag-icon-squared.flag-BRB, .flag-icon-squared.flag-icon-brb {
+.flag-icon-bb.flag-icon-squared, .flag-icon-squared.flag-BRB, .flag-BRB.flag-icon-rounded, .flag-icon-squared.flag-icon-brb, .flag-icon-brb.flag-icon-rounded, .flag-icon-bb.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bb.svg);
 }
 
@@ -13143,7 +13143,7 @@ button.close {
   background-image: url(../images/flags/4x3/bd.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bd.flag-icon-squared, .flag-icon-squared.flag-BGD, .flag-icon-squared.flag-icon-bgd {
+.flag-icon-bd.flag-icon-squared, .flag-icon-squared.flag-BGD, .flag-BGD.flag-icon-rounded, .flag-icon-squared.flag-icon-bgd, .flag-icon-bgd.flag-icon-rounded, .flag-icon-bd.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bd.svg);
 }
 
@@ -13152,7 +13152,7 @@ button.close {
   background-image: url(../images/flags/4x3/be.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-be.flag-icon-squared, .flag-icon-squared.flag-BEL, .flag-icon-squared.flag-icon-bel {
+.flag-icon-be.flag-icon-squared, .flag-icon-squared.flag-BEL, .flag-BEL.flag-icon-rounded, .flag-icon-squared.flag-icon-bel, .flag-icon-bel.flag-icon-rounded, .flag-icon-be.flag-icon-rounded {
   background-image: url(../images/flags/1x1/be.svg);
 }
 
@@ -13161,7 +13161,7 @@ button.close {
   background-image: url(../images/flags/4x3/bf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bf.flag-icon-squared, .flag-icon-squared.flag-BFA, .flag-icon-squared.flag-icon-bfa {
+.flag-icon-bf.flag-icon-squared, .flag-icon-squared.flag-BFA, .flag-BFA.flag-icon-rounded, .flag-icon-squared.flag-icon-bfa, .flag-icon-bfa.flag-icon-rounded, .flag-icon-bf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bf.svg);
 }
 
@@ -13170,7 +13170,7 @@ button.close {
   background-image: url(../images/flags/4x3/bg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bg.flag-icon-squared, .flag-icon-squared.flag-BGR, .flag-icon-squared.flag-icon-bgr {
+.flag-icon-bg.flag-icon-squared, .flag-icon-squared.flag-BGR, .flag-BGR.flag-icon-rounded, .flag-icon-squared.flag-icon-bgr, .flag-icon-bgr.flag-icon-rounded, .flag-icon-bg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bg.svg);
 }
 
@@ -13179,7 +13179,7 @@ button.close {
   background-image: url(../images/flags/4x3/bh.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bh.flag-icon-squared, .flag-icon-squared.flag-BHR, .flag-icon-squared.flag-icon-bhr {
+.flag-icon-bh.flag-icon-squared, .flag-icon-squared.flag-BHR, .flag-BHR.flag-icon-rounded, .flag-icon-squared.flag-icon-bhr, .flag-icon-bhr.flag-icon-rounded, .flag-icon-bh.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bh.svg);
 }
 
@@ -13188,7 +13188,7 @@ button.close {
   background-image: url(../images/flags/4x3/bi.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bi.flag-icon-squared, .flag-icon-squared.flag-BDI, .flag-icon-squared.flag-icon-bdi {
+.flag-icon-bi.flag-icon-squared, .flag-icon-squared.flag-BDI, .flag-BDI.flag-icon-rounded, .flag-icon-squared.flag-icon-bdi, .flag-icon-bdi.flag-icon-rounded, .flag-icon-bi.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bi.svg);
 }
 
@@ -13197,7 +13197,7 @@ button.close {
   background-image: url(../images/flags/4x3/bj.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bj.flag-icon-squared, .flag-icon-squared.flag-BEN, .flag-icon-squared.flag-icon-ben {
+.flag-icon-bj.flag-icon-squared, .flag-icon-squared.flag-BEN, .flag-BEN.flag-icon-rounded, .flag-icon-squared.flag-icon-ben, .flag-icon-ben.flag-icon-rounded, .flag-icon-bj.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bj.svg);
 }
 
@@ -13206,7 +13206,7 @@ button.close {
   background-image: url(../images/flags/4x3/bl.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bl.flag-icon-squared, .flag-icon-squared.flag-BLM, .flag-icon-squared.flag-icon-blm {
+.flag-icon-bl.flag-icon-squared, .flag-icon-squared.flag-BLM, .flag-BLM.flag-icon-rounded, .flag-icon-squared.flag-icon-blm, .flag-icon-blm.flag-icon-rounded, .flag-icon-bl.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bl.svg);
 }
 
@@ -13215,7 +13215,7 @@ button.close {
   background-image: url(../images/flags/4x3/bm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bm.flag-icon-squared, .flag-icon-squared.flag-BMU, .flag-icon-squared.flag-icon-bmu {
+.flag-icon-bm.flag-icon-squared, .flag-icon-squared.flag-BMU, .flag-BMU.flag-icon-rounded, .flag-icon-squared.flag-icon-bmu, .flag-icon-bmu.flag-icon-rounded, .flag-icon-bm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bm.svg);
 }
 
@@ -13224,7 +13224,7 @@ button.close {
   background-image: url(../images/flags/4x3/bn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bn.flag-icon-squared, .flag-icon-squared.flag-BRN, .flag-icon-squared.flag-icon-brn {
+.flag-icon-bn.flag-icon-squared, .flag-icon-squared.flag-BRN, .flag-BRN.flag-icon-rounded, .flag-icon-squared.flag-icon-brn, .flag-icon-brn.flag-icon-rounded, .flag-icon-bn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bn.svg);
 }
 
@@ -13233,7 +13233,7 @@ button.close {
   background-image: url(../images/flags/4x3/bo.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bo.flag-icon-squared, .flag-icon-squared.flag-BOL, .flag-icon-squared.flag-icon-bol {
+.flag-icon-bo.flag-icon-squared, .flag-icon-squared.flag-BOL, .flag-BOL.flag-icon-rounded, .flag-icon-squared.flag-icon-bol, .flag-icon-bol.flag-icon-rounded, .flag-icon-bo.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bo.svg);
 }
 
@@ -13242,7 +13242,7 @@ button.close {
   background-image: url(../images/flags/4x3/bq.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bq.flag-icon-squared {
+.flag-icon-bq.flag-icon-squared, .flag-icon-bq.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bq.svg);
 }
 
@@ -13251,7 +13251,7 @@ button.close {
   background-image: url(../images/flags/4x3/br.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-br.flag-icon-squared, .flag-icon-squared.flag-BRA, .flag-icon-squared.flag-icon-bra {
+.flag-icon-br.flag-icon-squared, .flag-icon-squared.flag-BRA, .flag-BRA.flag-icon-rounded, .flag-icon-squared.flag-icon-bra, .flag-icon-bra.flag-icon-rounded, .flag-icon-br.flag-icon-rounded {
   background-image: url(../images/flags/1x1/br.svg);
 }
 
@@ -13260,7 +13260,7 @@ button.close {
   background-image: url(../images/flags/4x3/bs.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bs.flag-icon-squared, .flag-icon-squared.flag-BHS, .flag-icon-squared.flag-icon-bhs {
+.flag-icon-bs.flag-icon-squared, .flag-icon-squared.flag-BHS, .flag-BHS.flag-icon-rounded, .flag-icon-squared.flag-icon-bhs, .flag-icon-bhs.flag-icon-rounded, .flag-icon-bs.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bs.svg);
 }
 
@@ -13269,7 +13269,7 @@ button.close {
   background-image: url(../images/flags/4x3/bt.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bt.flag-icon-squared, .flag-icon-squared.flag-BTN, .flag-icon-squared.flag-icon-btn {
+.flag-icon-bt.flag-icon-squared, .flag-icon-squared.flag-BTN, .flag-BTN.flag-icon-rounded, .flag-icon-squared.flag-icon-btn, .flag-icon-btn.flag-icon-rounded, .flag-icon-bt.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bt.svg);
 }
 
@@ -13278,7 +13278,7 @@ button.close {
   background-image: url(../images/flags/4x3/bv.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bv.flag-icon-squared, .flag-icon-squared.flag-BVT, .flag-icon-squared.flag-icon-bvt {
+.flag-icon-bv.flag-icon-squared, .flag-icon-squared.flag-BVT, .flag-BVT.flag-icon-rounded, .flag-icon-squared.flag-icon-bvt, .flag-icon-bvt.flag-icon-rounded, .flag-icon-bv.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bv.svg);
 }
 
@@ -13287,7 +13287,7 @@ button.close {
   background-image: url(../images/flags/4x3/bw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bw.flag-icon-squared, .flag-icon-squared.flag-BWA, .flag-icon-squared.flag-icon-bwa {
+.flag-icon-bw.flag-icon-squared, .flag-icon-squared.flag-BWA, .flag-BWA.flag-icon-rounded, .flag-icon-squared.flag-icon-bwa, .flag-icon-bwa.flag-icon-rounded, .flag-icon-bw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bw.svg);
 }
 
@@ -13296,7 +13296,7 @@ button.close {
   background-image: url(../images/flags/4x3/by.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-by.flag-icon-squared, .flag-icon-squared.flag-BLR, .flag-icon-squared.flag-icon-blr {
+.flag-icon-by.flag-icon-squared, .flag-icon-squared.flag-BLR, .flag-BLR.flag-icon-rounded, .flag-icon-squared.flag-icon-blr, .flag-icon-blr.flag-icon-rounded, .flag-icon-by.flag-icon-rounded {
   background-image: url(../images/flags/1x1/by.svg);
 }
 
@@ -13305,7 +13305,7 @@ button.close {
   background-image: url(../images/flags/4x3/bz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-bz.flag-icon-squared, .flag-icon-squared.flag-BLZ, .flag-icon-squared.flag-icon-blz {
+.flag-icon-bz.flag-icon-squared, .flag-icon-squared.flag-BLZ, .flag-BLZ.flag-icon-rounded, .flag-icon-squared.flag-icon-blz, .flag-icon-blz.flag-icon-rounded, .flag-icon-bz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/bz.svg);
 }
 
@@ -13314,7 +13314,7 @@ button.close {
   background-image: url(../images/flags/4x3/ca.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ca.flag-icon-squared, .flag-icon-squared.flag-CAN, .flag-icon-squared.flag-icon-can {
+.flag-icon-ca.flag-icon-squared, .flag-icon-squared.flag-CAN, .flag-CAN.flag-icon-rounded, .flag-icon-squared.flag-icon-can, .flag-icon-can.flag-icon-rounded, .flag-icon-ca.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ca.svg);
 }
 
@@ -13323,7 +13323,7 @@ button.close {
   background-image: url(../images/flags/4x3/cc.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cc.flag-icon-squared, .flag-icon-squared.flag-CCK, .flag-icon-squared.flag-icon-cck {
+.flag-icon-cc.flag-icon-squared, .flag-icon-squared.flag-CCK, .flag-CCK.flag-icon-rounded, .flag-icon-squared.flag-icon-cck, .flag-icon-cck.flag-icon-rounded, .flag-icon-cc.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cc.svg);
 }
 
@@ -13332,7 +13332,7 @@ button.close {
   background-image: url(../images/flags/4x3/cd.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cd.flag-icon-squared, .flag-icon-squared.flag-COD, .flag-icon-squared.flag-icon-cod {
+.flag-icon-cd.flag-icon-squared, .flag-icon-squared.flag-COD, .flag-COD.flag-icon-rounded, .flag-icon-squared.flag-icon-cod, .flag-icon-cod.flag-icon-rounded, .flag-icon-cd.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cd.svg);
 }
 
@@ -13341,7 +13341,7 @@ button.close {
   background-image: url(../images/flags/4x3/cf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cf.flag-icon-squared, .flag-icon-squared.flag-CAF, .flag-icon-squared.flag-icon-caf {
+.flag-icon-cf.flag-icon-squared, .flag-icon-squared.flag-CAF, .flag-CAF.flag-icon-rounded, .flag-icon-squared.flag-icon-caf, .flag-icon-caf.flag-icon-rounded, .flag-icon-cf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cf.svg);
 }
 
@@ -13350,7 +13350,7 @@ button.close {
   background-image: url(../images/flags/4x3/cg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cg.flag-icon-squared, .flag-icon-squared.flag-COG, .flag-icon-squared.flag-icon-cog {
+.flag-icon-cg.flag-icon-squared, .flag-icon-squared.flag-COG, .flag-COG.flag-icon-rounded, .flag-icon-squared.flag-icon-cog, .flag-icon-cog.flag-icon-rounded, .flag-icon-cg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cg.svg);
 }
 
@@ -13359,7 +13359,7 @@ button.close {
   background-image: url(../images/flags/4x3/ch.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ch.flag-icon-squared, .flag-icon-squared.flag-CHE, .flag-icon-squared.flag-icon-che {
+.flag-icon-ch.flag-icon-squared, .flag-icon-squared.flag-CHE, .flag-CHE.flag-icon-rounded, .flag-icon-squared.flag-icon-che, .flag-icon-che.flag-icon-rounded, .flag-icon-ch.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ch.svg);
 }
 
@@ -13368,7 +13368,7 @@ button.close {
   background-image: url(../images/flags/4x3/ci.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ci.flag-icon-squared, .flag-icon-squared.flag-CIV, .flag-icon-squared.flag-icon-civ {
+.flag-icon-ci.flag-icon-squared, .flag-icon-squared.flag-CIV, .flag-CIV.flag-icon-rounded, .flag-icon-squared.flag-icon-civ, .flag-icon-civ.flag-icon-rounded, .flag-icon-ci.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ci.svg);
 }
 
@@ -13377,7 +13377,7 @@ button.close {
   background-image: url(../images/flags/4x3/ck.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ck.flag-icon-squared, .flag-icon-squared.flag-COK, .flag-icon-squared.flag-icon-cok {
+.flag-icon-ck.flag-icon-squared, .flag-icon-squared.flag-COK, .flag-COK.flag-icon-rounded, .flag-icon-squared.flag-icon-cok, .flag-icon-cok.flag-icon-rounded, .flag-icon-ck.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ck.svg);
 }
 
@@ -13386,7 +13386,7 @@ button.close {
   background-image: url(../images/flags/4x3/cl.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cl.flag-icon-squared, .flag-icon-squared.flag-CHL, .flag-icon-squared.flag-icon-chl {
+.flag-icon-cl.flag-icon-squared, .flag-icon-squared.flag-CHL, .flag-CHL.flag-icon-rounded, .flag-icon-squared.flag-icon-chl, .flag-icon-chl.flag-icon-rounded, .flag-icon-cl.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cl.svg);
 }
 
@@ -13395,7 +13395,7 @@ button.close {
   background-image: url(../images/flags/4x3/cm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cm.flag-icon-squared, .flag-icon-squared.flag-CMR, .flag-icon-squared.flag-icon-cmr {
+.flag-icon-cm.flag-icon-squared, .flag-icon-squared.flag-CMR, .flag-CMR.flag-icon-rounded, .flag-icon-squared.flag-icon-cmr, .flag-icon-cmr.flag-icon-rounded, .flag-icon-cm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cm.svg);
 }
 
@@ -13404,7 +13404,7 @@ button.close {
   background-image: url(../images/flags/4x3/cn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cn.flag-icon-squared, .flag-icon-squared.flag-CHN, .flag-icon-squared.flag-icon-chn {
+.flag-icon-cn.flag-icon-squared, .flag-icon-squared.flag-CHN, .flag-CHN.flag-icon-rounded, .flag-icon-squared.flag-icon-chn, .flag-icon-chn.flag-icon-rounded, .flag-icon-cn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cn.svg);
 }
 
@@ -13413,7 +13413,7 @@ button.close {
   background-image: url(../images/flags/4x3/co.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-co.flag-icon-squared, .flag-icon-squared.flag-COL, .flag-icon-squared.flag-icon-col {
+.flag-icon-co.flag-icon-squared, .flag-icon-squared.flag-COL, .flag-COL.flag-icon-rounded, .flag-icon-squared.flag-icon-col, .flag-icon-col.flag-icon-rounded, .flag-icon-co.flag-icon-rounded {
   background-image: url(../images/flags/1x1/co.svg);
 }
 
@@ -13422,7 +13422,7 @@ button.close {
   background-image: url(../images/flags/4x3/cr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cr.flag-icon-squared, .flag-icon-squared.flag-CRI, .flag-icon-squared.flag-icon-cri {
+.flag-icon-cr.flag-icon-squared, .flag-icon-squared.flag-CRI, .flag-CRI.flag-icon-rounded, .flag-icon-squared.flag-icon-cri, .flag-icon-cri.flag-icon-rounded, .flag-icon-cr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cr.svg);
 }
 
@@ -13431,7 +13431,7 @@ button.close {
   background-image: url(../images/flags/4x3/cu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cu.flag-icon-squared, .flag-icon-squared.flag-CUB, .flag-icon-squared.flag-icon-cub {
+.flag-icon-cu.flag-icon-squared, .flag-icon-squared.flag-CUB, .flag-CUB.flag-icon-rounded, .flag-icon-squared.flag-icon-cub, .flag-icon-cub.flag-icon-rounded, .flag-icon-cu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cu.svg);
 }
 
@@ -13440,7 +13440,7 @@ button.close {
   background-image: url(../images/flags/4x3/cv.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cv.flag-icon-squared, .flag-icon-squared.flag-CPV, .flag-icon-squared.flag-icon-cpv {
+.flag-icon-cv.flag-icon-squared, .flag-icon-squared.flag-CPV, .flag-CPV.flag-icon-rounded, .flag-icon-squared.flag-icon-cpv, .flag-icon-cpv.flag-icon-rounded, .flag-icon-cv.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cv.svg);
 }
 
@@ -13449,7 +13449,7 @@ button.close {
   background-image: url(../images/flags/4x3/cw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cw.flag-icon-squared {
+.flag-icon-cw.flag-icon-squared, .flag-icon-cw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cw.svg);
 }
 
@@ -13458,7 +13458,7 @@ button.close {
   background-image: url(../images/flags/4x3/cx.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cx.flag-icon-squared, .flag-icon-squared.flag-CXR, .flag-icon-squared.flag-icon-cxr {
+.flag-icon-cx.flag-icon-squared, .flag-icon-squared.flag-CXR, .flag-CXR.flag-icon-rounded, .flag-icon-squared.flag-icon-cxr, .flag-icon-cxr.flag-icon-rounded, .flag-icon-cx.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cx.svg);
 }
 
@@ -13467,7 +13467,7 @@ button.close {
   background-image: url(../images/flags/4x3/cy.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cy.flag-icon-squared, .flag-icon-squared.flag-CYP, .flag-icon-squared.flag-icon-cyp {
+.flag-icon-cy.flag-icon-squared, .flag-icon-squared.flag-CYP, .flag-CYP.flag-icon-rounded, .flag-icon-squared.flag-icon-cyp, .flag-icon-cyp.flag-icon-rounded, .flag-icon-cy.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cy.svg);
 }
 
@@ -13476,7 +13476,7 @@ button.close {
   background-image: url(../images/flags/4x3/cz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-cz.flag-icon-squared, .flag-icon-squared.flag-CZE, .flag-icon-squared.flag-icon-cze {
+.flag-icon-cz.flag-icon-squared, .flag-icon-squared.flag-CZE, .flag-CZE.flag-icon-rounded, .flag-icon-squared.flag-icon-cze, .flag-icon-cze.flag-icon-rounded, .flag-icon-cz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/cz.svg);
 }
 
@@ -13485,7 +13485,7 @@ button.close {
   background-image: url(../images/flags/4x3/de.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-de.flag-icon-squared, .flag-icon-squared.flag-DEU, .flag-icon-squared.flag-icon-deu {
+.flag-icon-de.flag-icon-squared, .flag-icon-squared.flag-DEU, .flag-DEU.flag-icon-rounded, .flag-icon-squared.flag-icon-deu, .flag-icon-deu.flag-icon-rounded, .flag-icon-de.flag-icon-rounded {
   background-image: url(../images/flags/1x1/de.svg);
 }
 
@@ -13494,7 +13494,7 @@ button.close {
   background-image: url(../images/flags/4x3/dj.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-dj.flag-icon-squared, .flag-icon-squared.flag-DJI, .flag-icon-squared.flag-icon-dji {
+.flag-icon-dj.flag-icon-squared, .flag-icon-squared.flag-DJI, .flag-DJI.flag-icon-rounded, .flag-icon-squared.flag-icon-dji, .flag-icon-dji.flag-icon-rounded, .flag-icon-dj.flag-icon-rounded {
   background-image: url(../images/flags/1x1/dj.svg);
 }
 
@@ -13503,7 +13503,7 @@ button.close {
   background-image: url(../images/flags/4x3/dk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-dk.flag-icon-squared, .flag-icon-squared.flag-DNK, .flag-icon-squared.flag-icon-dnk {
+.flag-icon-dk.flag-icon-squared, .flag-icon-squared.flag-DNK, .flag-DNK.flag-icon-rounded, .flag-icon-squared.flag-icon-dnk, .flag-icon-dnk.flag-icon-rounded, .flag-icon-dk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/dk.svg);
 }
 
@@ -13512,7 +13512,7 @@ button.close {
   background-image: url(../images/flags/4x3/dm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-dm.flag-icon-squared, .flag-icon-squared.flag-DMA, .flag-icon-squared.flag-icon-dma {
+.flag-icon-dm.flag-icon-squared, .flag-icon-squared.flag-DMA, .flag-DMA.flag-icon-rounded, .flag-icon-squared.flag-icon-dma, .flag-icon-dma.flag-icon-rounded, .flag-icon-dm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/dm.svg);
 }
 
@@ -13521,7 +13521,7 @@ button.close {
   background-image: url(../images/flags/4x3/do.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-do.flag-icon-squared, .flag-icon-squared.flag-DOM, .flag-icon-squared.flag-icon-dom {
+.flag-icon-do.flag-icon-squared, .flag-icon-squared.flag-DOM, .flag-DOM.flag-icon-rounded, .flag-icon-squared.flag-icon-dom, .flag-icon-dom.flag-icon-rounded, .flag-icon-do.flag-icon-rounded {
   background-image: url(../images/flags/1x1/do.svg);
 }
 
@@ -13530,7 +13530,7 @@ button.close {
   background-image: url(../images/flags/4x3/dz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-dz.flag-icon-squared, .flag-icon-squared.flag-DZA, .flag-icon-squared.flag-icon-dza {
+.flag-icon-dz.flag-icon-squared, .flag-icon-squared.flag-DZA, .flag-DZA.flag-icon-rounded, .flag-icon-squared.flag-icon-dza, .flag-icon-dza.flag-icon-rounded, .flag-icon-dz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/dz.svg);
 }
 
@@ -13539,7 +13539,7 @@ button.close {
   background-image: url(../images/flags/4x3/ec.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ec.flag-icon-squared, .flag-icon-squared.flag-ECU, .flag-icon-squared.flag-icon-ecu {
+.flag-icon-ec.flag-icon-squared, .flag-icon-squared.flag-ECU, .flag-ECU.flag-icon-rounded, .flag-icon-squared.flag-icon-ecu, .flag-icon-ecu.flag-icon-rounded, .flag-icon-ec.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ec.svg);
 }
 
@@ -13548,7 +13548,7 @@ button.close {
   background-image: url(../images/flags/4x3/ee.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ee.flag-icon-squared, .flag-icon-squared.flag-EST, .flag-icon-squared.flag-icon-est {
+.flag-icon-ee.flag-icon-squared, .flag-icon-squared.flag-EST, .flag-EST.flag-icon-rounded, .flag-icon-squared.flag-icon-est, .flag-icon-est.flag-icon-rounded, .flag-icon-ee.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ee.svg);
 }
 
@@ -13557,7 +13557,7 @@ button.close {
   background-image: url(../images/flags/4x3/eg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-eg.flag-icon-squared, .flag-icon-squared.flag-EGY, .flag-icon-squared.flag-icon-egy {
+.flag-icon-eg.flag-icon-squared, .flag-icon-squared.flag-EGY, .flag-EGY.flag-icon-rounded, .flag-icon-squared.flag-icon-egy, .flag-icon-egy.flag-icon-rounded, .flag-icon-eg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/eg.svg);
 }
 
@@ -13566,7 +13566,7 @@ button.close {
   background-image: url(../images/flags/4x3/eh.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-eh.flag-icon-squared, .flag-icon-squared.flag-ESH, .flag-icon-squared.flag-icon-esh {
+.flag-icon-eh.flag-icon-squared, .flag-icon-squared.flag-ESH, .flag-ESH.flag-icon-rounded, .flag-icon-squared.flag-icon-esh, .flag-icon-esh.flag-icon-rounded, .flag-icon-eh.flag-icon-rounded {
   background-image: url(../images/flags/1x1/eh.svg);
 }
 
@@ -13575,7 +13575,7 @@ button.close {
   background-image: url(../images/flags/4x3/er.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-er.flag-icon-squared, .flag-icon-squared.flag-ERI, .flag-icon-squared.flag-icon-eri {
+.flag-icon-er.flag-icon-squared, .flag-icon-squared.flag-ERI, .flag-ERI.flag-icon-rounded, .flag-icon-squared.flag-icon-eri, .flag-icon-eri.flag-icon-rounded, .flag-icon-er.flag-icon-rounded {
   background-image: url(../images/flags/1x1/er.svg);
 }
 
@@ -13584,7 +13584,7 @@ button.close {
   background-image: url(../images/flags/4x3/es.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-es.flag-icon-squared, .flag-icon-squared.flag-ESP, .flag-icon-squared.flag-icon-esp {
+.flag-icon-es.flag-icon-squared, .flag-icon-squared.flag-ESP, .flag-ESP.flag-icon-rounded, .flag-icon-squared.flag-icon-esp, .flag-icon-esp.flag-icon-rounded, .flag-icon-es.flag-icon-rounded {
   background-image: url(../images/flags/1x1/es.svg);
 }
 
@@ -13593,7 +13593,7 @@ button.close {
   background-image: url(../images/flags/4x3/et.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-et.flag-icon-squared, .flag-icon-squared.flag-ETH, .flag-icon-squared.flag-icon-eth {
+.flag-icon-et.flag-icon-squared, .flag-icon-squared.flag-ETH, .flag-ETH.flag-icon-rounded, .flag-icon-squared.flag-icon-eth, .flag-icon-eth.flag-icon-rounded, .flag-icon-et.flag-icon-rounded {
   background-image: url(../images/flags/1x1/et.svg);
 }
 
@@ -13602,7 +13602,7 @@ button.close {
   background-image: url(../images/flags/4x3/fi.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-fi.flag-icon-squared, .flag-icon-squared.flag-FIN, .flag-icon-squared.flag-icon-fin {
+.flag-icon-fi.flag-icon-squared, .flag-icon-squared.flag-FIN, .flag-FIN.flag-icon-rounded, .flag-icon-squared.flag-icon-fin, .flag-icon-fin.flag-icon-rounded, .flag-icon-fi.flag-icon-rounded {
   background-image: url(../images/flags/1x1/fi.svg);
 }
 
@@ -13611,7 +13611,7 @@ button.close {
   background-image: url(../images/flags/4x3/fj.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-fj.flag-icon-squared, .flag-icon-squared.flag-FJI, .flag-icon-squared.flag-icon-fji {
+.flag-icon-fj.flag-icon-squared, .flag-icon-squared.flag-FJI, .flag-FJI.flag-icon-rounded, .flag-icon-squared.flag-icon-fji, .flag-icon-fji.flag-icon-rounded, .flag-icon-fj.flag-icon-rounded {
   background-image: url(../images/flags/1x1/fj.svg);
 }
 
@@ -13620,7 +13620,7 @@ button.close {
   background-image: url(../images/flags/4x3/fk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-fk.flag-icon-squared, .flag-icon-squared.flag-FLK, .flag-icon-squared.flag-icon-flk {
+.flag-icon-fk.flag-icon-squared, .flag-icon-squared.flag-FLK, .flag-FLK.flag-icon-rounded, .flag-icon-squared.flag-icon-flk, .flag-icon-flk.flag-icon-rounded, .flag-icon-fk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/fk.svg);
 }
 
@@ -13629,7 +13629,7 @@ button.close {
   background-image: url(../images/flags/4x3/fm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-fm.flag-icon-squared, .flag-icon-squared.flag-FSM, .flag-icon-squared.flag-icon-fsm {
+.flag-icon-fm.flag-icon-squared, .flag-icon-squared.flag-FSM, .flag-FSM.flag-icon-rounded, .flag-icon-squared.flag-icon-fsm, .flag-icon-fsm.flag-icon-rounded, .flag-icon-fm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/fm.svg);
 }
 
@@ -13638,7 +13638,7 @@ button.close {
   background-image: url(../images/flags/4x3/fo.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-fo.flag-icon-squared, .flag-icon-squared.flag-FRO, .flag-icon-squared.flag-icon-fro {
+.flag-icon-fo.flag-icon-squared, .flag-icon-squared.flag-FRO, .flag-FRO.flag-icon-rounded, .flag-icon-squared.flag-icon-fro, .flag-icon-fro.flag-icon-rounded, .flag-icon-fo.flag-icon-rounded {
   background-image: url(../images/flags/1x1/fo.svg);
 }
 
@@ -13647,7 +13647,7 @@ button.close {
   background-image: url(../images/flags/4x3/fr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-fr.flag-icon-squared, .flag-icon-squared.flag-FRA, .flag-icon-squared.flag-icon-fra {
+.flag-icon-fr.flag-icon-squared, .flag-icon-squared.flag-FRA, .flag-FRA.flag-icon-rounded, .flag-icon-squared.flag-icon-fra, .flag-icon-fra.flag-icon-rounded, .flag-icon-fr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/fr.svg);
 }
 
@@ -13656,7 +13656,7 @@ button.close {
   background-image: url(../images/flags/4x3/ga.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ga.flag-icon-squared, .flag-icon-squared.flag-GAB, .flag-icon-squared.flag-icon-gab {
+.flag-icon-ga.flag-icon-squared, .flag-icon-squared.flag-GAB, .flag-GAB.flag-icon-rounded, .flag-icon-squared.flag-icon-gab, .flag-icon-gab.flag-icon-rounded, .flag-icon-ga.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ga.svg);
 }
 
@@ -13665,7 +13665,7 @@ button.close {
   background-image: url(../images/flags/4x3/gb.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gb.flag-icon-squared, .flag-icon-squared.flag-GBR, .flag-icon-squared.flag-icon-gbr {
+.flag-icon-gb.flag-icon-squared, .flag-icon-squared.flag-GBR, .flag-GBR.flag-icon-rounded, .flag-icon-squared.flag-icon-gbr, .flag-icon-gbr.flag-icon-rounded, .flag-icon-gb.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gb.svg);
 }
 
@@ -13674,7 +13674,7 @@ button.close {
   background-image: url(../images/flags/4x3/gd.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gd.flag-icon-squared, .flag-icon-squared.flag-GRD, .flag-icon-squared.flag-icon-grd {
+.flag-icon-gd.flag-icon-squared, .flag-icon-squared.flag-GRD, .flag-GRD.flag-icon-rounded, .flag-icon-squared.flag-icon-grd, .flag-icon-grd.flag-icon-rounded, .flag-icon-gd.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gd.svg);
 }
 
@@ -13683,7 +13683,7 @@ button.close {
   background-image: url(../images/flags/4x3/ge.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ge.flag-icon-squared, .flag-icon-squared.flag-GEO, .flag-icon-squared.flag-icon-geo {
+.flag-icon-ge.flag-icon-squared, .flag-icon-squared.flag-GEO, .flag-GEO.flag-icon-rounded, .flag-icon-squared.flag-icon-geo, .flag-icon-geo.flag-icon-rounded, .flag-icon-ge.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ge.svg);
 }
 
@@ -13692,7 +13692,7 @@ button.close {
   background-image: url(../images/flags/4x3/gf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gf.flag-icon-squared, .flag-icon-squared.flag-GUF, .flag-icon-squared.flag-icon-guf {
+.flag-icon-gf.flag-icon-squared, .flag-icon-squared.flag-GUF, .flag-GUF.flag-icon-rounded, .flag-icon-squared.flag-icon-guf, .flag-icon-guf.flag-icon-rounded, .flag-icon-gf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gf.svg);
 }
 
@@ -13701,7 +13701,7 @@ button.close {
   background-image: url(../images/flags/4x3/gg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gg.flag-icon-squared, .flag-icon-squared.flag-GGY, .flag-icon-squared.flag-icon-ggy {
+.flag-icon-gg.flag-icon-squared, .flag-icon-squared.flag-GGY, .flag-GGY.flag-icon-rounded, .flag-icon-squared.flag-icon-ggy, .flag-icon-ggy.flag-icon-rounded, .flag-icon-gg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gg.svg);
 }
 
@@ -13710,7 +13710,7 @@ button.close {
   background-image: url(../images/flags/4x3/gh.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gh.flag-icon-squared, .flag-icon-squared.flag-GHA, .flag-icon-squared.flag-icon-gha {
+.flag-icon-gh.flag-icon-squared, .flag-icon-squared.flag-GHA, .flag-GHA.flag-icon-rounded, .flag-icon-squared.flag-icon-gha, .flag-icon-gha.flag-icon-rounded, .flag-icon-gh.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gh.svg);
 }
 
@@ -13719,7 +13719,7 @@ button.close {
   background-image: url(../images/flags/4x3/gi.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gi.flag-icon-squared, .flag-icon-squared.flag-GIB, .flag-icon-squared.flag-icon-gib {
+.flag-icon-gi.flag-icon-squared, .flag-icon-squared.flag-GIB, .flag-GIB.flag-icon-rounded, .flag-icon-squared.flag-icon-gib, .flag-icon-gib.flag-icon-rounded, .flag-icon-gi.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gi.svg);
 }
 
@@ -13728,7 +13728,7 @@ button.close {
   background-image: url(../images/flags/4x3/gl.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gl.flag-icon-squared, .flag-icon-squared.flag-GRL, .flag-icon-squared.flag-icon-grl {
+.flag-icon-gl.flag-icon-squared, .flag-icon-squared.flag-GRL, .flag-GRL.flag-icon-rounded, .flag-icon-squared.flag-icon-grl, .flag-icon-grl.flag-icon-rounded, .flag-icon-gl.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gl.svg);
 }
 
@@ -13737,7 +13737,7 @@ button.close {
   background-image: url(../images/flags/4x3/gm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gm.flag-icon-squared, .flag-icon-squared.flag-GMB, .flag-icon-squared.flag-icon-gmb {
+.flag-icon-gm.flag-icon-squared, .flag-icon-squared.flag-GMB, .flag-GMB.flag-icon-rounded, .flag-icon-squared.flag-icon-gmb, .flag-icon-gmb.flag-icon-rounded, .flag-icon-gm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gm.svg);
 }
 
@@ -13746,7 +13746,7 @@ button.close {
   background-image: url(../images/flags/4x3/gn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gn.flag-icon-squared, .flag-icon-squared.flag-GIN, .flag-icon-squared.flag-icon-gin {
+.flag-icon-gn.flag-icon-squared, .flag-icon-squared.flag-GIN, .flag-GIN.flag-icon-rounded, .flag-icon-squared.flag-icon-gin, .flag-icon-gin.flag-icon-rounded, .flag-icon-gn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gn.svg);
 }
 
@@ -13755,7 +13755,7 @@ button.close {
   background-image: url(../images/flags/4x3/gp.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gp.flag-icon-squared, .flag-icon-squared.flag-GLP, .flag-icon-squared.flag-icon-glp {
+.flag-icon-gp.flag-icon-squared, .flag-icon-squared.flag-GLP, .flag-GLP.flag-icon-rounded, .flag-icon-squared.flag-icon-glp, .flag-icon-glp.flag-icon-rounded, .flag-icon-gp.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gp.svg);
 }
 
@@ -13764,7 +13764,7 @@ button.close {
   background-image: url(../images/flags/4x3/gq.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gq.flag-icon-squared, .flag-icon-squared.flag-GNQ, .flag-icon-squared.flag-icon-gnq {
+.flag-icon-gq.flag-icon-squared, .flag-icon-squared.flag-GNQ, .flag-GNQ.flag-icon-rounded, .flag-icon-squared.flag-icon-gnq, .flag-icon-gnq.flag-icon-rounded, .flag-icon-gq.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gq.svg);
 }
 
@@ -13773,7 +13773,7 @@ button.close {
   background-image: url(../images/flags/4x3/gr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gr.flag-icon-squared, .flag-icon-squared.flag-GRC, .flag-icon-squared.flag-icon-grc {
+.flag-icon-gr.flag-icon-squared, .flag-icon-squared.flag-GRC, .flag-GRC.flag-icon-rounded, .flag-icon-squared.flag-icon-grc, .flag-icon-grc.flag-icon-rounded, .flag-icon-gr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gr.svg);
 }
 
@@ -13782,7 +13782,7 @@ button.close {
   background-image: url(../images/flags/4x3/gs.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gs.flag-icon-squared, .flag-icon-squared.flag-SGS, .flag-icon-squared.flag-icon-sgs {
+.flag-icon-gs.flag-icon-squared, .flag-icon-squared.flag-SGS, .flag-SGS.flag-icon-rounded, .flag-icon-squared.flag-icon-sgs, .flag-icon-sgs.flag-icon-rounded, .flag-icon-gs.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gs.svg);
 }
 
@@ -13791,7 +13791,7 @@ button.close {
   background-image: url(../images/flags/4x3/gt.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gt.flag-icon-squared, .flag-icon-squared.flag-GTM, .flag-icon-squared.flag-icon-gtm {
+.flag-icon-gt.flag-icon-squared, .flag-icon-squared.flag-GTM, .flag-GTM.flag-icon-rounded, .flag-icon-squared.flag-icon-gtm, .flag-icon-gtm.flag-icon-rounded, .flag-icon-gt.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gt.svg);
 }
 
@@ -13800,7 +13800,7 @@ button.close {
   background-image: url(../images/flags/4x3/gu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gu.flag-icon-squared, .flag-icon-squared.flag-GUM, .flag-icon-squared.flag-icon-gum {
+.flag-icon-gu.flag-icon-squared, .flag-icon-squared.flag-GUM, .flag-GUM.flag-icon-rounded, .flag-icon-squared.flag-icon-gum, .flag-icon-gum.flag-icon-rounded, .flag-icon-gu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gu.svg);
 }
 
@@ -13809,7 +13809,7 @@ button.close {
   background-image: url(../images/flags/4x3/gw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gw.flag-icon-squared, .flag-icon-squared.flag-GNB, .flag-icon-squared.flag-icon-gnb {
+.flag-icon-gw.flag-icon-squared, .flag-icon-squared.flag-GNB, .flag-GNB.flag-icon-rounded, .flag-icon-squared.flag-icon-gnb, .flag-icon-gnb.flag-icon-rounded, .flag-icon-gw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gw.svg);
 }
 
@@ -13818,7 +13818,7 @@ button.close {
   background-image: url(../images/flags/4x3/gy.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gy.flag-icon-squared, .flag-icon-squared.flag-GUY, .flag-icon-squared.flag-icon-guy {
+.flag-icon-gy.flag-icon-squared, .flag-icon-squared.flag-GUY, .flag-GUY.flag-icon-rounded, .flag-icon-squared.flag-icon-guy, .flag-icon-guy.flag-icon-rounded, .flag-icon-gy.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gy.svg);
 }
 
@@ -13827,7 +13827,7 @@ button.close {
   background-image: url(../images/flags/4x3/hk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-hk.flag-icon-squared, .flag-icon-squared.flag-HKG, .flag-icon-squared.flag-icon-hkg {
+.flag-icon-hk.flag-icon-squared, .flag-icon-squared.flag-HKG, .flag-HKG.flag-icon-rounded, .flag-icon-squared.flag-icon-hkg, .flag-icon-hkg.flag-icon-rounded, .flag-icon-hk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/hk.svg);
 }
 
@@ -13836,7 +13836,7 @@ button.close {
   background-image: url(../images/flags/4x3/hm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-hm.flag-icon-squared, .flag-icon-squared.flag-HMD, .flag-icon-squared.flag-icon-hmd {
+.flag-icon-hm.flag-icon-squared, .flag-icon-squared.flag-HMD, .flag-HMD.flag-icon-rounded, .flag-icon-squared.flag-icon-hmd, .flag-icon-hmd.flag-icon-rounded, .flag-icon-hm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/hm.svg);
 }
 
@@ -13845,7 +13845,7 @@ button.close {
   background-image: url(../images/flags/4x3/hn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-hn.flag-icon-squared, .flag-icon-squared.flag-HND, .flag-icon-squared.flag-icon-hnd {
+.flag-icon-hn.flag-icon-squared, .flag-icon-squared.flag-HND, .flag-HND.flag-icon-rounded, .flag-icon-squared.flag-icon-hnd, .flag-icon-hnd.flag-icon-rounded, .flag-icon-hn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/hn.svg);
 }
 
@@ -13854,7 +13854,7 @@ button.close {
   background-image: url(../images/flags/4x3/hr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-hr.flag-icon-squared, .flag-icon-squared.flag-HRV, .flag-icon-squared.flag-icon-hrv {
+.flag-icon-hr.flag-icon-squared, .flag-icon-squared.flag-HRV, .flag-HRV.flag-icon-rounded, .flag-icon-squared.flag-icon-hrv, .flag-icon-hrv.flag-icon-rounded, .flag-icon-hr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/hr.svg);
 }
 
@@ -13863,7 +13863,7 @@ button.close {
   background-image: url(../images/flags/4x3/ht.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ht.flag-icon-squared, .flag-icon-squared.flag-HTI, .flag-icon-squared.flag-icon-hti {
+.flag-icon-ht.flag-icon-squared, .flag-icon-squared.flag-HTI, .flag-HTI.flag-icon-rounded, .flag-icon-squared.flag-icon-hti, .flag-icon-hti.flag-icon-rounded, .flag-icon-ht.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ht.svg);
 }
 
@@ -13872,7 +13872,7 @@ button.close {
   background-image: url(../images/flags/4x3/hu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-hu.flag-icon-squared, .flag-icon-squared.flag-HUN, .flag-icon-squared.flag-icon-hun {
+.flag-icon-hu.flag-icon-squared, .flag-icon-squared.flag-HUN, .flag-HUN.flag-icon-rounded, .flag-icon-squared.flag-icon-hun, .flag-icon-hun.flag-icon-rounded, .flag-icon-hu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/hu.svg);
 }
 
@@ -13881,7 +13881,7 @@ button.close {
   background-image: url(../images/flags/4x3/id.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-id.flag-icon-squared, .flag-icon-squared.flag-IDN, .flag-icon-squared.flag-icon-idn {
+.flag-icon-id.flag-icon-squared, .flag-icon-squared.flag-IDN, .flag-IDN.flag-icon-rounded, .flag-icon-squared.flag-icon-idn, .flag-icon-idn.flag-icon-rounded, .flag-icon-id.flag-icon-rounded {
   background-image: url(../images/flags/1x1/id.svg);
 }
 
@@ -13890,7 +13890,7 @@ button.close {
   background-image: url(../images/flags/4x3/ie.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ie.flag-icon-squared, .flag-icon-squared.flag-IRL, .flag-icon-squared.flag-icon-irl {
+.flag-icon-ie.flag-icon-squared, .flag-icon-squared.flag-IRL, .flag-IRL.flag-icon-rounded, .flag-icon-squared.flag-icon-irl, .flag-icon-irl.flag-icon-rounded, .flag-icon-ie.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ie.svg);
 }
 
@@ -13899,7 +13899,7 @@ button.close {
   background-image: url(../images/flags/4x3/il.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-il.flag-icon-squared, .flag-icon-squared.flag-ISR, .flag-icon-squared.flag-icon-isr {
+.flag-icon-il.flag-icon-squared, .flag-icon-squared.flag-ISR, .flag-ISR.flag-icon-rounded, .flag-icon-squared.flag-icon-isr, .flag-icon-isr.flag-icon-rounded, .flag-icon-il.flag-icon-rounded {
   background-image: url(../images/flags/1x1/il.svg);
 }
 
@@ -13908,7 +13908,7 @@ button.close {
   background-image: url(../images/flags/4x3/im.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-im.flag-icon-squared, .flag-icon-squared.flag-IMN, .flag-icon-squared.flag-icon-imn {
+.flag-icon-im.flag-icon-squared, .flag-icon-squared.flag-IMN, .flag-IMN.flag-icon-rounded, .flag-icon-squared.flag-icon-imn, .flag-icon-imn.flag-icon-rounded, .flag-icon-im.flag-icon-rounded {
   background-image: url(../images/flags/1x1/im.svg);
 }
 
@@ -13917,7 +13917,7 @@ button.close {
   background-image: url(../images/flags/4x3/in.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-in.flag-icon-squared, .flag-icon-squared.flag-IND, .flag-icon-squared.flag-icon-ind {
+.flag-icon-in.flag-icon-squared, .flag-icon-squared.flag-IND, .flag-IND.flag-icon-rounded, .flag-icon-squared.flag-icon-ind, .flag-icon-ind.flag-icon-rounded, .flag-icon-in.flag-icon-rounded {
   background-image: url(../images/flags/1x1/in.svg);
 }
 
@@ -13926,7 +13926,7 @@ button.close {
   background-image: url(../images/flags/4x3/io.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-io.flag-icon-squared, .flag-icon-squared.flag-IOT, .flag-icon-squared.flag-icon-iot {
+.flag-icon-io.flag-icon-squared, .flag-icon-squared.flag-IOT, .flag-IOT.flag-icon-rounded, .flag-icon-squared.flag-icon-iot, .flag-icon-iot.flag-icon-rounded, .flag-icon-io.flag-icon-rounded {
   background-image: url(../images/flags/1x1/io.svg);
 }
 
@@ -13935,7 +13935,7 @@ button.close {
   background-image: url(../images/flags/4x3/iq.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-iq.flag-icon-squared, .flag-icon-squared.flag-IRQ, .flag-icon-squared.flag-icon-irq {
+.flag-icon-iq.flag-icon-squared, .flag-icon-squared.flag-IRQ, .flag-IRQ.flag-icon-rounded, .flag-icon-squared.flag-icon-irq, .flag-icon-irq.flag-icon-rounded, .flag-icon-iq.flag-icon-rounded {
   background-image: url(../images/flags/1x1/iq.svg);
 }
 
@@ -13944,7 +13944,7 @@ button.close {
   background-image: url(../images/flags/4x3/ir.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ir.flag-icon-squared, .flag-icon-squared.flag-IRN, .flag-icon-squared.flag-icon-irn {
+.flag-icon-ir.flag-icon-squared, .flag-icon-squared.flag-IRN, .flag-IRN.flag-icon-rounded, .flag-icon-squared.flag-icon-irn, .flag-icon-irn.flag-icon-rounded, .flag-icon-ir.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ir.svg);
 }
 
@@ -13953,7 +13953,7 @@ button.close {
   background-image: url(../images/flags/4x3/is.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-is.flag-icon-squared, .flag-icon-squared.flag-ISL, .flag-icon-squared.flag-icon-isl {
+.flag-icon-is.flag-icon-squared, .flag-icon-squared.flag-ISL, .flag-ISL.flag-icon-rounded, .flag-icon-squared.flag-icon-isl, .flag-icon-isl.flag-icon-rounded, .flag-icon-is.flag-icon-rounded {
   background-image: url(../images/flags/1x1/is.svg);
 }
 
@@ -13962,7 +13962,7 @@ button.close {
   background-image: url(../images/flags/4x3/it.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-it.flag-icon-squared, .flag-icon-squared.flag-ITA, .flag-icon-squared.flag-icon-ita {
+.flag-icon-it.flag-icon-squared, .flag-icon-squared.flag-ITA, .flag-ITA.flag-icon-rounded, .flag-icon-squared.flag-icon-ita, .flag-icon-ita.flag-icon-rounded, .flag-icon-it.flag-icon-rounded {
   background-image: url(../images/flags/1x1/it.svg);
 }
 
@@ -13971,7 +13971,7 @@ button.close {
   background-image: url(../images/flags/4x3/je.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-je.flag-icon-squared, .flag-icon-squared.flag-JEY, .flag-icon-squared.flag-icon-jey {
+.flag-icon-je.flag-icon-squared, .flag-icon-squared.flag-JEY, .flag-JEY.flag-icon-rounded, .flag-icon-squared.flag-icon-jey, .flag-icon-jey.flag-icon-rounded, .flag-icon-je.flag-icon-rounded {
   background-image: url(../images/flags/1x1/je.svg);
 }
 
@@ -13980,7 +13980,7 @@ button.close {
   background-image: url(../images/flags/4x3/jm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-jm.flag-icon-squared, .flag-icon-squared.flag-JAM, .flag-icon-squared.flag-icon-jam {
+.flag-icon-jm.flag-icon-squared, .flag-icon-squared.flag-JAM, .flag-JAM.flag-icon-rounded, .flag-icon-squared.flag-icon-jam, .flag-icon-jam.flag-icon-rounded, .flag-icon-jm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/jm.svg);
 }
 
@@ -13989,7 +13989,7 @@ button.close {
   background-image: url(../images/flags/4x3/jo.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-jo.flag-icon-squared, .flag-icon-squared.flag-JOR, .flag-icon-squared.flag-icon-jor {
+.flag-icon-jo.flag-icon-squared, .flag-icon-squared.flag-JOR, .flag-JOR.flag-icon-rounded, .flag-icon-squared.flag-icon-jor, .flag-icon-jor.flag-icon-rounded, .flag-icon-jo.flag-icon-rounded {
   background-image: url(../images/flags/1x1/jo.svg);
 }
 
@@ -13998,7 +13998,7 @@ button.close {
   background-image: url(../images/flags/4x3/jp.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-jp.flag-icon-squared, .flag-icon-squared.flag-JPN, .flag-icon-squared.flag-icon-jpn {
+.flag-icon-jp.flag-icon-squared, .flag-icon-squared.flag-JPN, .flag-JPN.flag-icon-rounded, .flag-icon-squared.flag-icon-jpn, .flag-icon-jpn.flag-icon-rounded, .flag-icon-jp.flag-icon-rounded {
   background-image: url(../images/flags/1x1/jp.svg);
 }
 
@@ -14007,7 +14007,7 @@ button.close {
   background-image: url(../images/flags/4x3/ke.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ke.flag-icon-squared, .flag-icon-squared.flag-KEN, .flag-icon-squared.flag-icon-ken {
+.flag-icon-ke.flag-icon-squared, .flag-icon-squared.flag-KEN, .flag-KEN.flag-icon-rounded, .flag-icon-squared.flag-icon-ken, .flag-icon-ken.flag-icon-rounded, .flag-icon-ke.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ke.svg);
 }
 
@@ -14016,7 +14016,7 @@ button.close {
   background-image: url(../images/flags/4x3/kg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-kg.flag-icon-squared, .flag-icon-squared.flag-KGZ, .flag-icon-squared.flag-icon-kgz {
+.flag-icon-kg.flag-icon-squared, .flag-icon-squared.flag-KGZ, .flag-KGZ.flag-icon-rounded, .flag-icon-squared.flag-icon-kgz, .flag-icon-kgz.flag-icon-rounded, .flag-icon-kg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/kg.svg);
 }
 
@@ -14025,7 +14025,7 @@ button.close {
   background-image: url(../images/flags/4x3/kh.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-kh.flag-icon-squared, .flag-icon-squared.flag-KHM, .flag-icon-squared.flag-icon-khm {
+.flag-icon-kh.flag-icon-squared, .flag-icon-squared.flag-KHM, .flag-KHM.flag-icon-rounded, .flag-icon-squared.flag-icon-khm, .flag-icon-khm.flag-icon-rounded, .flag-icon-kh.flag-icon-rounded {
   background-image: url(../images/flags/1x1/kh.svg);
 }
 
@@ -14034,7 +14034,7 @@ button.close {
   background-image: url(../images/flags/4x3/ki.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ki.flag-icon-squared, .flag-icon-squared.flag-KIR, .flag-icon-squared.flag-icon-kir {
+.flag-icon-ki.flag-icon-squared, .flag-icon-squared.flag-KIR, .flag-KIR.flag-icon-rounded, .flag-icon-squared.flag-icon-kir, .flag-icon-kir.flag-icon-rounded, .flag-icon-ki.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ki.svg);
 }
 
@@ -14043,7 +14043,7 @@ button.close {
   background-image: url(../images/flags/4x3/km.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-km.flag-icon-squared, .flag-icon-squared.flag-COM, .flag-icon-squared.flag-icon-com {
+.flag-icon-km.flag-icon-squared, .flag-icon-squared.flag-COM, .flag-COM.flag-icon-rounded, .flag-icon-squared.flag-icon-com, .flag-icon-com.flag-icon-rounded, .flag-icon-km.flag-icon-rounded {
   background-image: url(../images/flags/1x1/km.svg);
 }
 
@@ -14052,7 +14052,7 @@ button.close {
   background-image: url(../images/flags/4x3/kn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-kn.flag-icon-squared, .flag-icon-squared.flag-KNA, .flag-icon-squared.flag-icon-kna {
+.flag-icon-kn.flag-icon-squared, .flag-icon-squared.flag-KNA, .flag-KNA.flag-icon-rounded, .flag-icon-squared.flag-icon-kna, .flag-icon-kna.flag-icon-rounded, .flag-icon-kn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/kn.svg);
 }
 
@@ -14061,7 +14061,7 @@ button.close {
   background-image: url(../images/flags/4x3/kp.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-kp.flag-icon-squared, .flag-icon-squared.flag-PRK, .flag-icon-squared.flag-icon-prk {
+.flag-icon-kp.flag-icon-squared, .flag-icon-squared.flag-PRK, .flag-PRK.flag-icon-rounded, .flag-icon-squared.flag-icon-prk, .flag-icon-prk.flag-icon-rounded, .flag-icon-kp.flag-icon-rounded {
   background-image: url(../images/flags/1x1/kp.svg);
 }
 
@@ -14070,7 +14070,7 @@ button.close {
   background-image: url(../images/flags/4x3/kr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-kr.flag-icon-squared, .flag-icon-squared.flag-KOR, .flag-icon-squared.flag-icon-kor {
+.flag-icon-kr.flag-icon-squared, .flag-icon-squared.flag-KOR, .flag-KOR.flag-icon-rounded, .flag-icon-squared.flag-icon-kor, .flag-icon-kor.flag-icon-rounded, .flag-icon-kr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/kr.svg);
 }
 
@@ -14079,7 +14079,7 @@ button.close {
   background-image: url(../images/flags/4x3/kw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-kw.flag-icon-squared, .flag-icon-squared.flag-KWT, .flag-icon-squared.flag-icon-kwt {
+.flag-icon-kw.flag-icon-squared, .flag-icon-squared.flag-KWT, .flag-KWT.flag-icon-rounded, .flag-icon-squared.flag-icon-kwt, .flag-icon-kwt.flag-icon-rounded, .flag-icon-kw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/kw.svg);
 }
 
@@ -14088,7 +14088,7 @@ button.close {
   background-image: url(../images/flags/4x3/ky.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ky.flag-icon-squared, .flag-icon-squared.flag-CYM, .flag-icon-squared.flag-icon-cym {
+.flag-icon-ky.flag-icon-squared, .flag-icon-squared.flag-CYM, .flag-CYM.flag-icon-rounded, .flag-icon-squared.flag-icon-cym, .flag-icon-cym.flag-icon-rounded, .flag-icon-ky.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ky.svg);
 }
 
@@ -14097,7 +14097,7 @@ button.close {
   background-image: url(../images/flags/4x3/kz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-kz.flag-icon-squared, .flag-icon-squared.flag-KAZ, .flag-icon-squared.flag-icon-kaz {
+.flag-icon-kz.flag-icon-squared, .flag-icon-squared.flag-KAZ, .flag-KAZ.flag-icon-rounded, .flag-icon-squared.flag-icon-kaz, .flag-icon-kaz.flag-icon-rounded, .flag-icon-kz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/kz.svg);
 }
 
@@ -14106,7 +14106,7 @@ button.close {
   background-image: url(../images/flags/4x3/la.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-la.flag-icon-squared, .flag-icon-squared.flag-LAO, .flag-icon-squared.flag-icon-lao {
+.flag-icon-la.flag-icon-squared, .flag-icon-squared.flag-LAO, .flag-LAO.flag-icon-rounded, .flag-icon-squared.flag-icon-lao, .flag-icon-lao.flag-icon-rounded, .flag-icon-la.flag-icon-rounded {
   background-image: url(../images/flags/1x1/la.svg);
 }
 
@@ -14115,7 +14115,7 @@ button.close {
   background-image: url(../images/flags/4x3/lb.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-lb.flag-icon-squared, .flag-icon-squared.flag-LBN, .flag-icon-squared.flag-icon-lbn {
+.flag-icon-lb.flag-icon-squared, .flag-icon-squared.flag-LBN, .flag-LBN.flag-icon-rounded, .flag-icon-squared.flag-icon-lbn, .flag-icon-lbn.flag-icon-rounded, .flag-icon-lb.flag-icon-rounded {
   background-image: url(../images/flags/1x1/lb.svg);
 }
 
@@ -14124,7 +14124,7 @@ button.close {
   background-image: url(../images/flags/4x3/lc.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-lc.flag-icon-squared, .flag-icon-squared.flag-LCA, .flag-icon-squared.flag-icon-lca {
+.flag-icon-lc.flag-icon-squared, .flag-icon-squared.flag-LCA, .flag-LCA.flag-icon-rounded, .flag-icon-squared.flag-icon-lca, .flag-icon-lca.flag-icon-rounded, .flag-icon-lc.flag-icon-rounded {
   background-image: url(../images/flags/1x1/lc.svg);
 }
 
@@ -14133,7 +14133,7 @@ button.close {
   background-image: url(../images/flags/4x3/li.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-li.flag-icon-squared, .flag-icon-squared.flag-LIE, .flag-icon-squared.flag-icon-lie {
+.flag-icon-li.flag-icon-squared, .flag-icon-squared.flag-LIE, .flag-LIE.flag-icon-rounded, .flag-icon-squared.flag-icon-lie, .flag-icon-lie.flag-icon-rounded, .flag-icon-li.flag-icon-rounded {
   background-image: url(../images/flags/1x1/li.svg);
 }
 
@@ -14142,7 +14142,7 @@ button.close {
   background-image: url(../images/flags/4x3/lk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-lk.flag-icon-squared, .flag-icon-squared.flag-LKA, .flag-icon-squared.flag-icon-lka {
+.flag-icon-lk.flag-icon-squared, .flag-icon-squared.flag-LKA, .flag-LKA.flag-icon-rounded, .flag-icon-squared.flag-icon-lka, .flag-icon-lka.flag-icon-rounded, .flag-icon-lk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/lk.svg);
 }
 
@@ -14151,7 +14151,7 @@ button.close {
   background-image: url(../images/flags/4x3/lr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-lr.flag-icon-squared, .flag-icon-squared.flag-LBR, .flag-icon-squared.flag-icon-lbr {
+.flag-icon-lr.flag-icon-squared, .flag-icon-squared.flag-LBR, .flag-LBR.flag-icon-rounded, .flag-icon-squared.flag-icon-lbr, .flag-icon-lbr.flag-icon-rounded, .flag-icon-lr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/lr.svg);
 }
 
@@ -14160,7 +14160,7 @@ button.close {
   background-image: url(../images/flags/4x3/ls.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ls.flag-icon-squared, .flag-icon-squared.flag-LSO, .flag-icon-squared.flag-icon-lso {
+.flag-icon-ls.flag-icon-squared, .flag-icon-squared.flag-LSO, .flag-LSO.flag-icon-rounded, .flag-icon-squared.flag-icon-lso, .flag-icon-lso.flag-icon-rounded, .flag-icon-ls.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ls.svg);
 }
 
@@ -14169,7 +14169,7 @@ button.close {
   background-image: url(../images/flags/4x3/lt.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-lt.flag-icon-squared, .flag-icon-squared.flag-LTU, .flag-icon-squared.flag-icon-ltu {
+.flag-icon-lt.flag-icon-squared, .flag-icon-squared.flag-LTU, .flag-LTU.flag-icon-rounded, .flag-icon-squared.flag-icon-ltu, .flag-icon-ltu.flag-icon-rounded, .flag-icon-lt.flag-icon-rounded {
   background-image: url(../images/flags/1x1/lt.svg);
 }
 
@@ -14178,7 +14178,7 @@ button.close {
   background-image: url(../images/flags/4x3/lu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-lu.flag-icon-squared, .flag-icon-squared.flag-LUX, .flag-icon-squared.flag-icon-lux {
+.flag-icon-lu.flag-icon-squared, .flag-icon-squared.flag-LUX, .flag-LUX.flag-icon-rounded, .flag-icon-squared.flag-icon-lux, .flag-icon-lux.flag-icon-rounded, .flag-icon-lu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/lu.svg);
 }
 
@@ -14187,7 +14187,7 @@ button.close {
   background-image: url(../images/flags/4x3/lv.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-lv.flag-icon-squared, .flag-icon-squared.flag-LVA, .flag-icon-squared.flag-icon-lva {
+.flag-icon-lv.flag-icon-squared, .flag-icon-squared.flag-LVA, .flag-LVA.flag-icon-rounded, .flag-icon-squared.flag-icon-lva, .flag-icon-lva.flag-icon-rounded, .flag-icon-lv.flag-icon-rounded {
   background-image: url(../images/flags/1x1/lv.svg);
 }
 
@@ -14196,7 +14196,7 @@ button.close {
   background-image: url(../images/flags/4x3/ly.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ly.flag-icon-squared, .flag-icon-squared.flag-LBY, .flag-icon-squared.flag-icon-lby {
+.flag-icon-ly.flag-icon-squared, .flag-icon-squared.flag-LBY, .flag-LBY.flag-icon-rounded, .flag-icon-squared.flag-icon-lby, .flag-icon-lby.flag-icon-rounded, .flag-icon-ly.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ly.svg);
 }
 
@@ -14205,7 +14205,7 @@ button.close {
   background-image: url(../images/flags/4x3/ma.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ma.flag-icon-squared, .flag-icon-squared.flag-MAR, .flag-icon-squared.flag-icon-mar {
+.flag-icon-ma.flag-icon-squared, .flag-icon-squared.flag-MAR, .flag-MAR.flag-icon-rounded, .flag-icon-squared.flag-icon-mar, .flag-icon-mar.flag-icon-rounded, .flag-icon-ma.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ma.svg);
 }
 
@@ -14214,7 +14214,7 @@ button.close {
   background-image: url(../images/flags/4x3/mc.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mc.flag-icon-squared, .flag-icon-squared.flag-MCO, .flag-icon-squared.flag-icon-mco {
+.flag-icon-mc.flag-icon-squared, .flag-icon-squared.flag-MCO, .flag-MCO.flag-icon-rounded, .flag-icon-squared.flag-icon-mco, .flag-icon-mco.flag-icon-rounded, .flag-icon-mc.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mc.svg);
 }
 
@@ -14223,7 +14223,7 @@ button.close {
   background-image: url(../images/flags/4x3/md.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-md.flag-icon-squared, .flag-icon-squared.flag-MDA, .flag-icon-squared.flag-icon-mda {
+.flag-icon-md.flag-icon-squared, .flag-icon-squared.flag-MDA, .flag-MDA.flag-icon-rounded, .flag-icon-squared.flag-icon-mda, .flag-icon-mda.flag-icon-rounded, .flag-icon-md.flag-icon-rounded {
   background-image: url(../images/flags/1x1/md.svg);
 }
 
@@ -14232,7 +14232,7 @@ button.close {
   background-image: url(../images/flags/4x3/me.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-me.flag-icon-squared, .flag-icon-squared.flag-MNE, .flag-icon-squared.flag-icon-mne {
+.flag-icon-me.flag-icon-squared, .flag-icon-squared.flag-MNE, .flag-MNE.flag-icon-rounded, .flag-icon-squared.flag-icon-mne, .flag-icon-mne.flag-icon-rounded, .flag-icon-me.flag-icon-rounded {
   background-image: url(../images/flags/1x1/me.svg);
 }
 
@@ -14241,7 +14241,7 @@ button.close {
   background-image: url(../images/flags/4x3/mf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mf.flag-icon-squared, .flag-icon-squared.flag-MAF, .flag-icon-squared.flag-icon-maf {
+.flag-icon-mf.flag-icon-squared, .flag-icon-squared.flag-MAF, .flag-MAF.flag-icon-rounded, .flag-icon-squared.flag-icon-maf, .flag-icon-maf.flag-icon-rounded, .flag-icon-mf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mf.svg);
 }
 
@@ -14250,7 +14250,7 @@ button.close {
   background-image: url(../images/flags/4x3/mg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mg.flag-icon-squared, .flag-icon-squared.flag-MDG, .flag-icon-squared.flag-icon-mdg {
+.flag-icon-mg.flag-icon-squared, .flag-icon-squared.flag-MDG, .flag-MDG.flag-icon-rounded, .flag-icon-squared.flag-icon-mdg, .flag-icon-mdg.flag-icon-rounded, .flag-icon-mg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mg.svg);
 }
 
@@ -14259,7 +14259,7 @@ button.close {
   background-image: url(../images/flags/4x3/mh.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mh.flag-icon-squared, .flag-icon-squared.flag-MHL, .flag-icon-squared.flag-icon-mhl {
+.flag-icon-mh.flag-icon-squared, .flag-icon-squared.flag-MHL, .flag-MHL.flag-icon-rounded, .flag-icon-squared.flag-icon-mhl, .flag-icon-mhl.flag-icon-rounded, .flag-icon-mh.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mh.svg);
 }
 
@@ -14268,7 +14268,7 @@ button.close {
   background-image: url(../images/flags/4x3/mk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mk.flag-icon-squared, .flag-icon-squared.flag-MKD, .flag-icon-squared.flag-icon-mkd {
+.flag-icon-mk.flag-icon-squared, .flag-icon-squared.flag-MKD, .flag-MKD.flag-icon-rounded, .flag-icon-squared.flag-icon-mkd, .flag-icon-mkd.flag-icon-rounded, .flag-icon-mk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mk.svg);
 }
 
@@ -14277,7 +14277,7 @@ button.close {
   background-image: url(../images/flags/4x3/ml.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ml.flag-icon-squared, .flag-icon-squared.flag-MLI, .flag-icon-squared.flag-icon-mli {
+.flag-icon-ml.flag-icon-squared, .flag-icon-squared.flag-MLI, .flag-MLI.flag-icon-rounded, .flag-icon-squared.flag-icon-mli, .flag-icon-mli.flag-icon-rounded, .flag-icon-ml.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ml.svg);
 }
 
@@ -14286,7 +14286,7 @@ button.close {
   background-image: url(../images/flags/4x3/mm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mm.flag-icon-squared, .flag-icon-squared.flag-MMR, .flag-icon-squared.flag-icon-mmr {
+.flag-icon-mm.flag-icon-squared, .flag-icon-squared.flag-MMR, .flag-MMR.flag-icon-rounded, .flag-icon-squared.flag-icon-mmr, .flag-icon-mmr.flag-icon-rounded, .flag-icon-mm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mm.svg);
 }
 
@@ -14295,7 +14295,7 @@ button.close {
   background-image: url(../images/flags/4x3/mn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mn.flag-icon-squared, .flag-icon-squared.flag-MNG, .flag-icon-squared.flag-icon-mng {
+.flag-icon-mn.flag-icon-squared, .flag-icon-squared.flag-MNG, .flag-MNG.flag-icon-rounded, .flag-icon-squared.flag-icon-mng, .flag-icon-mng.flag-icon-rounded, .flag-icon-mn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mn.svg);
 }
 
@@ -14304,7 +14304,7 @@ button.close {
   background-image: url(../images/flags/4x3/mo.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mo.flag-icon-squared, .flag-icon-squared.flag-MAC, .flag-icon-squared.flag-icon-mac {
+.flag-icon-mo.flag-icon-squared, .flag-icon-squared.flag-MAC, .flag-MAC.flag-icon-rounded, .flag-icon-squared.flag-icon-mac, .flag-icon-mac.flag-icon-rounded, .flag-icon-mo.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mo.svg);
 }
 
@@ -14313,7 +14313,7 @@ button.close {
   background-image: url(../images/flags/4x3/mp.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mp.flag-icon-squared, .flag-icon-squared.flag-MNP, .flag-icon-squared.flag-icon-mnp {
+.flag-icon-mp.flag-icon-squared, .flag-icon-squared.flag-MNP, .flag-MNP.flag-icon-rounded, .flag-icon-squared.flag-icon-mnp, .flag-icon-mnp.flag-icon-rounded, .flag-icon-mp.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mp.svg);
 }
 
@@ -14322,7 +14322,7 @@ button.close {
   background-image: url(../images/flags/4x3/mq.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mq.flag-icon-squared, .flag-icon-squared.flag-MTQ, .flag-icon-squared.flag-icon-mtq {
+.flag-icon-mq.flag-icon-squared, .flag-icon-squared.flag-MTQ, .flag-MTQ.flag-icon-rounded, .flag-icon-squared.flag-icon-mtq, .flag-icon-mtq.flag-icon-rounded, .flag-icon-mq.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mq.svg);
 }
 
@@ -14331,7 +14331,7 @@ button.close {
   background-image: url(../images/flags/4x3/mr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mr.flag-icon-squared, .flag-icon-squared.flag-MRT, .flag-icon-squared.flag-icon-mrt {
+.flag-icon-mr.flag-icon-squared, .flag-icon-squared.flag-MRT, .flag-MRT.flag-icon-rounded, .flag-icon-squared.flag-icon-mrt, .flag-icon-mrt.flag-icon-rounded, .flag-icon-mr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mr.svg);
 }
 
@@ -14340,7 +14340,7 @@ button.close {
   background-image: url(../images/flags/4x3/ms.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ms.flag-icon-squared, .flag-icon-squared.flag-MSR, .flag-icon-squared.flag-icon-msr {
+.flag-icon-ms.flag-icon-squared, .flag-icon-squared.flag-MSR, .flag-MSR.flag-icon-rounded, .flag-icon-squared.flag-icon-msr, .flag-icon-msr.flag-icon-rounded, .flag-icon-ms.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ms.svg);
 }
 
@@ -14349,7 +14349,7 @@ button.close {
   background-image: url(../images/flags/4x3/mt.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mt.flag-icon-squared, .flag-icon-squared.flag-MLT, .flag-icon-squared.flag-icon-mlt {
+.flag-icon-mt.flag-icon-squared, .flag-icon-squared.flag-MLT, .flag-MLT.flag-icon-rounded, .flag-icon-squared.flag-icon-mlt, .flag-icon-mlt.flag-icon-rounded, .flag-icon-mt.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mt.svg);
 }
 
@@ -14358,7 +14358,7 @@ button.close {
   background-image: url(../images/flags/4x3/mu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mu.flag-icon-squared, .flag-icon-squared.flag-MUS, .flag-icon-squared.flag-icon-mus {
+.flag-icon-mu.flag-icon-squared, .flag-icon-squared.flag-MUS, .flag-MUS.flag-icon-rounded, .flag-icon-squared.flag-icon-mus, .flag-icon-mus.flag-icon-rounded, .flag-icon-mu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mu.svg);
 }
 
@@ -14367,7 +14367,7 @@ button.close {
   background-image: url(../images/flags/4x3/mv.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mv.flag-icon-squared, .flag-icon-squared.flag-MDV, .flag-icon-squared.flag-icon-mdv {
+.flag-icon-mv.flag-icon-squared, .flag-icon-squared.flag-MDV, .flag-MDV.flag-icon-rounded, .flag-icon-squared.flag-icon-mdv, .flag-icon-mdv.flag-icon-rounded, .flag-icon-mv.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mv.svg);
 }
 
@@ -14376,7 +14376,7 @@ button.close {
   background-image: url(../images/flags/4x3/mw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mw.flag-icon-squared, .flag-icon-squared.flag-MWI, .flag-icon-squared.flag-icon-mwi {
+.flag-icon-mw.flag-icon-squared, .flag-icon-squared.flag-MWI, .flag-MWI.flag-icon-rounded, .flag-icon-squared.flag-icon-mwi, .flag-icon-mwi.flag-icon-rounded, .flag-icon-mw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mw.svg);
 }
 
@@ -14385,7 +14385,7 @@ button.close {
   background-image: url(../images/flags/4x3/mx.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mx.flag-icon-squared, .flag-icon-squared.flag-MEX, .flag-icon-squared.flag-icon-mex {
+.flag-icon-mx.flag-icon-squared, .flag-icon-squared.flag-MEX, .flag-MEX.flag-icon-rounded, .flag-icon-squared.flag-icon-mex, .flag-icon-mex.flag-icon-rounded, .flag-icon-mx.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mx.svg);
 }
 
@@ -14394,7 +14394,7 @@ button.close {
   background-image: url(../images/flags/4x3/my.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-my.flag-icon-squared, .flag-icon-squared.flag-MYS, .flag-icon-squared.flag-icon-mys {
+.flag-icon-my.flag-icon-squared, .flag-icon-squared.flag-MYS, .flag-MYS.flag-icon-rounded, .flag-icon-squared.flag-icon-mys, .flag-icon-mys.flag-icon-rounded, .flag-icon-my.flag-icon-rounded {
   background-image: url(../images/flags/1x1/my.svg);
 }
 
@@ -14403,7 +14403,7 @@ button.close {
   background-image: url(../images/flags/4x3/mz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-mz.flag-icon-squared, .flag-icon-squared.flag-MOZ, .flag-icon-squared.flag-icon-moz {
+.flag-icon-mz.flag-icon-squared, .flag-icon-squared.flag-MOZ, .flag-MOZ.flag-icon-rounded, .flag-icon-squared.flag-icon-moz, .flag-icon-moz.flag-icon-rounded, .flag-icon-mz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/mz.svg);
 }
 
@@ -14412,7 +14412,7 @@ button.close {
   background-image: url(../images/flags/4x3/na.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-na.flag-icon-squared, .flag-icon-squared.flag-NAM, .flag-icon-squared.flag-icon-nam {
+.flag-icon-na.flag-icon-squared, .flag-icon-squared.flag-NAM, .flag-NAM.flag-icon-rounded, .flag-icon-squared.flag-icon-nam, .flag-icon-nam.flag-icon-rounded, .flag-icon-na.flag-icon-rounded {
   background-image: url(../images/flags/1x1/na.svg);
 }
 
@@ -14421,7 +14421,7 @@ button.close {
   background-image: url(../images/flags/4x3/nc.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-nc.flag-icon-squared, .flag-icon-squared.flag-NCL, .flag-icon-squared.flag-icon-ncl {
+.flag-icon-nc.flag-icon-squared, .flag-icon-squared.flag-NCL, .flag-NCL.flag-icon-rounded, .flag-icon-squared.flag-icon-ncl, .flag-icon-ncl.flag-icon-rounded, .flag-icon-nc.flag-icon-rounded {
   background-image: url(../images/flags/1x1/nc.svg);
 }
 
@@ -14430,7 +14430,7 @@ button.close {
   background-image: url(../images/flags/4x3/ne.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ne.flag-icon-squared, .flag-icon-squared.flag-NER, .flag-icon-squared.flag-icon-ner {
+.flag-icon-ne.flag-icon-squared, .flag-icon-squared.flag-NER, .flag-NER.flag-icon-rounded, .flag-icon-squared.flag-icon-ner, .flag-icon-ner.flag-icon-rounded, .flag-icon-ne.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ne.svg);
 }
 
@@ -14439,7 +14439,7 @@ button.close {
   background-image: url(../images/flags/4x3/nf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-nf.flag-icon-squared, .flag-icon-squared.flag-NFK, .flag-icon-squared.flag-icon-nfk {
+.flag-icon-nf.flag-icon-squared, .flag-icon-squared.flag-NFK, .flag-NFK.flag-icon-rounded, .flag-icon-squared.flag-icon-nfk, .flag-icon-nfk.flag-icon-rounded, .flag-icon-nf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/nf.svg);
 }
 
@@ -14448,7 +14448,7 @@ button.close {
   background-image: url(../images/flags/4x3/ng.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ng.flag-icon-squared, .flag-icon-squared.flag-NGA, .flag-icon-squared.flag-icon-nga {
+.flag-icon-ng.flag-icon-squared, .flag-icon-squared.flag-NGA, .flag-NGA.flag-icon-rounded, .flag-icon-squared.flag-icon-nga, .flag-icon-nga.flag-icon-rounded, .flag-icon-ng.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ng.svg);
 }
 
@@ -14457,7 +14457,7 @@ button.close {
   background-image: url(../images/flags/4x3/ni.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ni.flag-icon-squared, .flag-icon-squared.flag-NIC, .flag-icon-squared.flag-icon-nic {
+.flag-icon-ni.flag-icon-squared, .flag-icon-squared.flag-NIC, .flag-NIC.flag-icon-rounded, .flag-icon-squared.flag-icon-nic, .flag-icon-nic.flag-icon-rounded, .flag-icon-ni.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ni.svg);
 }
 
@@ -14466,7 +14466,7 @@ button.close {
   background-image: url(../images/flags/4x3/nl.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-nl.flag-icon-squared, .flag-icon-squared.flag-NLD, .flag-icon-squared.flag-icon-nld {
+.flag-icon-nl.flag-icon-squared, .flag-icon-squared.flag-NLD, .flag-NLD.flag-icon-rounded, .flag-icon-squared.flag-icon-nld, .flag-icon-nld.flag-icon-rounded, .flag-icon-nl.flag-icon-rounded {
   background-image: url(../images/flags/1x1/nl.svg);
 }
 
@@ -14475,7 +14475,7 @@ button.close {
   background-image: url(../images/flags/4x3/no.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-no.flag-icon-squared, .flag-icon-squared.flag-NOR, .flag-icon-squared.flag-icon-nor {
+.flag-icon-no.flag-icon-squared, .flag-icon-squared.flag-NOR, .flag-NOR.flag-icon-rounded, .flag-icon-squared.flag-icon-nor, .flag-icon-nor.flag-icon-rounded, .flag-icon-no.flag-icon-rounded {
   background-image: url(../images/flags/1x1/no.svg);
 }
 
@@ -14484,7 +14484,7 @@ button.close {
   background-image: url(../images/flags/4x3/np.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-np.flag-icon-squared, .flag-icon-squared.flag-NPL, .flag-icon-squared.flag-icon-npl {
+.flag-icon-np.flag-icon-squared, .flag-icon-squared.flag-NPL, .flag-NPL.flag-icon-rounded, .flag-icon-squared.flag-icon-npl, .flag-icon-npl.flag-icon-rounded, .flag-icon-np.flag-icon-rounded {
   background-image: url(../images/flags/1x1/np.svg);
 }
 
@@ -14493,7 +14493,7 @@ button.close {
   background-image: url(../images/flags/4x3/nr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-nr.flag-icon-squared, .flag-icon-squared.flag-NRU, .flag-icon-squared.flag-icon-nru {
+.flag-icon-nr.flag-icon-squared, .flag-icon-squared.flag-NRU, .flag-NRU.flag-icon-rounded, .flag-icon-squared.flag-icon-nru, .flag-icon-nru.flag-icon-rounded, .flag-icon-nr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/nr.svg);
 }
 
@@ -14502,7 +14502,7 @@ button.close {
   background-image: url(../images/flags/4x3/nu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-nu.flag-icon-squared, .flag-icon-squared.flag-NIU, .flag-icon-squared.flag-icon-niu {
+.flag-icon-nu.flag-icon-squared, .flag-icon-squared.flag-NIU, .flag-NIU.flag-icon-rounded, .flag-icon-squared.flag-icon-niu, .flag-icon-niu.flag-icon-rounded, .flag-icon-nu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/nu.svg);
 }
 
@@ -14511,7 +14511,7 @@ button.close {
   background-image: url(../images/flags/4x3/nz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-nz.flag-icon-squared, .flag-icon-squared.flag-NZL, .flag-icon-squared.flag-icon-nzl {
+.flag-icon-nz.flag-icon-squared, .flag-icon-squared.flag-NZL, .flag-NZL.flag-icon-rounded, .flag-icon-squared.flag-icon-nzl, .flag-icon-nzl.flag-icon-rounded, .flag-icon-nz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/nz.svg);
 }
 
@@ -14520,7 +14520,7 @@ button.close {
   background-image: url(../images/flags/4x3/om.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-om.flag-icon-squared, .flag-icon-squared.flag-OMN, .flag-icon-squared.flag-icon-omn {
+.flag-icon-om.flag-icon-squared, .flag-icon-squared.flag-OMN, .flag-OMN.flag-icon-rounded, .flag-icon-squared.flag-icon-omn, .flag-icon-omn.flag-icon-rounded, .flag-icon-om.flag-icon-rounded {
   background-image: url(../images/flags/1x1/om.svg);
 }
 
@@ -14529,7 +14529,7 @@ button.close {
   background-image: url(../images/flags/4x3/pa.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pa.flag-icon-squared, .flag-icon-squared.flag-PAN, .flag-icon-squared.flag-icon-pan {
+.flag-icon-pa.flag-icon-squared, .flag-icon-squared.flag-PAN, .flag-PAN.flag-icon-rounded, .flag-icon-squared.flag-icon-pan, .flag-icon-pan.flag-icon-rounded, .flag-icon-pa.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pa.svg);
 }
 
@@ -14538,7 +14538,7 @@ button.close {
   background-image: url(../images/flags/4x3/pe.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pe.flag-icon-squared, .flag-icon-squared.flag-PER, .flag-icon-squared.flag-icon-per {
+.flag-icon-pe.flag-icon-squared, .flag-icon-squared.flag-PER, .flag-PER.flag-icon-rounded, .flag-icon-squared.flag-icon-per, .flag-icon-per.flag-icon-rounded, .flag-icon-pe.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pe.svg);
 }
 
@@ -14547,7 +14547,7 @@ button.close {
   background-image: url(../images/flags/4x3/pf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pf.flag-icon-squared, .flag-icon-squared.flag-PYF, .flag-icon-squared.flag-icon-pyf {
+.flag-icon-pf.flag-icon-squared, .flag-icon-squared.flag-PYF, .flag-PYF.flag-icon-rounded, .flag-icon-squared.flag-icon-pyf, .flag-icon-pyf.flag-icon-rounded, .flag-icon-pf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pf.svg);
 }
 
@@ -14556,7 +14556,7 @@ button.close {
   background-image: url(../images/flags/4x3/pg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pg.flag-icon-squared, .flag-icon-squared.flag-PNG, .flag-icon-squared.flag-icon-png {
+.flag-icon-pg.flag-icon-squared, .flag-icon-squared.flag-PNG, .flag-PNG.flag-icon-rounded, .flag-icon-squared.flag-icon-png, .flag-icon-png.flag-icon-rounded, .flag-icon-pg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pg.svg);
 }
 
@@ -14565,7 +14565,7 @@ button.close {
   background-image: url(../images/flags/4x3/ph.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ph.flag-icon-squared, .flag-icon-squared.flag-PHL, .flag-icon-squared.flag-icon-phl {
+.flag-icon-ph.flag-icon-squared, .flag-icon-squared.flag-PHL, .flag-PHL.flag-icon-rounded, .flag-icon-squared.flag-icon-phl, .flag-icon-phl.flag-icon-rounded, .flag-icon-ph.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ph.svg);
 }
 
@@ -14574,7 +14574,7 @@ button.close {
   background-image: url(../images/flags/4x3/pk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pk.flag-icon-squared, .flag-icon-squared.flag-PAK, .flag-icon-squared.flag-icon-pak {
+.flag-icon-pk.flag-icon-squared, .flag-icon-squared.flag-PAK, .flag-PAK.flag-icon-rounded, .flag-icon-squared.flag-icon-pak, .flag-icon-pak.flag-icon-rounded, .flag-icon-pk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pk.svg);
 }
 
@@ -14583,7 +14583,7 @@ button.close {
   background-image: url(../images/flags/4x3/pl.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pl.flag-icon-squared, .flag-icon-squared.flag-POL, .flag-icon-squared.flag-icon-pol {
+.flag-icon-pl.flag-icon-squared, .flag-icon-squared.flag-POL, .flag-POL.flag-icon-rounded, .flag-icon-squared.flag-icon-pol, .flag-icon-pol.flag-icon-rounded, .flag-icon-pl.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pl.svg);
 }
 
@@ -14592,7 +14592,7 @@ button.close {
   background-image: url(../images/flags/4x3/pm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pm.flag-icon-squared, .flag-icon-squared.flag-SPM, .flag-icon-squared.flag-icon-spm {
+.flag-icon-pm.flag-icon-squared, .flag-icon-squared.flag-SPM, .flag-SPM.flag-icon-rounded, .flag-icon-squared.flag-icon-spm, .flag-icon-spm.flag-icon-rounded, .flag-icon-pm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pm.svg);
 }
 
@@ -14601,7 +14601,7 @@ button.close {
   background-image: url(../images/flags/4x3/pn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pn.flag-icon-squared, .flag-icon-squared.flag-PCN, .flag-icon-squared.flag-icon-pcn {
+.flag-icon-pn.flag-icon-squared, .flag-icon-squared.flag-PCN, .flag-PCN.flag-icon-rounded, .flag-icon-squared.flag-icon-pcn, .flag-icon-pcn.flag-icon-rounded, .flag-icon-pn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pn.svg);
 }
 
@@ -14610,7 +14610,7 @@ button.close {
   background-image: url(../images/flags/4x3/pr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pr.flag-icon-squared, .flag-icon-squared.flag-PRI, .flag-icon-squared.flag-icon-pri {
+.flag-icon-pr.flag-icon-squared, .flag-icon-squared.flag-PRI, .flag-PRI.flag-icon-rounded, .flag-icon-squared.flag-icon-pri, .flag-icon-pri.flag-icon-rounded, .flag-icon-pr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pr.svg);
 }
 
@@ -14619,7 +14619,7 @@ button.close {
   background-image: url(../images/flags/4x3/ps.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ps.flag-icon-squared, .flag-icon-squared.flag-PSE, .flag-icon-squared.flag-icon-pse {
+.flag-icon-ps.flag-icon-squared, .flag-icon-squared.flag-PSE, .flag-PSE.flag-icon-rounded, .flag-icon-squared.flag-icon-pse, .flag-icon-pse.flag-icon-rounded, .flag-icon-ps.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ps.svg);
 }
 
@@ -14628,7 +14628,7 @@ button.close {
   background-image: url(../images/flags/4x3/pt.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pt.flag-icon-squared, .flag-icon-squared.flag-PRT, .flag-icon-squared.flag-icon-prt {
+.flag-icon-pt.flag-icon-squared, .flag-icon-squared.flag-PRT, .flag-PRT.flag-icon-rounded, .flag-icon-squared.flag-icon-prt, .flag-icon-prt.flag-icon-rounded, .flag-icon-pt.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pt.svg);
 }
 
@@ -14637,7 +14637,7 @@ button.close {
   background-image: url(../images/flags/4x3/pw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-pw.flag-icon-squared, .flag-icon-squared.flag-PLW, .flag-icon-squared.flag-icon-plw {
+.flag-icon-pw.flag-icon-squared, .flag-icon-squared.flag-PLW, .flag-PLW.flag-icon-rounded, .flag-icon-squared.flag-icon-plw, .flag-icon-plw.flag-icon-rounded, .flag-icon-pw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/pw.svg);
 }
 
@@ -14646,7 +14646,7 @@ button.close {
   background-image: url(../images/flags/4x3/py.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-py.flag-icon-squared, .flag-icon-squared.flag-PRY, .flag-icon-squared.flag-icon-pry {
+.flag-icon-py.flag-icon-squared, .flag-icon-squared.flag-PRY, .flag-PRY.flag-icon-rounded, .flag-icon-squared.flag-icon-pry, .flag-icon-pry.flag-icon-rounded, .flag-icon-py.flag-icon-rounded {
   background-image: url(../images/flags/1x1/py.svg);
 }
 
@@ -14655,7 +14655,7 @@ button.close {
   background-image: url(../images/flags/4x3/qa.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-qa.flag-icon-squared, .flag-icon-squared.flag-QAT, .flag-icon-squared.flag-icon-qat {
+.flag-icon-qa.flag-icon-squared, .flag-icon-squared.flag-QAT, .flag-QAT.flag-icon-rounded, .flag-icon-squared.flag-icon-qat, .flag-icon-qat.flag-icon-rounded, .flag-icon-qa.flag-icon-rounded {
   background-image: url(../images/flags/1x1/qa.svg);
 }
 
@@ -14664,7 +14664,7 @@ button.close {
   background-image: url(../images/flags/4x3/re.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-re.flag-icon-squared, .flag-icon-squared.flag-REU, .flag-icon-squared.flag-icon-reu {
+.flag-icon-re.flag-icon-squared, .flag-icon-squared.flag-REU, .flag-REU.flag-icon-rounded, .flag-icon-squared.flag-icon-reu, .flag-icon-reu.flag-icon-rounded, .flag-icon-re.flag-icon-rounded {
   background-image: url(../images/flags/1x1/re.svg);
 }
 
@@ -14673,7 +14673,7 @@ button.close {
   background-image: url(../images/flags/4x3/ro.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ro.flag-icon-squared, .flag-icon-squared.flag-ROU, .flag-icon-squared.flag-icon-rou {
+.flag-icon-ro.flag-icon-squared, .flag-icon-squared.flag-ROU, .flag-ROU.flag-icon-rounded, .flag-icon-squared.flag-icon-rou, .flag-icon-rou.flag-icon-rounded, .flag-icon-ro.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ro.svg);
 }
 
@@ -14682,7 +14682,7 @@ button.close {
   background-image: url(../images/flags/4x3/rs.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-rs.flag-icon-squared, .flag-icon-squared.flag-SRB, .flag-icon-squared.flag-icon-srb {
+.flag-icon-rs.flag-icon-squared, .flag-icon-squared.flag-SRB, .flag-SRB.flag-icon-rounded, .flag-icon-squared.flag-icon-srb, .flag-icon-srb.flag-icon-rounded, .flag-icon-rs.flag-icon-rounded {
   background-image: url(../images/flags/1x1/rs.svg);
 }
 
@@ -14691,7 +14691,7 @@ button.close {
   background-image: url(../images/flags/4x3/ru.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ru.flag-icon-squared, .flag-icon-squared.flag-RUS, .flag-icon-squared.flag-icon-rus {
+.flag-icon-ru.flag-icon-squared, .flag-icon-squared.flag-RUS, .flag-RUS.flag-icon-rounded, .flag-icon-squared.flag-icon-rus, .flag-icon-rus.flag-icon-rounded, .flag-icon-ru.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ru.svg);
 }
 
@@ -14700,7 +14700,7 @@ button.close {
   background-image: url(../images/flags/4x3/rw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-rw.flag-icon-squared, .flag-icon-squared.flag-RWA, .flag-icon-squared.flag-icon-rwa {
+.flag-icon-rw.flag-icon-squared, .flag-icon-squared.flag-RWA, .flag-RWA.flag-icon-rounded, .flag-icon-squared.flag-icon-rwa, .flag-icon-rwa.flag-icon-rounded, .flag-icon-rw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/rw.svg);
 }
 
@@ -14709,7 +14709,7 @@ button.close {
   background-image: url(../images/flags/4x3/sa.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sa.flag-icon-squared, .flag-icon-squared.flag-SAU, .flag-icon-squared.flag-icon-sau {
+.flag-icon-sa.flag-icon-squared, .flag-icon-squared.flag-SAU, .flag-SAU.flag-icon-rounded, .flag-icon-squared.flag-icon-sau, .flag-icon-sau.flag-icon-rounded, .flag-icon-sa.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sa.svg);
 }
 
@@ -14718,7 +14718,7 @@ button.close {
   background-image: url(../images/flags/4x3/sb.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sb.flag-icon-squared, .flag-icon-squared.flag-SLB, .flag-icon-squared.flag-icon-slb {
+.flag-icon-sb.flag-icon-squared, .flag-icon-squared.flag-SLB, .flag-SLB.flag-icon-rounded, .flag-icon-squared.flag-icon-slb, .flag-icon-slb.flag-icon-rounded, .flag-icon-sb.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sb.svg);
 }
 
@@ -14727,7 +14727,7 @@ button.close {
   background-image: url(../images/flags/4x3/sc.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sc.flag-icon-squared, .flag-icon-squared.flag-SYC, .flag-icon-squared.flag-icon-syc {
+.flag-icon-sc.flag-icon-squared, .flag-icon-squared.flag-SYC, .flag-SYC.flag-icon-rounded, .flag-icon-squared.flag-icon-syc, .flag-icon-syc.flag-icon-rounded, .flag-icon-sc.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sc.svg);
 }
 
@@ -14736,7 +14736,7 @@ button.close {
   background-image: url(../images/flags/4x3/sd.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sd.flag-icon-squared, .flag-icon-squared.flag-SDN, .flag-icon-squared.flag-icon-sdn {
+.flag-icon-sd.flag-icon-squared, .flag-icon-squared.flag-SDN, .flag-SDN.flag-icon-rounded, .flag-icon-squared.flag-icon-sdn, .flag-icon-sdn.flag-icon-rounded, .flag-icon-sd.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sd.svg);
 }
 
@@ -14745,7 +14745,7 @@ button.close {
   background-image: url(../images/flags/4x3/se.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-se.flag-icon-squared, .flag-icon-squared.flag-SWE, .flag-icon-squared.flag-icon-swe {
+.flag-icon-se.flag-icon-squared, .flag-icon-squared.flag-SWE, .flag-SWE.flag-icon-rounded, .flag-icon-squared.flag-icon-swe, .flag-icon-swe.flag-icon-rounded, .flag-icon-se.flag-icon-rounded {
   background-image: url(../images/flags/1x1/se.svg);
 }
 
@@ -14754,7 +14754,7 @@ button.close {
   background-image: url(../images/flags/4x3/sg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sg.flag-icon-squared, .flag-icon-squared.flag-SGP, .flag-icon-squared.flag-icon-sgp {
+.flag-icon-sg.flag-icon-squared, .flag-icon-squared.flag-SGP, .flag-SGP.flag-icon-rounded, .flag-icon-squared.flag-icon-sgp, .flag-icon-sgp.flag-icon-rounded, .flag-icon-sg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sg.svg);
 }
 
@@ -14763,7 +14763,7 @@ button.close {
   background-image: url(../images/flags/4x3/sh.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sh.flag-icon-squared, .flag-icon-squared.flag-SHN, .flag-icon-squared.flag-icon-shn {
+.flag-icon-sh.flag-icon-squared, .flag-icon-squared.flag-SHN, .flag-SHN.flag-icon-rounded, .flag-icon-squared.flag-icon-shn, .flag-icon-shn.flag-icon-rounded, .flag-icon-sh.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sh.svg);
 }
 
@@ -14772,7 +14772,7 @@ button.close {
   background-image: url(../images/flags/4x3/si.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-si.flag-icon-squared, .flag-icon-squared.flag-SVN, .flag-icon-squared.flag-icon-svn {
+.flag-icon-si.flag-icon-squared, .flag-icon-squared.flag-SVN, .flag-SVN.flag-icon-rounded, .flag-icon-squared.flag-icon-svn, .flag-icon-svn.flag-icon-rounded, .flag-icon-si.flag-icon-rounded {
   background-image: url(../images/flags/1x1/si.svg);
 }
 
@@ -14781,7 +14781,7 @@ button.close {
   background-image: url(../images/flags/4x3/sj.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sj.flag-icon-squared, .flag-icon-squared.flag-SJM, .flag-icon-squared.flag-icon-sjm {
+.flag-icon-sj.flag-icon-squared, .flag-icon-squared.flag-SJM, .flag-SJM.flag-icon-rounded, .flag-icon-squared.flag-icon-sjm, .flag-icon-sjm.flag-icon-rounded, .flag-icon-sj.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sj.svg);
 }
 
@@ -14790,7 +14790,7 @@ button.close {
   background-image: url(../images/flags/4x3/sk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sk.flag-icon-squared, .flag-icon-squared.flag-SVK, .flag-icon-squared.flag-icon-svk {
+.flag-icon-sk.flag-icon-squared, .flag-icon-squared.flag-SVK, .flag-SVK.flag-icon-rounded, .flag-icon-squared.flag-icon-svk, .flag-icon-svk.flag-icon-rounded, .flag-icon-sk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sk.svg);
 }
 
@@ -14799,7 +14799,7 @@ button.close {
   background-image: url(../images/flags/4x3/sl.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sl.flag-icon-squared, .flag-icon-squared.flag-SLE, .flag-icon-squared.flag-icon-sle {
+.flag-icon-sl.flag-icon-squared, .flag-icon-squared.flag-SLE, .flag-SLE.flag-icon-rounded, .flag-icon-squared.flag-icon-sle, .flag-icon-sle.flag-icon-rounded, .flag-icon-sl.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sl.svg);
 }
 
@@ -14808,7 +14808,7 @@ button.close {
   background-image: url(../images/flags/4x3/sm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sm.flag-icon-squared, .flag-icon-squared.flag-SMR, .flag-icon-squared.flag-icon-smr {
+.flag-icon-sm.flag-icon-squared, .flag-icon-squared.flag-SMR, .flag-SMR.flag-icon-rounded, .flag-icon-squared.flag-icon-smr, .flag-icon-smr.flag-icon-rounded, .flag-icon-sm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sm.svg);
 }
 
@@ -14817,7 +14817,7 @@ button.close {
   background-image: url(../images/flags/4x3/sn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sn.flag-icon-squared, .flag-icon-squared.flag-SEN, .flag-icon-squared.flag-icon-sen {
+.flag-icon-sn.flag-icon-squared, .flag-icon-squared.flag-SEN, .flag-SEN.flag-icon-rounded, .flag-icon-squared.flag-icon-sen, .flag-icon-sen.flag-icon-rounded, .flag-icon-sn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sn.svg);
 }
 
@@ -14826,7 +14826,7 @@ button.close {
   background-image: url(../images/flags/4x3/so.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-so.flag-icon-squared, .flag-icon-squared.flag-SOM, .flag-icon-squared.flag-icon-som {
+.flag-icon-so.flag-icon-squared, .flag-icon-squared.flag-SOM, .flag-SOM.flag-icon-rounded, .flag-icon-squared.flag-icon-som, .flag-icon-som.flag-icon-rounded, .flag-icon-so.flag-icon-rounded {
   background-image: url(../images/flags/1x1/so.svg);
 }
 
@@ -14835,7 +14835,7 @@ button.close {
   background-image: url(../images/flags/4x3/sr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sr.flag-icon-squared, .flag-icon-squared.flag-SUR, .flag-icon-squared.flag-icon-sur {
+.flag-icon-sr.flag-icon-squared, .flag-icon-squared.flag-SUR, .flag-SUR.flag-icon-rounded, .flag-icon-squared.flag-icon-sur, .flag-icon-sur.flag-icon-rounded, .flag-icon-sr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sr.svg);
 }
 
@@ -14844,7 +14844,7 @@ button.close {
   background-image: url(../images/flags/4x3/ss.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ss.flag-icon-squared, .flag-icon-squared.flag-SSD, .flag-icon-squared.flag-icon-ssd {
+.flag-icon-ss.flag-icon-squared, .flag-icon-squared.flag-SSD, .flag-SSD.flag-icon-rounded, .flag-icon-squared.flag-icon-ssd, .flag-icon-ssd.flag-icon-rounded, .flag-icon-ss.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ss.svg);
 }
 
@@ -14853,7 +14853,7 @@ button.close {
   background-image: url(../images/flags/4x3/st.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-st.flag-icon-squared, .flag-icon-squared.flag-STP, .flag-icon-squared.flag-icon-stp {
+.flag-icon-st.flag-icon-squared, .flag-icon-squared.flag-STP, .flag-STP.flag-icon-rounded, .flag-icon-squared.flag-icon-stp, .flag-icon-stp.flag-icon-rounded, .flag-icon-st.flag-icon-rounded {
   background-image: url(../images/flags/1x1/st.svg);
 }
 
@@ -14862,7 +14862,7 @@ button.close {
   background-image: url(../images/flags/4x3/sv.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sv.flag-icon-squared, .flag-icon-squared.flag-SLV, .flag-icon-squared.flag-icon-slv {
+.flag-icon-sv.flag-icon-squared, .flag-icon-squared.flag-SLV, .flag-SLV.flag-icon-rounded, .flag-icon-squared.flag-icon-slv, .flag-icon-slv.flag-icon-rounded, .flag-icon-sv.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sv.svg);
 }
 
@@ -14871,7 +14871,7 @@ button.close {
   background-image: url(../images/flags/4x3/sx.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sx.flag-icon-squared {
+.flag-icon-sx.flag-icon-squared, .flag-icon-sx.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sx.svg);
 }
 
@@ -14880,7 +14880,7 @@ button.close {
   background-image: url(../images/flags/4x3/sy.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sy.flag-icon-squared, .flag-icon-squared.flag-SYR, .flag-icon-squared.flag-icon-syr {
+.flag-icon-sy.flag-icon-squared, .flag-icon-squared.flag-SYR, .flag-SYR.flag-icon-rounded, .flag-icon-squared.flag-icon-syr, .flag-icon-syr.flag-icon-rounded, .flag-icon-sy.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sy.svg);
 }
 
@@ -14889,7 +14889,7 @@ button.close {
   background-image: url(../images/flags/4x3/sz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-sz.flag-icon-squared, .flag-icon-squared.flag-SWZ, .flag-icon-squared.flag-icon-swz {
+.flag-icon-sz.flag-icon-squared, .flag-icon-squared.flag-SWZ, .flag-SWZ.flag-icon-rounded, .flag-icon-squared.flag-icon-swz, .flag-icon-swz.flag-icon-rounded, .flag-icon-sz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/sz.svg);
 }
 
@@ -14898,7 +14898,7 @@ button.close {
   background-image: url(../images/flags/4x3/tc.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tc.flag-icon-squared, .flag-icon-squared.flag-TCA, .flag-icon-squared.flag-icon-tca {
+.flag-icon-tc.flag-icon-squared, .flag-icon-squared.flag-TCA, .flag-TCA.flag-icon-rounded, .flag-icon-squared.flag-icon-tca, .flag-icon-tca.flag-icon-rounded, .flag-icon-tc.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tc.svg);
 }
 
@@ -14907,7 +14907,7 @@ button.close {
   background-image: url(../images/flags/4x3/td.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-td.flag-icon-squared, .flag-icon-squared.flag-TCD, .flag-icon-squared.flag-icon-tcd {
+.flag-icon-td.flag-icon-squared, .flag-icon-squared.flag-TCD, .flag-TCD.flag-icon-rounded, .flag-icon-squared.flag-icon-tcd, .flag-icon-tcd.flag-icon-rounded, .flag-icon-td.flag-icon-rounded {
   background-image: url(../images/flags/1x1/td.svg);
 }
 
@@ -14916,7 +14916,7 @@ button.close {
   background-image: url(../images/flags/4x3/tf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tf.flag-icon-squared, .flag-icon-squared.flag-ATF, .flag-icon-squared.flag-icon-atf {
+.flag-icon-tf.flag-icon-squared, .flag-icon-squared.flag-ATF, .flag-ATF.flag-icon-rounded, .flag-icon-squared.flag-icon-atf, .flag-icon-atf.flag-icon-rounded, .flag-icon-tf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tf.svg);
 }
 
@@ -14925,7 +14925,7 @@ button.close {
   background-image: url(../images/flags/4x3/tg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tg.flag-icon-squared, .flag-icon-squared.flag-TGO, .flag-icon-squared.flag-icon-tgo {
+.flag-icon-tg.flag-icon-squared, .flag-icon-squared.flag-TGO, .flag-TGO.flag-icon-rounded, .flag-icon-squared.flag-icon-tgo, .flag-icon-tgo.flag-icon-rounded, .flag-icon-tg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tg.svg);
 }
 
@@ -14934,7 +14934,7 @@ button.close {
   background-image: url(../images/flags/4x3/th.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-th.flag-icon-squared, .flag-icon-squared.flag-THA, .flag-icon-squared.flag-icon-tha {
+.flag-icon-th.flag-icon-squared, .flag-icon-squared.flag-THA, .flag-THA.flag-icon-rounded, .flag-icon-squared.flag-icon-tha, .flag-icon-tha.flag-icon-rounded, .flag-icon-th.flag-icon-rounded {
   background-image: url(../images/flags/1x1/th.svg);
 }
 
@@ -14943,7 +14943,7 @@ button.close {
   background-image: url(../images/flags/4x3/tj.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tj.flag-icon-squared, .flag-icon-squared.flag-TJK, .flag-icon-squared.flag-icon-tjk {
+.flag-icon-tj.flag-icon-squared, .flag-icon-squared.flag-TJK, .flag-TJK.flag-icon-rounded, .flag-icon-squared.flag-icon-tjk, .flag-icon-tjk.flag-icon-rounded, .flag-icon-tj.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tj.svg);
 }
 
@@ -14952,7 +14952,7 @@ button.close {
   background-image: url(../images/flags/4x3/tk.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tk.flag-icon-squared, .flag-icon-squared.flag-TKL, .flag-icon-squared.flag-icon-tkl {
+.flag-icon-tk.flag-icon-squared, .flag-icon-squared.flag-TKL, .flag-TKL.flag-icon-rounded, .flag-icon-squared.flag-icon-tkl, .flag-icon-tkl.flag-icon-rounded, .flag-icon-tk.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tk.svg);
 }
 
@@ -14961,7 +14961,7 @@ button.close {
   background-image: url(../images/flags/4x3/tl.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tl.flag-icon-squared, .flag-icon-squared.flag-TLS, .flag-icon-squared.flag-icon-tls {
+.flag-icon-tl.flag-icon-squared, .flag-icon-squared.flag-TLS, .flag-TLS.flag-icon-rounded, .flag-icon-squared.flag-icon-tls, .flag-icon-tls.flag-icon-rounded, .flag-icon-tl.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tl.svg);
 }
 
@@ -14970,7 +14970,7 @@ button.close {
   background-image: url(../images/flags/4x3/tm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tm.flag-icon-squared, .flag-icon-squared.flag-TKM, .flag-icon-squared.flag-icon-tkm {
+.flag-icon-tm.flag-icon-squared, .flag-icon-squared.flag-TKM, .flag-TKM.flag-icon-rounded, .flag-icon-squared.flag-icon-tkm, .flag-icon-tkm.flag-icon-rounded, .flag-icon-tm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tm.svg);
 }
 
@@ -14979,7 +14979,7 @@ button.close {
   background-image: url(../images/flags/4x3/tn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tn.flag-icon-squared, .flag-icon-squared.flag-TUN, .flag-icon-squared.flag-icon-tun {
+.flag-icon-tn.flag-icon-squared, .flag-icon-squared.flag-TUN, .flag-TUN.flag-icon-rounded, .flag-icon-squared.flag-icon-tun, .flag-icon-tun.flag-icon-rounded, .flag-icon-tn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tn.svg);
 }
 
@@ -14988,7 +14988,7 @@ button.close {
   background-image: url(../images/flags/4x3/to.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-to.flag-icon-squared, .flag-icon-squared.flag-TON, .flag-icon-squared.flag-icon-ton {
+.flag-icon-to.flag-icon-squared, .flag-icon-squared.flag-TON, .flag-TON.flag-icon-rounded, .flag-icon-squared.flag-icon-ton, .flag-icon-ton.flag-icon-rounded, .flag-icon-to.flag-icon-rounded {
   background-image: url(../images/flags/1x1/to.svg);
 }
 
@@ -14997,7 +14997,7 @@ button.close {
   background-image: url(../images/flags/4x3/tr.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tr.flag-icon-squared, .flag-icon-squared.flag-TUR, .flag-icon-squared.flag-icon-tur {
+.flag-icon-tr.flag-icon-squared, .flag-icon-squared.flag-TUR, .flag-TUR.flag-icon-rounded, .flag-icon-squared.flag-icon-tur, .flag-icon-tur.flag-icon-rounded, .flag-icon-tr.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tr.svg);
 }
 
@@ -15006,7 +15006,7 @@ button.close {
   background-image: url(../images/flags/4x3/tt.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tt.flag-icon-squared, .flag-icon-squared.flag-TTO, .flag-icon-squared.flag-icon-tto {
+.flag-icon-tt.flag-icon-squared, .flag-icon-squared.flag-TTO, .flag-TTO.flag-icon-rounded, .flag-icon-squared.flag-icon-tto, .flag-icon-tto.flag-icon-rounded, .flag-icon-tt.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tt.svg);
 }
 
@@ -15015,7 +15015,7 @@ button.close {
   background-image: url(../images/flags/4x3/tv.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tv.flag-icon-squared, .flag-icon-squared.flag-TUV, .flag-icon-squared.flag-icon-tuv {
+.flag-icon-tv.flag-icon-squared, .flag-icon-squared.flag-TUV, .flag-TUV.flag-icon-rounded, .flag-icon-squared.flag-icon-tuv, .flag-icon-tuv.flag-icon-rounded, .flag-icon-tv.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tv.svg);
 }
 
@@ -15024,7 +15024,7 @@ button.close {
   background-image: url(../images/flags/4x3/tw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tw.flag-icon-squared, .flag-icon-squared.flag-TWN, .flag-icon-squared.flag-icon-twn {
+.flag-icon-tw.flag-icon-squared, .flag-icon-squared.flag-TWN, .flag-TWN.flag-icon-rounded, .flag-icon-squared.flag-icon-twn, .flag-icon-twn.flag-icon-rounded, .flag-icon-tw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tw.svg);
 }
 
@@ -15033,7 +15033,7 @@ button.close {
   background-image: url(../images/flags/4x3/tz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-tz.flag-icon-squared, .flag-icon-squared.flag-TZA, .flag-icon-squared.flag-icon-tza {
+.flag-icon-tz.flag-icon-squared, .flag-icon-squared.flag-TZA, .flag-TZA.flag-icon-rounded, .flag-icon-squared.flag-icon-tza, .flag-icon-tza.flag-icon-rounded, .flag-icon-tz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/tz.svg);
 }
 
@@ -15042,7 +15042,7 @@ button.close {
   background-image: url(../images/flags/4x3/ua.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ua.flag-icon-squared, .flag-icon-squared.flag-UKR, .flag-icon-squared.flag-icon-ukr {
+.flag-icon-ua.flag-icon-squared, .flag-icon-squared.flag-UKR, .flag-UKR.flag-icon-rounded, .flag-icon-squared.flag-icon-ukr, .flag-icon-ukr.flag-icon-rounded, .flag-icon-ua.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ua.svg);
 }
 
@@ -15051,7 +15051,7 @@ button.close {
   background-image: url(../images/flags/4x3/ug.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ug.flag-icon-squared, .flag-icon-squared.flag-UGA, .flag-icon-squared.flag-icon-uga {
+.flag-icon-ug.flag-icon-squared, .flag-icon-squared.flag-UGA, .flag-UGA.flag-icon-rounded, .flag-icon-squared.flag-icon-uga, .flag-icon-uga.flag-icon-rounded, .flag-icon-ug.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ug.svg);
 }
 
@@ -15060,7 +15060,7 @@ button.close {
   background-image: url(../images/flags/4x3/um.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-um.flag-icon-squared, .flag-icon-squared.flag-UMI, .flag-icon-squared.flag-icon-umi {
+.flag-icon-um.flag-icon-squared, .flag-icon-squared.flag-UMI, .flag-UMI.flag-icon-rounded, .flag-icon-squared.flag-icon-umi, .flag-icon-umi.flag-icon-rounded, .flag-icon-um.flag-icon-rounded {
   background-image: url(../images/flags/1x1/um.svg);
 }
 
@@ -15069,7 +15069,7 @@ button.close {
   background-image: url(../images/flags/4x3/us.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-us.flag-icon-squared, .flag-icon-squared.flag-USA, .flag-icon-squared.flag-icon-usa {
+.flag-icon-us.flag-icon-squared, .flag-icon-squared.flag-USA, .flag-USA.flag-icon-rounded, .flag-icon-squared.flag-icon-usa, .flag-icon-usa.flag-icon-rounded, .flag-icon-us.flag-icon-rounded {
   background-image: url(../images/flags/1x1/us.svg);
 }
 
@@ -15078,7 +15078,7 @@ button.close {
   background-image: url(../images/flags/4x3/uy.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-uy.flag-icon-squared, .flag-icon-squared.flag-URY, .flag-icon-squared.flag-icon-ury {
+.flag-icon-uy.flag-icon-squared, .flag-icon-squared.flag-URY, .flag-URY.flag-icon-rounded, .flag-icon-squared.flag-icon-ury, .flag-icon-ury.flag-icon-rounded, .flag-icon-uy.flag-icon-rounded {
   background-image: url(../images/flags/1x1/uy.svg);
 }
 
@@ -15087,7 +15087,7 @@ button.close {
   background-image: url(../images/flags/4x3/uz.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-uz.flag-icon-squared, .flag-icon-squared.flag-UZB, .flag-icon-squared.flag-icon-uzb {
+.flag-icon-uz.flag-icon-squared, .flag-icon-squared.flag-UZB, .flag-UZB.flag-icon-rounded, .flag-icon-squared.flag-icon-uzb, .flag-icon-uzb.flag-icon-rounded, .flag-icon-uz.flag-icon-rounded {
   background-image: url(../images/flags/1x1/uz.svg);
 }
 
@@ -15096,7 +15096,7 @@ button.close {
   background-image: url(../images/flags/4x3/va.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-va.flag-icon-squared, .flag-icon-squared.flag-VAT, .flag-icon-squared.flag-icon-vat {
+.flag-icon-va.flag-icon-squared, .flag-icon-squared.flag-VAT, .flag-VAT.flag-icon-rounded, .flag-icon-squared.flag-icon-vat, .flag-icon-vat.flag-icon-rounded, .flag-icon-va.flag-icon-rounded {
   background-image: url(../images/flags/1x1/va.svg);
 }
 
@@ -15105,7 +15105,7 @@ button.close {
   background-image: url(../images/flags/4x3/vc.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-vc.flag-icon-squared, .flag-icon-squared.flag-VCT, .flag-icon-squared.flag-icon-vct {
+.flag-icon-vc.flag-icon-squared, .flag-icon-squared.flag-VCT, .flag-VCT.flag-icon-rounded, .flag-icon-squared.flag-icon-vct, .flag-icon-vct.flag-icon-rounded, .flag-icon-vc.flag-icon-rounded {
   background-image: url(../images/flags/1x1/vc.svg);
 }
 
@@ -15114,7 +15114,7 @@ button.close {
   background-image: url(../images/flags/4x3/ve.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ve.flag-icon-squared, .flag-icon-squared.flag-VEN, .flag-icon-squared.flag-icon-ven {
+.flag-icon-ve.flag-icon-squared, .flag-icon-squared.flag-VEN, .flag-VEN.flag-icon-rounded, .flag-icon-squared.flag-icon-ven, .flag-icon-ven.flag-icon-rounded, .flag-icon-ve.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ve.svg);
 }
 
@@ -15123,7 +15123,7 @@ button.close {
   background-image: url(../images/flags/4x3/vg.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-vg.flag-icon-squared, .flag-icon-squared.flag-VGB, .flag-icon-squared.flag-icon-vgb {
+.flag-icon-vg.flag-icon-squared, .flag-icon-squared.flag-VGB, .flag-VGB.flag-icon-rounded, .flag-icon-squared.flag-icon-vgb, .flag-icon-vgb.flag-icon-rounded, .flag-icon-vg.flag-icon-rounded {
   background-image: url(../images/flags/1x1/vg.svg);
 }
 
@@ -15132,7 +15132,7 @@ button.close {
   background-image: url(../images/flags/4x3/vi.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-vi.flag-icon-squared, .flag-icon-squared.flag-VIR, .flag-icon-squared.flag-icon-vir {
+.flag-icon-vi.flag-icon-squared, .flag-icon-squared.flag-VIR, .flag-VIR.flag-icon-rounded, .flag-icon-squared.flag-icon-vir, .flag-icon-vir.flag-icon-rounded, .flag-icon-vi.flag-icon-rounded {
   background-image: url(../images/flags/1x1/vi.svg);
 }
 
@@ -15141,7 +15141,7 @@ button.close {
   background-image: url(../images/flags/4x3/vn.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-vn.flag-icon-squared, .flag-icon-squared.flag-VNM, .flag-icon-squared.flag-icon-vnm {
+.flag-icon-vn.flag-icon-squared, .flag-icon-squared.flag-VNM, .flag-VNM.flag-icon-rounded, .flag-icon-squared.flag-icon-vnm, .flag-icon-vnm.flag-icon-rounded, .flag-icon-vn.flag-icon-rounded {
   background-image: url(../images/flags/1x1/vn.svg);
 }
 
@@ -15150,7 +15150,7 @@ button.close {
   background-image: url(../images/flags/4x3/vu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-vu.flag-icon-squared, .flag-icon-squared.flag-VUT, .flag-icon-squared.flag-icon-vut {
+.flag-icon-vu.flag-icon-squared, .flag-icon-squared.flag-VUT, .flag-VUT.flag-icon-rounded, .flag-icon-squared.flag-icon-vut, .flag-icon-vut.flag-icon-rounded, .flag-icon-vu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/vu.svg);
 }
 
@@ -15159,7 +15159,7 @@ button.close {
   background-image: url(../images/flags/4x3/wf.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-wf.flag-icon-squared, .flag-icon-squared.flag-WLF, .flag-icon-squared.flag-icon-wlf {
+.flag-icon-wf.flag-icon-squared, .flag-icon-squared.flag-WLF, .flag-WLF.flag-icon-rounded, .flag-icon-squared.flag-icon-wlf, .flag-icon-wlf.flag-icon-rounded, .flag-icon-wf.flag-icon-rounded {
   background-image: url(../images/flags/1x1/wf.svg);
 }
 
@@ -15168,7 +15168,7 @@ button.close {
   background-image: url(../images/flags/4x3/ws.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ws.flag-icon-squared, .flag-icon-squared.flag-WSM, .flag-icon-squared.flag-icon-wsm {
+.flag-icon-ws.flag-icon-squared, .flag-icon-squared.flag-WSM, .flag-WSM.flag-icon-rounded, .flag-icon-squared.flag-icon-wsm, .flag-icon-wsm.flag-icon-rounded, .flag-icon-ws.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ws.svg);
 }
 
@@ -15177,7 +15177,7 @@ button.close {
   background-image: url(../images/flags/4x3/ye.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-ye.flag-icon-squared, .flag-icon-squared.flag-YEM, .flag-icon-squared.flag-icon-yem {
+.flag-icon-ye.flag-icon-squared, .flag-icon-squared.flag-YEM, .flag-YEM.flag-icon-rounded, .flag-icon-squared.flag-icon-yem, .flag-icon-yem.flag-icon-rounded, .flag-icon-ye.flag-icon-rounded {
   background-image: url(../images/flags/1x1/ye.svg);
 }
 
@@ -15186,7 +15186,7 @@ button.close {
   background-image: url(../images/flags/4x3/yt.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-yt.flag-icon-squared, .flag-icon-squared.flag-MYT, .flag-icon-squared.flag-icon-myt {
+.flag-icon-yt.flag-icon-squared, .flag-icon-squared.flag-MYT, .flag-MYT.flag-icon-rounded, .flag-icon-squared.flag-icon-myt, .flag-icon-myt.flag-icon-rounded, .flag-icon-yt.flag-icon-rounded {
   background-image: url(../images/flags/1x1/yt.svg);
 }
 
@@ -15195,7 +15195,7 @@ button.close {
   background-image: url(../images/flags/4x3/za.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-za.flag-icon-squared, .flag-icon-squared.flag-ZAF, .flag-icon-squared.flag-icon-zaf {
+.flag-icon-za.flag-icon-squared, .flag-icon-squared.flag-ZAF, .flag-ZAF.flag-icon-rounded, .flag-icon-squared.flag-icon-zaf, .flag-icon-zaf.flag-icon-rounded, .flag-icon-za.flag-icon-rounded {
   background-image: url(../images/flags/1x1/za.svg);
 }
 
@@ -15204,7 +15204,7 @@ button.close {
   background-image: url(../images/flags/4x3/zm.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-zm.flag-icon-squared, .flag-icon-squared.flag-ZMB, .flag-icon-squared.flag-icon-zmb {
+.flag-icon-zm.flag-icon-squared, .flag-icon-squared.flag-ZMB, .flag-ZMB.flag-icon-rounded, .flag-icon-squared.flag-icon-zmb, .flag-icon-zmb.flag-icon-rounded, .flag-icon-zm.flag-icon-rounded {
   background-image: url(../images/flags/1x1/zm.svg);
 }
 
@@ -15213,7 +15213,7 @@ button.close {
   background-image: url(../images/flags/4x3/zw.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-zw.flag-icon-squared, .flag-icon-squared.flag-ZWE, .flag-icon-squared.flag-icon-zwe {
+.flag-icon-zw.flag-icon-squared, .flag-icon-squared.flag-ZWE, .flag-ZWE.flag-icon-rounded, .flag-icon-squared.flag-icon-zwe, .flag-icon-zwe.flag-icon-rounded, .flag-icon-zw.flag-icon-rounded {
   background-image: url(../images/flags/1x1/zw.svg);
 }
 
@@ -15222,7 +15222,7 @@ button.close {
   background-image: url(../images/flags/4x3/eu.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-eu.flag-icon-squared {
+.flag-icon-eu.flag-icon-squared, .flag-icon-eu.flag-icon-rounded {
   background-image: url(../images/flags/1x1/eu.svg);
 }
 
@@ -15231,7 +15231,7 @@ button.close {
   background-image: url(../images/flags/4x3/gb-eng.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gb-eng.flag-icon-squared {
+.flag-icon-gb-eng.flag-icon-squared, .flag-icon-gb-eng.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gb-eng.svg);
 }
 
@@ -15240,7 +15240,7 @@ button.close {
   background-image: url(../images/flags/4x3/gb-nir.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gb-nir.flag-icon-squared {
+.flag-icon-gb-nir.flag-icon-squared, .flag-icon-gb-nir.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gb-nir.svg);
 }
 
@@ -15249,7 +15249,7 @@ button.close {
   background-image: url(../images/flags/4x3/gb-sct.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gb-sct.flag-icon-squared {
+.flag-icon-gb-sct.flag-icon-squared, .flag-icon-gb-sct.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gb-sct.svg);
 }
 
@@ -15258,7 +15258,7 @@ button.close {
   background-image: url(../images/flags/4x3/gb-wls.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-gb-wls.flag-icon-squared {
+.flag-icon-gb-wls.flag-icon-squared, .flag-icon-gb-wls.flag-icon-rounded {
   background-image: url(../images/flags/1x1/gb-wls.svg);
 }
 
@@ -15267,7 +15267,7 @@ button.close {
   background-image: url(../images/flags/4x3/un.svg);
 }
 /* line 24, ../../../../../../../../usr/local/lib/node_modules/flag-icon-css/sass/_flag-icon-base.scss */
-.flag-icon-un.flag-icon-squared {
+.flag-icon-un.flag-icon-squared, .flag-icon-un.flag-icon-rounded {
   background-image: url(../images/flags/1x1/un.svg);
 }
 
@@ -16326,7 +16326,15 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
   margin-bottom: 35px;
 }
 
-/* line 40, ../scss/partials/_elements.scss */
+/* line 38, ../scss/partials/_elements.scss */
+.body-field .field-name-body, .node .field-name-body, .node-teaser .field-name-body, #comments .comment .field-name-body,
+.body-field .field-name-comment-body,
+.node .field-name-comment-body,
+.node-teaser .field-name-comment-body,
+#comments .comment .field-name-comment-body {
+  font-family: "Merriweather", serif;
+}
+/* line 41, ../scss/partials/_elements.scss */
 .body-field .field-name-body h1, .node .field-name-body h1, .node-teaser .field-name-body h1, #comments .comment .field-name-body h1,
 .body-field .field-name-comment-body h1,
 .node .field-name-comment-body h1,
@@ -16334,7 +16342,7 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
 #comments .comment .field-name-comment-body h1 {
   font-size: 1.4em;
 }
-/* line 43, ../scss/partials/_elements.scss */
+/* line 44, ../scss/partials/_elements.scss */
 .body-field .field-name-body h2, .node .field-name-body h2, .node-teaser .field-name-body h2, #comments .comment .field-name-body h2,
 .body-field .field-name-comment-body h2,
 .node .field-name-comment-body h2,
@@ -16342,7 +16350,7 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
 #comments .comment .field-name-comment-body h2 {
   font-size: 1.3em;
 }
-/* line 46, ../scss/partials/_elements.scss */
+/* line 47, ../scss/partials/_elements.scss */
 .body-field .field-name-body h3, .node .field-name-body h3, .node-teaser .field-name-body h3, #comments .comment .field-name-body h3,
 .body-field .field-name-comment-body h3,
 .node .field-name-comment-body h3,
@@ -16350,17 +16358,30 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
 #comments .comment .field-name-comment-body h3 {
   font-size: 1.2em;
 }
-/* line 50, ../scss/partials/_elements.scss */
+/* line 51, ../scss/partials/_elements.scss */
 .body-field img, .node img, .node-teaser img, #comments .comment img {
   float: left;
   padding-right: 2em;
   padding-bottom: 2em;
 }
 
-/* line 58, ../scss/partials/_elements.scss */
+/* line 59, ../scss/partials/_elements.scss */
 .date-display-range .date-display-start,
 .date-display-range .date-display-end {
   display: block;
+}
+
+/* line 64, ../scss/partials/_elements.scss */
+.flag-icon-rounded {
+  border: 4px solid #FFFFFF;
+  width: 50px !important;
+  height: 50px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 2px 20px 0px #444444;
+  -moz-box-shadow: 0px 2px 20px 0px #444444;
+  box-shadow: 0px 2px 20px 0px #444444;
 }
 
 /* line 2, ../scss/partials/_labels.scss */
@@ -16872,12 +16893,17 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
 .page-book-countries #block-system-main {
   font-family: "Merriweather", serif;
 }
-/* line 23, ../scss/modules/_book.scss */
+/* line 22, ../scss/modules/_book.scss */
+.page-book-countries #block-system-main .node-landbook-country {
+  color: #444444;
+  font-size: 1.2em;
+}
+/* line 25, ../scss/modules/_book.scss */
 .page-book-countries #block-system-main .node-landbook-country header h2 {
   display: none;
 }
 
-/* line 33, ../scss/modules/_book.scss */
+/* line 35, ../scss/modules/_book.scss */
 #block-media,
 #block-compare,
 #block-views-country-content-partners,
@@ -16885,25 +16911,87 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
   background-color: #F0F0F0;
 }
 
-/* line 41, ../scss/modules/_book.scss */
+/* line 43, ../scss/modules/_book.scss */
 #content-related-links {
   padding: 2em 0;
 }
-/* line 43, ../scss/modules/_book.scss */
+/* line 45, ../scss/modules/_book.scss */
 #content-related-links span {
   display: block;
   font-weight: bold;
 }
 
-/* line 48, ../scss/modules/_book.scss */
+/* line 50, ../scss/modules/_book.scss */
 #block-landbook-disclaimer-block {
   background-color: #8FCD1F;
   color: #FFFFFF;
 }
-/* line 53, ../scss/modules/_book.scss */
+/* line 55, ../scss/modules/_book.scss */
 #block-landbook-disclaimer-block p {
   text-align: justify;
   padding: 1em;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* line 69, ../scss/modules/_book.scss */
+  .view.grid .view-content > div .col-sm-4:nth-child(3n+1), .view.grid .view-content > div body > footer .block:nth-child(3n+1), body > footer .view.grid .view-content > div .block:nth-child(3n+1), .view.grid .view-content > div #block-system-main > .node-form .group-topics-regions:nth-child(3n+1), #block-system-main > .node-form .view.grid .view-content > div .group-topics-regions:nth-child(3n+1),
+  .view.grid .view-content > div #block-system-main > .node-form .group-meta:nth-child(3n+1),
+  #block-system-main > .node-form .view.grid .view-content > div .group-meta:nth-child(3n+1),
+  .view.grid .view-content > div #block-system-main > .node-form .group-access:nth-child(3n+1),
+  #block-system-main > .node-form .view.grid .view-content > div .group-access:nth-child(3n+1),
+  .view.grid .view-content > div #block-system-main > .node-form .group-editors-pub:nth-child(3n+1),
+  #block-system-main > .node-form .view.grid .view-content > div .group-editors-pub:nth-child(3n+1), .view.grid .view-content > div #comments .comment .user-picture:nth-child(3n+1), #comments .comment .view.grid .view-content > div .user-picture:nth-child(3n+1), .view.grid .view-content > div .view-content > div:nth-child(3n+1), .view.grid .view-content > div .node-debate.node-teaser .field-name-field-image:nth-child(3n+1), .node-debate.node-teaser .view.grid .view-content > div .field-name-field-image:nth-child(3n+1),
+  .view.grid .view-content > div .node-debate.node-teaser .field-name-field-status:nth-child(3n+1),
+  .node-debate.node-teaser .view.grid .view-content > div .field-name-field-status:nth-child(3n+1),
+  .view.grid .view-content > div .node-debate.node-teaser .field-name-field-date:nth-child(3n+1),
+  .node-debate.node-teaser .view.grid .view-content > div .field-name-field-date:nth-child(3n+1),
+  .view.grid .view-content > div .node-debate.node-teaser .field-name-field-facilitators:nth-child(3n+1),
+  .node-debate.node-teaser .view.grid .view-content > div .field-name-field-facilitators:nth-child(3n+1),
+  .view.grid .view-content > div .node-type-debate .node .field-name-field-image:nth-child(3n+1),
+  .node-type-debate .node .view.grid .view-content > div .field-name-field-image:nth-child(3n+1),
+  .view.grid .view-content > div .node-type-debate .node .field-name-field-status:nth-child(3n+1),
+  .node-type-debate .node .view.grid .view-content > div .field-name-field-status:nth-child(3n+1),
+  .view.grid .view-content > div .node-type-debate .node .field-name-field-date:nth-child(3n+1),
+  .node-type-debate .node .view.grid .view-content > div .field-name-field-date:nth-child(3n+1),
+  .view.grid .view-content > div .node-type-debate .node .field-name-field-facilitators:nth-child(3n+1),
+  .node-type-debate .node .view.grid .view-content > div .field-name-field-facilitators:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 72, ../scss/modules/_book.scss */
+  .view.grid .view-content > div .col-md-3:nth-child(4n+1), .view.grid .view-content > div #block-system-main > .node-form .group-topics-regions:nth-child(4n+1), #block-system-main > .node-form .view.grid .view-content > div .group-topics-regions:nth-child(4n+1),
+  .view.grid .view-content > div #block-system-main > .node-form .group-meta:nth-child(4n+1),
+  #block-system-main > .node-form .view.grid .view-content > div .group-meta:nth-child(4n+1),
+  .view.grid .view-content > div #block-system-main > .node-form .group-access:nth-child(4n+1),
+  #block-system-main > .node-form .view.grid .view-content > div .group-access:nth-child(4n+1),
+  .view.grid .view-content > div #block-system-main > .node-form .group-editors-pub:nth-child(4n+1),
+  #block-system-main > .node-form .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .node .field-name-field-doc-thumb:nth-child(4n+1), .node .view.grid .view-content > div .field-name-field-doc-thumb:nth-child(4n+1),
+  .view.grid .view-content > div .node .field-name-field-image:nth-child(4n+1),
+  .node .view.grid .view-content > div .field-name-field-image:nth-child(4n+1),
+  .view.grid .view-content > div .node .group-meta:nth-child(4n+1),
+  .node .view.grid .view-content > div .group-meta:nth-child(4n+1),
+  .view.grid .view-content > div .node .group-access:nth-child(4n+1),
+  .node .view.grid .view-content > div .group-access:nth-child(4n+1),
+  .view.grid .view-content > div .node .group-editors-pub:nth-child(4n+1),
+  .node .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .node-teaser .field-name-field-doc-thumb:nth-child(4n+1), .node-teaser .view.grid .view-content > div .field-name-field-doc-thumb:nth-child(4n+1),
+  .view.grid .view-content > div .node-teaser .field-name-field-image:nth-child(4n+1),
+  .node-teaser .view.grid .view-content > div .field-name-field-image:nth-child(4n+1),
+  .view.grid .view-content > div .node-teaser .group-meta:nth-child(4n+1),
+  .node-teaser .view.grid .view-content > div .group-meta:nth-child(4n+1),
+  .view.grid .view-content > div .node-teaser .group-access:nth-child(4n+1),
+  .node-teaser .view.grid .view-content > div .group-access:nth-child(4n+1),
+  .view.grid .view-content > div .node-teaser .group-editors-pub:nth-child(4n+1),
+  .node-teaser .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .view-content > div:nth-child(4n+1) {
+    clear: left;
+  }
+}
+
+/* line 78, ../scss/modules/_book.scss */
+.view-landbook-countries .flag-icon {
+  font-size: 2em;
+  display: block;
+  margin: 1em auto .5em;
 }
 
 /* line 4, ../scss/modules/_library.scss */

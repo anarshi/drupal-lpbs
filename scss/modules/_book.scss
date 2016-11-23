@@ -20,6 +20,8 @@
         // Country page 'header' (country name + flag) is shown by
         // country navigation block in the highlight section
         .node-landbook-country {
+            color: $grey-dark;
+            font-size: 1.2em;
             header h2 {
                 display: none;
             }
@@ -55,5 +57,27 @@
         padding: 1em;
         @extend .col-md-offset-1;
         @extend .col-md-10;
+    }
+}
+
+.view.grid {
+    @extend .text-center;
+    .view-content>div {
+        @extend .col-sm-4;
+        @extend .col-md-3;
+        @media (min-width: $screen-sm) and (max-width: $screen-md) {
+            .col-sm-4:nth-child(3n+1) { clear: left; }
+        }
+        @media (min-width: $screen-md) {
+            .col-md-3:nth-child(4n+1) { clear: left; }
+        }
+    }
+}
+
+.view-landbook-countries {
+    .flag-icon {
+        font-size: 2em;
+        display: block;
+        margin: 1em auto .5em;
     }
 }
