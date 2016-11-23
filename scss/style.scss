@@ -9,21 +9,37 @@
 // External assets (aka Vendors)
 //
 // Font Awesome
+// gem install font-awesome-sass
 $fa-font-path: "font-awesome/"; // will prepend 'fonts_path' variable from config.rb
 @import "font-awesome-compass";
 @import "font-awesome";
 // Compass
+// gem install compass
 @import "compass/css3/border-radius";
 @import "compass/css3/images";
 @import "compass/css3/box-shadow";
-// Bootstrap Framework.
+// Bootstrap Framework
+// gem install bootstrap-sass
 @import "bootstrap-compass";
 @import "bootstrap";
+// flag-icon-css by lipis (https://github.com/lipis/flag-icon-css)
+// npm install -g flag-icon-css
+//@import "/usr/local/lib/node_modules/flag-icon-css/sass/variables";
+$flag-icon-css-path: '../images/flags' !default;
+$flag-icon-rect-path: '/4x3' !default;
+$flag-icon-square-path: '/1x1' !default;
+@import "/usr/local/lib/node_modules/flag-icon-css/sass/flag-icon-base";
+@import "/usr/local/lib/node_modules/flag-icon-css/sass/flag-icon-list";
+@import "/usr/local/lib/node_modules/flag-icon-css/sass/flag-icon-more";
 
+//
+// Land Portal stuff
+//
 // default Drupal Bootstrap theme overrides
 @import 'partials/overrides';
 @import 'partials/elements';
 @import 'partials/labels';
+@import 'partials/iso-mapping';
 
 // Land Portal stuff
 //   (from the lowest to higher concept)
@@ -34,6 +50,7 @@ $fa-font-path: "font-awesome/"; // will prepend 'fonts_path' variable from confi
 @import 'modules/social';
 @import 'modules/taxonomies';
 @import 'modules/nodes';
+@import 'modules/comments';
 @import 'modules/users';
 @import 'modules/search';
 @import 'modules/promoted';

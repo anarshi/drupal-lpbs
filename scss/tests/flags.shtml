@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flags check</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--#include file="_head-styles.html" -->
+
+    <script type="text/javascript" async="" src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="http://landportal.ker/sites/all/modules/jquery_update/replace/jquery/2.1/jquery.min.js?v=2.1.4"></script>
+    <script src="http://landportal.ker/misc/jquery.once.js?v=1.2"></script>
+    <script src="http://landportal.ker/misc/drupal.js?ofo1ke"></script>
+    <style>
+      article li {
+      float: left;
+      width: 20%;
+      }
+      .flag-icon { font-size: 3em; }
+      .flag-icon-squared { border-radius: 20px; font-size: 40px; }
+</style>
+  </head>
+  <body>
+
+<!--#include file="_header.html" -->
+
+    <div class="main-container container-fluid">
+      <div class="row">
+      
+      <article>
+        <header>
+          <h2>Flags test</h2>
+        </header>
+        <ul class="list-unstyled">
+          <li><span class="flag-icon flag-icon-afg"></span> AF - AFG <span class="flag-icon flag-icon-squared flag-icon-afg"></span></li>
+<li><span class="flag-icon flag-icon-ala"></span> AX - ALA</li>
+<li><span class="flag-icon flag-icon-alb"></span> AL - ALB</li>
+<li><span class="flag-icon flag-icon-dza"></span> DZ - DZA</li>
+<li><span class="flag-icon flag-icon-asm"></span> AS - ASM</li>
+<li><span class="flag-icon flag-icon-and"></span> AD - AND</li>
+<li><span class="flag-icon flag-icon-ago"></span> AO - AGO</li>
+<li><span class="flag-icon flag-icon-aia"></span> AI - AIA</li>
+<li><span class="flag-icon flag-icon-ata"></span> AQ - ATA</li>
+<li><span class="flag-icon flag-icon-atg"></span> AG - ATG</li>
+<li><span class="flag-icon flag-icon-arg"></span> AR - ARG</li>
+<li><span class="flag-icon flag-icon-arm"></span> AM - ARM</li>
+<li><span class="flag-icon flag-icon-abw"></span> AW - ABW</li>
+<li><span class="flag-icon flag-icon-aus"></span> AU - AUS</li>
+<li><span class="flag-icon flag-icon-aut"></span> AT - AUT</li>
+<li><span class="flag-icon flag-icon-aze"></span> AZ - AZE</li>
+<li><span class="flag-icon flag-icon-bhs"></span> BS - BHS</li>
+<li><span class="flag-icon flag-icon-bhr"></span> BH - BHR</li>
+<li><span class="flag-icon flag-icon-bgd"></span> BD - BGD</li>
+<li><span class="flag-icon flag-icon-brb"></span> BB - BRB</li>
+<li><span class="flag-icon flag-icon-blr"></span> BY - BLR</li>
+<li><span class="flag-icon flag-icon-bel"></span> BE - BEL</li>
+<li><span class="flag-icon flag-icon-blz"></span> BZ - BLZ</li>
+<li><span class="flag-icon flag-icon-ben"></span> BJ - BEN</li>
+<li><span class="flag-icon flag-icon-bmu"></span> BM - BMU</li>
+<li><span class="flag-icon flag-icon-btn"></span> BT - BTN</li>
+<li><span class="flag-icon flag-icon-bol"></span> BO - BOL</li>
+<li><span class="flag-icon flag-icon-bih"></span> BA - BIH</li>
+<li><span class="flag-icon flag-icon-bwa"></span> BW - BWA</li>
+<li><span class="flag-icon flag-icon-bvt"></span> BV - BVT</li>
+<li><span class="flag-icon flag-icon-bra"></span> BR - BRA</li>
+<li><span class="flag-icon flag-icon-vgb"></span> VG - VGB</li>
+<li><span class="flag-icon flag-icon-iot"></span> IO - IOT</li>
+<li><span class="flag-icon flag-icon-brn"></span> BN - BRN</li>
+<li><span class="flag-icon flag-icon-bgr"></span> BG - BGR</li>
+<li><span class="flag-icon flag-icon-bfa"></span> BF - BFA</li>
+<li><span class="flag-icon flag-icon-bdi"></span> BI - BDI</li>
+<li><span class="flag-icon flag-icon-khm"></span> KH - KHM</li>
+<li><span class="flag-icon flag-icon-cmr"></span> CM - CMR</li>
+<li><span class="flag-icon flag-icon-can"></span> CA - CAN</li>
+<li><span class="flag-icon flag-icon-cpv"></span> CV - CPV</li>
+<li><span class="flag-icon flag-icon-cym"></span> KY - CYM</li>
+<li><span class="flag-icon flag-icon-caf"></span> CF - CAF</li>
+<li><span class="flag-icon flag-icon-tcd"></span> TD - TCD</li>
+<li><span class="flag-icon flag-icon-chl"></span> CL - CHL</li>
+<li><span class="flag-icon flag-icon-chn"></span> CN - CHN</li>
+<li><span class="flag-icon flag-icon-hkg"></span> HK - HKG</li>
+<li><span class="flag-icon flag-icon-mac"></span> MO - MAC</li>
+<li><span class="flag-icon flag-icon-cxr"></span> CX - CXR</li>
+<li><span class="flag-icon flag-icon-cck"></span> CC - CCK</li>
+<li><span class="flag-icon flag-icon-col"></span> CO - COL</li>
+<li><span class="flag-icon flag-icon-com"></span> KM - COM</li>
+<li><span class="flag-icon flag-icon-cog"></span> CG - COG</li>
+<li><span class="flag-icon flag-icon-cod"></span> CD - COD</li>
+<li><span class="flag-icon flag-icon-cok"></span> CK - COK</li>
+<li><span class="flag-icon flag-icon-cri"></span> CR - CRI</li>
+<li><span class="flag-icon flag-icon-civ"></span> CI - CIV</li>
+<li><span class="flag-icon flag-icon-hrv"></span> HR - HRV</li>
+<li><span class="flag-icon flag-icon-cub"></span> CU - CUB</li>
+<li><span class="flag-icon flag-icon-cyp"></span> CY - CYP</li>
+<li><span class="flag-icon flag-icon-cze"></span> CZ - CZE</li>
+<li><span class="flag-icon flag-icon-dnk"></span> DK - DNK</li>
+<li><span class="flag-icon flag-icon-dji"></span> DJ - DJI</li>
+<li><span class="flag-icon flag-icon-dma"></span> DM - DMA</li>
+<li><span class="flag-icon flag-icon-dom"></span> DO - DOM</li>
+<li><span class="flag-icon flag-icon-ecu"></span> EC - ECU</li>
+<li><span class="flag-icon flag-icon-egy"></span> EG - EGY</li>
+<li><span class="flag-icon flag-icon-slv"></span> SV - SLV</li>
+<li><span class="flag-icon flag-icon-gnq"></span> GQ - GNQ</li>
+<li><span class="flag-icon flag-icon-eri"></span> ER - ERI</li>
+<li><span class="flag-icon flag-icon-est"></span> EE - EST</li>
+<li><span class="flag-icon flag-icon-eth"></span> ET - ETH</li>
+<li><span class="flag-icon flag-icon-flk"></span> FK - FLK</li>
+<li><span class="flag-icon flag-icon-fro"></span> FO - FRO</li>
+<li><span class="flag-icon flag-icon-fji"></span> FJ - FJI</li>
+<li><span class="flag-icon flag-icon-fin"></span> FI - FIN</li>
+<li><span class="flag-icon flag-icon-fra"></span> FR - FRA</li>
+<li><span class="flag-icon flag-icon-guf"></span> GF - GUF</li>
+<li><span class="flag-icon flag-icon-pyf"></span> PF - PYF</li>
+<li><span class="flag-icon flag-icon-atf"></span> TF - ATF</li>
+<li><span class="flag-icon flag-icon-gab"></span> GA - GAB</li>
+<li><span class="flag-icon flag-icon-gmb"></span> GM - GMB</li>
+<li><span class="flag-icon flag-icon-geo"></span> GE - GEO</li>
+<li><span class="flag-icon flag-icon-deu"></span> DE - DEU</li>
+<li><span class="flag-icon flag-icon-gha"></span> GH - GHA</li>
+<li><span class="flag-icon flag-icon-gib"></span> GI - GIB</li>
+<li><span class="flag-icon flag-icon-grc"></span> GR - GRC</li>
+<li><span class="flag-icon flag-icon-grl"></span> GL - GRL</li>
+<li><span class="flag-icon flag-icon-grd"></span> GD - GRD</li>
+<li><span class="flag-icon flag-icon-glp"></span> GP - GLP</li>
+<li><span class="flag-icon flag-icon-gum"></span> GU - GUM</li>
+<li><span class="flag-icon flag-icon-gtm"></span> GT - GTM</li>
+<li><span class="flag-icon flag-icon-ggy"></span> GG - GGY</li>
+<li><span class="flag-icon flag-icon-gin"></span> GN - GIN</li>
+<li><span class="flag-icon flag-icon-gnb"></span> GW - GNB</li>
+<li><span class="flag-icon flag-icon-guy"></span> GY - GUY</li>
+<li><span class="flag-icon flag-icon-hti"></span> HT - HTI</li>
+<li><span class="flag-icon flag-icon-hmd"></span> HM - HMD</li>
+<li><span class="flag-icon flag-icon-vat"></span> VA - VAT</li>
+<li><span class="flag-icon flag-icon-hnd"></span> HN - HND</li>
+<li><span class="flag-icon flag-icon-hun"></span> HU - HUN</li>
+<li><span class="flag-icon flag-icon-isl"></span> IS - ISL</li>
+<li><span class="flag-icon flag-icon-ind"></span> IN - IND</li>
+<li><span class="flag-icon flag-icon-idn"></span> ID - IDN</li>
+<li><span class="flag-icon flag-icon-irn"></span> IR - IRN</li>
+<li><span class="flag-icon flag-icon-irq"></span> IQ - IRQ</li>
+<li><span class="flag-icon flag-icon-irl"></span> IE - IRL</li>
+<li><span class="flag-icon flag-icon-imn"></span> IM - IMN</li>
+<li><span class="flag-icon flag-icon-isr"></span> IL - ISR</li>
+<li><span class="flag-icon flag-icon-ita"></span> IT - ITA</li>
+<li><span class="flag-icon flag-icon-jam"></span> JM - JAM</li>
+<li><span class="flag-icon flag-icon-jpn"></span> JP - JPN</li>
+<li><span class="flag-icon flag-icon-jey"></span> JE - JEY</li>
+<li><span class="flag-icon flag-icon-jor"></span> JO - JOR</li>
+<li><span class="flag-icon flag-icon-kaz"></span> KZ - KAZ</li>
+<li><span class="flag-icon flag-icon-ken"></span> KE - KEN</li>
+<li><span class="flag-icon flag-icon-kir"></span> KI - KIR</li>
+<li><span class="flag-icon flag-icon-prk"></span> KP - PRK</li>
+<li><span class="flag-icon flag-icon-kor"></span> KR - KOR</li>
+<li><span class="flag-icon flag-icon-kwt"></span> KW - KWT</li>
+<li><span class="flag-icon flag-icon-kgz"></span> KG - KGZ</li>
+<li><span class="flag-icon flag-icon-lao"></span> LA - LAO</li>
+<li><span class="flag-icon flag-icon-lva"></span> LV - LVA</li>
+<li><span class="flag-icon flag-icon-lbn"></span> LB - LBN</li>
+<li><span class="flag-icon flag-icon-lso"></span> LS - LSO</li>
+<li><span class="flag-icon flag-icon-lbr"></span> LR - LBR</li>
+<li><span class="flag-icon flag-icon-lby"></span> LY - LBY</li>
+<li><span class="flag-icon flag-icon-lie"></span> LI - LIE</li>
+<li><span class="flag-icon flag-icon-ltu"></span> LT - LTU</li>
+<li><span class="flag-icon flag-icon-lux"></span> LU - LUX</li>
+<li><span class="flag-icon flag-icon-mkd"></span> MK - MKD</li>
+<li><span class="flag-icon flag-icon-mdg"></span> MG - MDG</li>
+<li><span class="flag-icon flag-icon-mwi"></span> MW - MWI</li>
+<li><span class="flag-icon flag-icon-mys"></span> MY - MYS</li>
+<li><span class="flag-icon flag-icon-mdv"></span> MV - MDV</li>
+<li><span class="flag-icon flag-icon-mli"></span> ML - MLI</li>
+<li><span class="flag-icon flag-icon-mlt"></span> MT - MLT</li>
+<li><span class="flag-icon flag-icon-mhl"></span> MH - MHL</li>
+<li><span class="flag-icon flag-icon-mtq"></span> MQ - MTQ</li>
+<li><span class="flag-icon flag-icon-mrt"></span> MR - MRT</li>
+<li><span class="flag-icon flag-icon-mus"></span> MU - MUS</li>
+<li><span class="flag-icon flag-icon-myt"></span> YT - MYT</li>
+<li><span class="flag-icon flag-icon-mex"></span> MX - MEX</li>
+<li><span class="flag-icon flag-icon-fsm"></span> FM - FSM</li>
+<li><span class="flag-icon flag-icon-mda"></span> MD - MDA</li>
+<li><span class="flag-icon flag-icon-mco"></span> MC - MCO</li>
+<li><span class="flag-icon flag-icon-mng"></span> MN - MNG</li>
+<li><span class="flag-icon flag-icon-mne"></span> ME - MNE</li>
+<li><span class="flag-icon flag-icon-msr"></span> MS - MSR</li>
+<li><span class="flag-icon flag-icon-mar"></span> MA - MAR</li>
+<li><span class="flag-icon flag-icon-moz"></span> MZ - MOZ</li>
+<li><span class="flag-icon flag-icon-mmr"></span> MM - MMR</li>
+<li><span class="flag-icon flag-icon-nam"></span> NA - NAM</li>
+<li><span class="flag-icon flag-icon-nru"></span> NR - NRU</li>
+<li><span class="flag-icon flag-icon-npl"></span> NP - NPL</li>
+<li><span class="flag-icon flag-icon-nld"></span> NL - NLD</li>
+<li><span class="flag-icon flag-icon-ant"></span> AN - ANT</li>
+<li><span class="flag-icon flag-icon-ncl"></span> NC - NCL</li>
+<li><span class="flag-icon flag-icon-nzl"></span> NZ - NZL</li>
+<li><span class="flag-icon flag-icon-nic"></span> NI - NIC</li>
+<li><span class="flag-icon flag-icon-ner"></span> NE - NER</li>
+<li><span class="flag-icon flag-icon-nga"></span> NG - NGA</li>
+<li><span class="flag-icon flag-icon-niu"></span> NU - NIU</li>
+<li><span class="flag-icon flag-icon-nfk"></span> NF - NFK</li>
+<li><span class="flag-icon flag-icon-mnp"></span> MP - MNP</li>
+<li><span class="flag-icon flag-icon-nor"></span> NO - NOR</li>
+<li><span class="flag-icon flag-icon-omn"></span> OM - OMN</li>
+<li><span class="flag-icon flag-icon-pak"></span> PK - PAK</li>
+<li><span class="flag-icon flag-icon-plw"></span> PW - PLW</li>
+<li><span class="flag-icon flag-icon-pse"></span> PS - PSE</li>
+<li><span class="flag-icon flag-icon-pan"></span> PA - PAN</li>
+<li><span class="flag-icon flag-icon-png"></span> PG - PNG</li>
+<li><span class="flag-icon flag-icon-pry"></span> PY - PRY</li>
+<li><span class="flag-icon flag-icon-per"></span> PE - PER</li>
+<li><span class="flag-icon flag-icon-phl"></span> PH - PHL</li>
+<li><span class="flag-icon flag-icon-pcn"></span> PN - PCN</li>
+<li><span class="flag-icon flag-icon-pol"></span> PL - POL</li>
+<li><span class="flag-icon flag-icon-prt"></span> PT - PRT</li>
+<li><span class="flag-icon flag-icon-pri"></span> PR - PRI</li>
+<li><span class="flag-icon flag-icon-qat"></span> QA - QAT</li>
+<li><span class="flag-icon flag-icon-reu"></span> RE - REU</li>
+<li><span class="flag-icon flag-icon-rou"></span> RO - ROU</li>
+<li><span class="flag-icon flag-icon-rus"></span> RU - RUS</li>
+<li><span class="flag-icon flag-icon-rwa"></span> RW - RWA</li>
+<li><span class="flag-icon flag-icon-blm"></span> BL - BLM</li>
+<li><span class="flag-icon flag-icon-shn"></span> SH - SHN</li>
+<li><span class="flag-icon flag-icon-kna"></span> KN - KNA</li>
+<li><span class="flag-icon flag-icon-lca"></span> LC - LCA</li>
+<li><span class="flag-icon flag-icon-maf"></span> MF - MAF</li>
+<li><span class="flag-icon flag-icon-spm"></span> PM - SPM</li>
+<li><span class="flag-icon flag-icon-vct"></span> VC - VCT</li>
+<li><span class="flag-icon flag-icon-wsm"></span> WS - WSM</li>
+<li><span class="flag-icon flag-icon-smr"></span> SM - SMR</li>
+<li><span class="flag-icon flag-icon-stp"></span> ST - STP</li>
+<li><span class="flag-icon flag-icon-sau"></span> SA - SAU</li>
+<li><span class="flag-icon flag-icon-sen"></span> SN - SEN</li>
+<li><span class="flag-icon flag-icon-srb"></span> RS - SRB</li>
+<li><span class="flag-icon flag-icon-syc"></span> SC - SYC</li>
+<li><span class="flag-icon flag-icon-sle"></span> SL - SLE</li>
+<li><span class="flag-icon flag-icon-sgp"></span> SG - SGP</li>
+<li><span class="flag-icon flag-icon-svk"></span> SK - SVK</li>
+<li><span class="flag-icon flag-icon-svn"></span> SI - SVN</li>
+<li><span class="flag-icon flag-icon-slb"></span> SB - SLB</li>
+<li><span class="flag-icon flag-icon-som"></span> SO - SOM</li>
+<li><span class="flag-icon flag-icon-zaf"></span> ZA - ZAF</li>
+<li><span class="flag-icon flag-icon-sgs"></span> GS - SGS</li>
+<li><span class="flag-icon flag-icon-ssd"></span> SS - SSD</li>
+<li><span class="flag-icon flag-icon-esp"></span> ES - ESP</li>
+<li><span class="flag-icon flag-icon-lka"></span> LK - LKA</li>
+<li><span class="flag-icon flag-icon-sdn"></span> SD - SDN</li>
+<li><span class="flag-icon flag-icon-sur"></span> SR - SUR</li>
+<li><span class="flag-icon flag-icon-sjm"></span> SJ - SJM</li>
+<li><span class="flag-icon flag-icon-swz"></span> SZ - SWZ</li>
+<li><span class="flag-icon flag-icon-swe"></span> SE - SWE</li>
+<li><span class="flag-icon flag-icon-che"></span> CH - CHE</li>
+<li><span class="flag-icon flag-icon-syr"></span> SY - SYR</li>
+<li><span class="flag-icon flag-icon-twn"></span> TW - TWN</li>
+<li><span class="flag-icon flag-icon-tjk"></span> TJ - TJK</li>
+<li><span class="flag-icon flag-icon-tza"></span> TZ - TZA</li>
+<li><span class="flag-icon flag-icon-tha"></span> TH - THA</li>
+<li><span class="flag-icon flag-icon-tls"></span> TL - TLS</li>
+<li><span class="flag-icon flag-icon-tgo"></span> TG - TGO</li>
+<li><span class="flag-icon flag-icon-tkl"></span> TK - TKL</li>
+<li><span class="flag-icon flag-icon-ton"></span> TO - TON</li>
+<li><span class="flag-icon flag-icon-tto"></span> TT - TTO</li>
+<li><span class="flag-icon flag-icon-tun"></span> TN - TUN</li>
+<li><span class="flag-icon flag-icon-tur"></span> TR - TUR</li>
+<li><span class="flag-icon flag-icon-tkm"></span> TM - TKM</li>
+<li><span class="flag-icon flag-icon-tca"></span> TC - TCA</li>
+<li><span class="flag-icon flag-icon-tuv"></span> TV - TUV</li>
+<li><span class="flag-icon flag-icon-uga"></span> UG - UGA</li>
+<li><span class="flag-icon flag-icon-ukr"></span> UA - UKR</li>
+<li><span class="flag-icon flag-icon-are"></span> AE - ARE</li>
+<li><span class="flag-icon flag-icon-gbr"></span> GB - GBR</li>
+<li><span class="flag-icon flag-icon-usa"></span> US - USA</li>
+<li><span class="flag-icon flag-icon-umi"></span> UM - UMI</li>
+<li><span class="flag-icon flag-icon-ury"></span> UY - URY</li>
+<li><span class="flag-icon flag-icon-uzb"></span> UZ - UZB</li>
+<li><span class="flag-icon flag-icon-vut"></span> VU - VUT</li>
+<li><span class="flag-icon flag-icon-ven"></span> VE - VEN</li>
+<li><span class="flag-icon flag-icon-vnm"></span> VN - VNM</li>
+<li><span class="flag-icon flag-icon-vir"></span> VI - VIR</li>
+<li><span class="flag-icon flag-icon-wlf"></span> WF - WLF</li>
+<li><span class="flag-icon flag-icon-esh"></span> EH - ESH</li>
+<li><span class="flag-icon flag-icon-yem"></span> YE - YEM</li>
+<li><span class="flag-icon flag-icon-zmb"></span> ZM - ZMB</li>
+<li><span class="flag-icon flag-icon-zwe"></span> ZW - ZWE</li>
+        </ul>
+
+        <footer>
+        </footer>
+      </article>
+
+    </div>
+    </div>
+
+
+<!--#Include file="_footer.html" -->
+  </body>
+</html>

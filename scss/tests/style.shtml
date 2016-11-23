@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Typography check</title>    
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  </head>
+  <body>
+
+<!--#include file="_header.html" -->
+
+    <div class="main-container container-fluid">
+      <div class="row">
+      
+      <article>
+        <header>
+          <h2>Colors test</h2>
+        </header>
+        <p class="bg-primary">bg-primary</p>
+        <p class="bg-secondary">bg-secondary</p>
+        <footer>
+        </footer>
+      </article>
+
+    </div>
+    </div>
+
+
+<!--#Include file="_footer.html" -->
+  </body>
+</html>
