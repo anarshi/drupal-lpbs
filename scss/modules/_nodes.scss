@@ -33,7 +33,7 @@
     }
 }
 
-.node, .node-teaser {
+.node, .node-teaser, .node-listing {
     // Display settings for node fieldgroup to emulate 'responsive columns'
     // Warning: order in which fieldgroups (meta and editors-pub)
     //  are displayed (node: manage display) matters!
@@ -41,7 +41,7 @@
     @extend .body-field;
     //.group-topics-regions,
     .field-name-field-doc-thumb,
-    .field-name-field-image,
+    &:not(.node-organization) .field-name-field-image,
     .group-meta,
     .group-access,
     .group-editors-pub {

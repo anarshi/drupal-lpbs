@@ -6257,23 +6257,25 @@ pre code {
 .view-by-providers .view-filters, .main-container > header .block-menu ul.menu li.leaf, body > footer .block-menu > ul.menu > li, .col-md-3, #block-system-main > .node-form .group-topics-regions,
 #block-system-main > .node-form .group-meta,
 #block-system-main > .node-form .group-access,
-#block-system-main > .node-form .group-editors-pub, .node .field-name-field-doc-thumb,
-.node .field-name-field-image,
+#block-system-main > .node-form .group-editors-pub, .node .field-name-field-doc-thumb, .node:not(.node-organization) .field-name-field-image,
 .node .group-meta,
 .node .group-access,
-.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb,
-.node-teaser .field-name-field-image,
+.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb, .node-teaser:not(.node-organization) .field-name-field-image,
 .node-teaser .group-meta,
 .node-teaser .group-access,
-.node-teaser .group-editors-pub, .view.grid .view-content > div, .col-lg-3, .col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb,
-.node .field-name-field-image,
+.node-teaser .group-editors-pub, .node-listing .field-name-field-doc-thumb, .node-listing:not(.node-organization) .field-name-field-image,
+.node-listing .group-meta,
+.node-listing .group-access,
+.node-listing .group-editors-pub, .view.grid .view-content > div, .col-lg-3, .col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb, .node:not(.node-organization) .field-name-field-image,
 .node .group-meta,
 .node .group-access,
-.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb,
-.node-teaser .field-name-field-image,
+.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb, .node-teaser:not(.node-organization) .field-name-field-image,
 .node-teaser .group-meta,
 .node-teaser .group-access,
-.node-teaser .group-editors-pub, .col-sm-4, body > footer .block, #block-system-main > .node-form .group-topics-regions,
+.node-teaser .group-editors-pub, .node-listing .field-name-field-doc-thumb, .node-listing:not(.node-organization) .field-name-field-image,
+.node-listing .group-meta,
+.node-listing .group-access,
+.node-listing .group-editors-pub, .col-sm-4, body > footer .block, #block-system-main > .node-form .group-topics-regions,
 #block-system-main > .node-form .group-meta,
 #block-system-main > .node-form .group-access,
 #block-system-main > .node-form .group-editors-pub, #comments .comment .user-picture, .view.grid .view-content > div, .node-debate.node-teaser .field-name-field-image,
@@ -6292,15 +6294,16 @@ pre code {
 }
 
 /* line 27, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb,
-.node .field-name-field-image,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb, .node:not(.node-organization) .field-name-field-image,
 .node .group-meta,
 .node .group-access,
-.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb,
-.node-teaser .field-name-field-image,
+.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb, .node-teaser:not(.node-organization) .field-name-field-image,
 .node-teaser .group-meta,
 .node-teaser .group-access,
-.node-teaser .group-editors-pub, .col-xs-5, .col-xs-6, body > footer .block-menu > ul.menu > li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .page-search .form-inline .form-item, .col-xs-11, .col-xs-12, .main-container > header .block-menu, #page-header .block-menu h2, #page-header .block-menu p {
+.node-teaser .group-editors-pub, .node-listing .field-name-field-doc-thumb, .node-listing:not(.node-organization) .field-name-field-image,
+.node-listing .group-meta,
+.node-listing .group-access,
+.node-listing .group-editors-pub, .col-xs-5, .col-xs-6, body > footer .block-menu > ul.menu > li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .page-search .form-inline .form-item, .col-xs-11, .col-xs-12, .main-container > header .block-menu, #page-header .block-menu h2, #page-header .block-menu p {
   float: left;
 }
 
@@ -6320,15 +6323,16 @@ pre code {
 }
 
 /* line 35, ../../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb,
-.node .field-name-field-image,
+.col-xs-4, .main-container > header .block-menu ul.menu li.leaf, .node .field-name-field-doc-thumb, .node:not(.node-organization) .field-name-field-image,
 .node .group-meta,
 .node .group-access,
-.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb,
-.node-teaser .field-name-field-image,
+.node .group-editors-pub, .node-teaser .field-name-field-doc-thumb, .node-teaser:not(.node-organization) .field-name-field-image,
 .node-teaser .group-meta,
 .node-teaser .group-access,
-.node-teaser .group-editors-pub {
+.node-teaser .group-editors-pub, .node-listing .field-name-field-doc-thumb, .node-listing:not(.node-organization) .field-name-field-image,
+.node-listing .group-meta,
+.node-listing .group-access,
+.node-listing .group-editors-pub {
   width: 33.33333333%;
 }
 
@@ -6857,15 +6861,16 @@ pre code {
   .col-md-1, .col-md-2, .main-container > header .block-menu ul.menu li.leaf, .col-md-3, #block-system-main > .node-form .group-topics-regions,
   #block-system-main > .node-form .group-meta,
   #block-system-main > .node-form .group-access,
-  #block-system-main > .node-form .group-editors-pub, .node .field-name-field-doc-thumb,
-  .node .field-name-field-image,
+  #block-system-main > .node-form .group-editors-pub, .node .field-name-field-doc-thumb, .node:not(.node-organization) .field-name-field-image,
   .node .group-meta,
   .node .group-access,
-  .node .group-editors-pub, .node-teaser .field-name-field-doc-thumb,
-  .node-teaser .field-name-field-image,
+  .node .group-editors-pub, .node-teaser .field-name-field-doc-thumb, .node-teaser:not(.node-organization) .field-name-field-image,
   .node-teaser .group-meta,
   .node-teaser .group-access,
-  .node-teaser .group-editors-pub, .view.grid .view-content > div, .col-md-4, #comments .comment .submitted, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-md-9, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-md-11, .col-md-12 {
+  .node-teaser .group-editors-pub, .node-listing .field-name-field-doc-thumb, .node-listing:not(.node-organization) .field-name-field-image,
+  .node-listing .group-meta,
+  .node-listing .group-access,
+  .node-listing .group-editors-pub, .view.grid .view-content > div, .col-md-4, #comments .comment .submitted, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #comments .comment > h3, .page-book-countries #block-system-main .view-landbook-countries, .col-md-9, .col-md-10, #page-header .block-menu h2, #page-header .block-menu p, #block-landbook-disclaimer-block p, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -6883,15 +6888,16 @@ pre code {
   .col-md-3, #block-system-main > .node-form .group-topics-regions,
   #block-system-main > .node-form .group-meta,
   #block-system-main > .node-form .group-access,
-  #block-system-main > .node-form .group-editors-pub, .node .field-name-field-doc-thumb,
-  .node .field-name-field-image,
+  #block-system-main > .node-form .group-editors-pub, .node .field-name-field-doc-thumb, .node:not(.node-organization) .field-name-field-image,
   .node .group-meta,
   .node .group-access,
-  .node .group-editors-pub, .node-teaser .field-name-field-doc-thumb,
-  .node-teaser .field-name-field-image,
+  .node .group-editors-pub, .node-teaser .field-name-field-doc-thumb, .node-teaser:not(.node-organization) .field-name-field-image,
   .node-teaser .group-meta,
   .node-teaser .group-access,
-  .node-teaser .group-editors-pub, .view.grid .view-content > div {
+  .node-teaser .group-editors-pub, .node-listing .field-name-field-doc-thumb, .node-listing:not(.node-organization) .field-name-field-image,
+  .node-listing .group-meta,
+  .node-listing .group-access,
+  .node-listing .group-editors-pub, .view.grid .view-content > div {
     width: 25%;
   }
 
@@ -16279,6 +16285,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 24rem;
 }
 
+/* line 851, ../scss/partials/_overrides.scss */
+.container-inline-date .form-item, .container-inline-date .form-item input {
+  width: 100%;
+}
+
 /* line 1, ../scss/partials/_elements.scss */
 h1, h2 {
   color: #333333;
@@ -16334,39 +16345,43 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
 }
 
 /* line 38, ../scss/partials/_elements.scss */
-.body-field .field-name-body, .node .field-name-body, .node-teaser .field-name-body, #comments .comment .field-name-body,
+.body-field .field-name-body, .node .field-name-body, .node-teaser .field-name-body, .node-listing .field-name-body, #comments .comment .field-name-body,
 .body-field .field-name-comment-body,
 .node .field-name-comment-body,
 .node-teaser .field-name-comment-body,
+.node-listing .field-name-comment-body,
 #comments .comment .field-name-comment-body {
   font-family: "Merriweather", serif;
 }
 /* line 41, ../scss/partials/_elements.scss */
-.body-field .field-name-body h1, .node .field-name-body h1, .node-teaser .field-name-body h1, #comments .comment .field-name-body h1,
+.body-field .field-name-body h1, .node .field-name-body h1, .node-teaser .field-name-body h1, .node-listing .field-name-body h1, #comments .comment .field-name-body h1,
 .body-field .field-name-comment-body h1,
 .node .field-name-comment-body h1,
 .node-teaser .field-name-comment-body h1,
+.node-listing .field-name-comment-body h1,
 #comments .comment .field-name-comment-body h1 {
   font-size: 1.4em;
 }
 /* line 44, ../scss/partials/_elements.scss */
-.body-field .field-name-body h2, .node .field-name-body h2, .node-teaser .field-name-body h2, #comments .comment .field-name-body h2,
+.body-field .field-name-body h2, .node .field-name-body h2, .node-teaser .field-name-body h2, .node-listing .field-name-body h2, #comments .comment .field-name-body h2,
 .body-field .field-name-comment-body h2,
 .node .field-name-comment-body h2,
 .node-teaser .field-name-comment-body h2,
+.node-listing .field-name-comment-body h2,
 #comments .comment .field-name-comment-body h2 {
   font-size: 1.3em;
 }
 /* line 47, ../scss/partials/_elements.scss */
-.body-field .field-name-body h3, .node .field-name-body h3, .node-teaser .field-name-body h3, #comments .comment .field-name-body h3,
+.body-field .field-name-body h3, .node .field-name-body h3, .node-teaser .field-name-body h3, .node-listing .field-name-body h3, #comments .comment .field-name-body h3,
 .body-field .field-name-comment-body h3,
 .node .field-name-comment-body h3,
 .node-teaser .field-name-comment-body h3,
+.node-listing .field-name-comment-body h3,
 #comments .comment .field-name-comment-body h3 {
   font-size: 1.2em;
 }
 /* line 51, ../scss/partials/_elements.scss */
-.body-field img, .node img, .node-teaser img, #comments .comment img {
+.body-field img, .node img, .node-teaser img, .node-listing img, #comments .comment img {
   float: left;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -16728,14 +16743,16 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
 /* line 53, ../scss/modules/_nodes.scss */
 .node .group-meta,
 .node .group-editors-pub, .node-teaser .group-meta,
-.node-teaser .group-editors-pub {
+.node-teaser .group-editors-pub, .node-listing .group-meta,
+.node-listing .group-editors-pub {
   clear: left;
 }
 @media (min-width: 992px) {
   /* line 58, ../scss/modules/_nodes.scss */
   .node .group-meta,
   .node .group-editors-pub, .node-teaser .group-meta,
-  .node-teaser .group-editors-pub {
+  .node-teaser .group-editors-pub, .node-listing .group-meta,
+  .node-listing .group-editors-pub {
     float: right;
     clear: right;
   }
@@ -16983,23 +17000,25 @@ body[class*="node-type-thematic-narrative"] #block-views-country-content-library
   .view.grid .view-content > div #block-system-main > .node-form .group-access:nth-child(4n+1),
   #block-system-main > .node-form .view.grid .view-content > div .group-access:nth-child(4n+1),
   .view.grid .view-content > div #block-system-main > .node-form .group-editors-pub:nth-child(4n+1),
-  #block-system-main > .node-form .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .node .field-name-field-doc-thumb:nth-child(4n+1), .node .view.grid .view-content > div .field-name-field-doc-thumb:nth-child(4n+1),
-  .view.grid .view-content > div .node .field-name-field-image:nth-child(4n+1),
-  .node .view.grid .view-content > div .field-name-field-image:nth-child(4n+1),
+  #block-system-main > .node-form .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .node .field-name-field-doc-thumb:nth-child(4n+1), .node .view.grid .view-content > div .field-name-field-doc-thumb:nth-child(4n+1), .view.grid .view-content > div .node:not(.node-organization) .field-name-field-image:nth-child(4n+1), .node:not(.node-organization) .view.grid .view-content > div .field-name-field-image:nth-child(4n+1),
   .view.grid .view-content > div .node .group-meta:nth-child(4n+1),
   .node .view.grid .view-content > div .group-meta:nth-child(4n+1),
   .view.grid .view-content > div .node .group-access:nth-child(4n+1),
   .node .view.grid .view-content > div .group-access:nth-child(4n+1),
   .view.grid .view-content > div .node .group-editors-pub:nth-child(4n+1),
-  .node .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .node-teaser .field-name-field-doc-thumb:nth-child(4n+1), .node-teaser .view.grid .view-content > div .field-name-field-doc-thumb:nth-child(4n+1),
-  .view.grid .view-content > div .node-teaser .field-name-field-image:nth-child(4n+1),
-  .node-teaser .view.grid .view-content > div .field-name-field-image:nth-child(4n+1),
+  .node .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .node-teaser .field-name-field-doc-thumb:nth-child(4n+1), .node-teaser .view.grid .view-content > div .field-name-field-doc-thumb:nth-child(4n+1), .view.grid .view-content > div .node-teaser:not(.node-organization) .field-name-field-image:nth-child(4n+1), .node-teaser:not(.node-organization) .view.grid .view-content > div .field-name-field-image:nth-child(4n+1),
   .view.grid .view-content > div .node-teaser .group-meta:nth-child(4n+1),
   .node-teaser .view.grid .view-content > div .group-meta:nth-child(4n+1),
   .view.grid .view-content > div .node-teaser .group-access:nth-child(4n+1),
   .node-teaser .view.grid .view-content > div .group-access:nth-child(4n+1),
   .view.grid .view-content > div .node-teaser .group-editors-pub:nth-child(4n+1),
-  .node-teaser .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .view-content > div:nth-child(4n+1) {
+  .node-teaser .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .node-listing .field-name-field-doc-thumb:nth-child(4n+1), .node-listing .view.grid .view-content > div .field-name-field-doc-thumb:nth-child(4n+1), .view.grid .view-content > div .node-listing:not(.node-organization) .field-name-field-image:nth-child(4n+1), .node-listing:not(.node-organization) .view.grid .view-content > div .field-name-field-image:nth-child(4n+1),
+  .view.grid .view-content > div .node-listing .group-meta:nth-child(4n+1),
+  .node-listing .view.grid .view-content > div .group-meta:nth-child(4n+1),
+  .view.grid .view-content > div .node-listing .group-access:nth-child(4n+1),
+  .node-listing .view.grid .view-content > div .group-access:nth-child(4n+1),
+  .view.grid .view-content > div .node-listing .group-editors-pub:nth-child(4n+1),
+  .node-listing .view.grid .view-content > div .group-editors-pub:nth-child(4n+1), .view.grid .view-content > div .view-content > div:nth-child(4n+1) {
     clear: left;
   }
 }
