@@ -1,0 +1,64 @@
+#comments {
+    .indented {
+        border-left: .5em solid $grey-light;
+        margin: 1em 0 1em 1em;
+        padding: 0 0 0 1em;
+        .comment:first-of-type {
+            border-top: 1px dotted $grey;
+        }
+    }
+    &>h2,
+    &>form {
+        background-color: $grey-lighter;
+        @extend .col-sm-12;
+    /*     @extend .col-sm-offset-1; */
+    /*     @extend .col-md-8; */
+    /*     @extend .col-md-offset-2; */
+    /*     @extend .col-lg-6; */
+    /*     @extend .col-lg-offset-2; */
+    }
+    &>h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 1em;
+    }
+    .comment {
+        @extend .body-field;
+        @extend .row;
+        padding: 1em;
+        border-top: 1px dotted $grey;
+        &:first-of-type {
+            border-top: 0;
+        }
+        &>h3 {
+            @extend .col-sm-12;
+            @extend .col-md-8;
+        }
+        .user-picture {
+            @extend .pull-right;
+            @extend .col-sm-4;
+            text-align: right;
+            img {
+                display: inline;
+                height: 100px;
+            }
+            //@extend .col-md-4;
+        }
+        .submitted {
+            clear: right;
+            text-align: right;
+            @extend .pull-right;
+            margin-top: 20px;
+            @extend .col-sm-8;
+            @extend .col-md-4;
+            font-size: .9em;
+        }
+        .content {
+            @extend .col-sm-12;
+            float: none;
+        }
+        .links {
+            @extend .pull-right;
+        }
+    }
+}
