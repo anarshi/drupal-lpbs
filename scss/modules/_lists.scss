@@ -65,6 +65,9 @@
             @media (min-width: $screen-lg) {
                 &:nth-child(6n+1) { clear: left; }
             }
+            .node-organization .field-name-field-image {
+                padding: 0 1em;
+            }
         }
     }
 }

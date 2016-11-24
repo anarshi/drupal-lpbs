@@ -30,7 +30,7 @@
     }
     // Node image
     .field-name-field-doc-thumb,
-    &:not(.node-organization):not(.node-teaser) .field-name-field-image {
+    .field-name-field-image {
         padding-right: 2em;
         padding-bottom: 2em;
         img {
@@ -44,16 +44,15 @@
             font-style: italic;
         }
     }
-}
 
-//
-// The following classes sets display settings for know fields
-// or fieldgroup to create 'responsive columns'
-//
-// Warning: order in which fieldgroups (meta and editors-pub)
-//  are displayed (node: manage display) matters!
-//
-.node, .node-teaser, .node-listing {
+    //
+    // The following classes sets display settings for know fields
+    // or fieldgroup to create 'responsive columns'
+    //
+    // Warning: order in which fieldgroups (meta and editors-pub)
+    //  are displayed (node: manage display) matters!
+    //
+
     @extend .body-field;
 
     //.group-topics-regions,
@@ -62,9 +61,10 @@
     .field-name-field-acronym,
     .field-name-field-link,
     .group-meta,
+    .group-details,
     .group-access,
     .group-editors-pub {
-        @extend .col-xs-4;
+        @extend .col-sm-4;
         @extend .col-md-3;
     }
 
@@ -73,22 +73,25 @@
     //.group-topics-regions,
     .field-name-field-acronym,
     .field-name-field-link,
-    .group-meta,
     .group-editors-pub {
         clear: left;
     }
-    @media (min-width: $screen-md-min) {        
-        .group-meta,
-        .group-editors-pub {
-            float: right;
-            clear: right;
-        }
-    }
 }
+
+/* .search-result .node, */
+/* .node-teaser, .node-listing { */
+/*     .field-name-field-doc-description, */
+/*     .field-name-body { */
+/*         @extend .pull-right; */
+/*         @extend .col-sm-8; */
+/*         @extend .col-md-9; */
+/*     } */
+/* } */
 
 //
 // For Organizations
 //
+.node-listing,
 .node-teaser {
     // Organization teasers
     &.node-organization {

@@ -1,44 +1,85 @@
+.page-library-search,
 .page-search {
-
+    // Do NOT display the page title "Search"
     header .block-search {
         display: none;
     }
-    
+    // Hide "search results:" title
     .page-header {
         @extend .sr-only;
     }
-
-    .form-inline {
+    .search-form {
         margin-top: 20px;
         margin-bottom: 20px;
         @extend .row;
-        .form-item {
-            @extend .col-xs-10;
-            input {
-                width: 100%;
+        .form-inline {
+            @extend .clearfix;
+            .form-item {
+                margin: 0;
+                @extend .col-xs-10;
+                //@extend .col-sm-7;
+                input {
+                    width: 100%;
+                }
+            }
+            .form-submit {
+                float: left;
+                //@extend .col-xs-2;
+                @extend .btn-primary;
+            }
+            // TODO: BUG in theme, drupal search or blocks?
+            .spelling-suggestions {
+                display: none;
             }
         }
-        .form-submit {
-            @extend .btn-primary;
-        }
-        // TODO: bugged in theme, drupal search or blocks?
-        .spelling-suggestions {
-            display: none;
+        // Advanced search
+        fieldset.panel {
+            clear: both;
+            margin: $grid-gutter-width / 2;
+            margin-bottom: 0;
+            .panel-body {
+                @extend .row;
+                .form-item {
+                    margin-top: 15px;
+                    @extend .col-sm-6;
+                    &:nth-of-type(2n+1) {
+                        clear: left;
+                    }
+                }
+            }
         }
     }
-    .panel {
-        .form-item {
-            margin-top: 15px;
+    // Facets
+    .apachesolr-browse-blocks {
+        @extend .row;
+        >h2,
+        >p {
             @extend .col-sm-6;
-            &:nth-of-type(2n+1) {
+        }
+        >p {
+            margin-top: 2.5em;
+            font-style: italic;
+        }
+        .block-facetapi {
+            &:first-of-type {
                 clear: left;
             }
+            @extend .col-sm-6;
+            @extend .col-lg-4;
         }
     }
+    // Results
     ol.search-results {
         @extend .list-unstyled;
         article footer .links {
             display: none;
         }
     }
+}
+
+// Hack for page (no picture)
+.search-result .node-page .field-name-body {
+    @extend .pull-right;
+    @extend .col-sm-8;
+    @extend .col-md-9;
 }

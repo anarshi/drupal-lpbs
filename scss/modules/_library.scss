@@ -1,16 +1,27 @@
-.node-landlibrary-resource,
-.node-type-landlibrary-resource {
+.node-landlibrary-resource {
     .field-group-fieldset.panel {
         .panel-heading {
-            background-color: $red;
-            color: $white;
+            color: $red;
+            background-color: $white;
             font-weight: bold;
-            font-size: .9em;
+            //font-size: 1em;
+            padding: 0;
+            text-transform: uppercase;
+            border-bottom: 2px solid $red;
         }
     }
     &.node-teaser {
         .field-name-field-doc-creation-date {
             display: inline-block;
+        }
+    }
+}
+.node-type-landlibrary-resource {
+    @media (min-width: $screen-md-min) {
+        .group-meta,
+        .group-editors-pub {
+            float: right;
+            clear: right;
         }
     }
 }
