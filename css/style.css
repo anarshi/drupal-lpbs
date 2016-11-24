@@ -4878,6 +4878,9 @@ body[class*="page-book-countries-"] #block-views-country-content-library h2.bloc
 .field-name-field-status { margin-bottom: 1em; }
 .field-name-field-status .field-item { font-size: 1.4em; }
 
+.node-debate.node-teaser .field-name-field-facilitators .field-item, .node-debate.node-listing .field-name-field-facilitators .field-item, .search-results .node.node-debate .field-name-field-facilitators .field-item { display: inline; }
+.node-debate.node-teaser .field-name-field-facilitators .field-item:not(:first-of-type):before, .node-debate.node-listing .field-name-field-facilitators .field-item:not(:first-of-type):before, .search-results .node.node-debate .field-name-field-facilitators .field-item:not(:first-of-type):before { content: ', '; }
+
 .node-type-debate .node .field-name-field-image, .node-type-debate .node .group-details, .node-type-debate .node .field-name-field-facilitators { clear: left; }
 .node-type-debate .node .field-name-field-image .field-label, .node-type-debate .node .group-details .field-label, .node-type-debate .node .field-name-field-facilitators .field-label { font-size: 2em; }
 

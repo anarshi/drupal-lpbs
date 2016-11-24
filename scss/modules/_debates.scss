@@ -17,6 +17,14 @@
         @extend .pull-right;
         @extend .col-md-6;
     }
+    .field-name-field-facilitators {
+        .field-item {
+            &:not(:first-of-type):before {
+                content: ', ';
+            }
+            display: inline;
+        }
+    }
 }
 
 .node-type-debate .node {
