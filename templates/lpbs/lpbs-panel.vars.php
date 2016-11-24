@@ -21,7 +21,13 @@ function lpbs_preprocess_lpbs_panel(&$variables) {
 
   // Retrieve the attributes for the element.
   $attributes = &_lpbs_get_attributes($element);
+  /* dpm($element, 'elem'); */
+  /* dpm($attributes, 'attr'); */
 
+  if ($attributes['id'] == 'edit-advanced-search') {
+    $element['#collapsed'] = TRUE;
+    $element['#collapsible'] = TRUE;
+  }
   // Add panel and panel-default classes.
   $attributes['class'][] = 'panel';
   $attributes['class'][] = 'panel-default';
