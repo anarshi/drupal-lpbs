@@ -1,84 +1,3 @@
-
-.node {
-    // Header
-    &>header>.submitted {
-        @extend .sr-only;
-    }
-
-    // Body / main content
-    >fieldset.panel {
-        border: 0;
-        @include box-shadow(none);
-        .panel-body {
-            padding: 0;
-        }
-    }
-
-    // Node image
-    .field-name-field-doc-thumb,
-    &:not(.node-organization):not(.node-teaser) .field-name-field-image {
-        padding-right: 2em;
-        padding-bottom: 2em;
-        img {
-            @include box-shadow(5px 5px 10px 0 rgba($black, 0.4));
-        }
-    }
-
-    footer {
-        @extend .clearfix;
-        .links {
-            @extend .pull-right;
-            font-style: italic;
-        }
-    }
-}
-
-.node, .node-teaser, .node-listing {
-    // Display settings for node fieldgroup to emulate 'responsive columns'
-    // Warning: order in which fieldgroups (meta and editors-pub)
-    //  are displayed (node: manage display) matters!
-
-    @extend .body-field;
-    //.group-topics-regions,
-    .field-name-field-doc-thumb,
-    &:not(.node-organization) .field-name-field-image,
-    .group-meta,
-    .group-access,
-    .group-editors-pub {
-        @extend .col-xs-4;
-        @extend .col-md-3;
-    }
-
-    //.group-topics-regions,
-    .group-meta,
-    .group-editors-pub {
-        clear: left;
-    }
-    @media (min-width: $screen-md-min) {        
-        .group-meta,
-        .group-editors-pub {
-            float: right;
-            clear: right;
-        }
-    }
-}
-
-.node-teaser {
-    // For organization that appears inside another teaser
-    .node-organization {
-        float: right;
-    }
-
-    // Organization teasers
-    // do not show title
-    &.node-organization {
-        footer .links,
-        header h2 {
-            @extend .sr-only;
-        }
-    }
-}
-
 .field-collection-view {
     margin: 0;
     padding: 0 0 1em 0;
@@ -96,3 +15,96 @@
     display: inline-block;
 }
 
+.node {
+    // Header
+    &>header>.submitted {
+        @extend .sr-only;
+    }
+    // Body / main content
+    >fieldset.panel {
+        border: 0;
+        @include box-shadow(none);
+        .panel-body {
+            padding: 0;
+        }
+    }
+    // Node image
+    .field-name-field-doc-thumb,
+    &:not(.node-organization):not(.node-teaser) .field-name-field-image {
+        padding-right: 2em;
+        padding-bottom: 2em;
+        img {
+            @include box-shadow(5px 5px 10px 0 rgba($black, 0.4));
+        }
+    }
+    footer {
+        @extend .clearfix;
+        .links {
+            @extend .pull-right;
+            font-style: italic;
+        }
+    }
+}
+
+//
+// The following classes sets display settings for know fields
+// or fieldgroup to create 'responsive columns'
+//
+// Warning: order in which fieldgroups (meta and editors-pub)
+//  are displayed (node: manage display) matters!
+//
+.node, .node-teaser, .node-listing {
+    @extend .body-field;
+
+    //.group-topics-regions,
+    .field-name-field-doc-thumb,
+    .field-name-field-image,
+    .field-name-field-acronym,
+    .field-name-field-link,
+    .group-meta,
+    .group-access,
+    .group-editors-pub {
+        @extend .col-xs-4;
+        @extend .col-md-3;
+    }
+
+    // Those field(group)s clear left float to align left
+    // under the first item (usually a field-image)
+    //.group-topics-regions,
+    .field-name-field-acronym,
+    .field-name-field-link,
+    .group-meta,
+    .group-editors-pub {
+        clear: left;
+    }
+    @media (min-width: $screen-md-min) {        
+        .group-meta,
+        .group-editors-pub {
+            float: right;
+            clear: right;
+        }
+    }
+}
+
+//
+// For Organizations
+//
+.node-teaser {
+    // Organization teasers
+    &.node-organization {
+        // do not show title
+        footer .links,
+        header h2 {
+            @extend .sr-only;
+        }
+        // Image (logo) width should be 100%
+        // (organization teasers only show the logo)
+        .field-name-field-image {
+            width: 100%;
+        }
+    }
+    // For organization that appears inside another teaser
+    .node-organization {
+        float: right;
+    }
+}
