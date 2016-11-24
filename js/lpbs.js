@@ -14,6 +14,7 @@ var Drupal = Drupal || {};
 
         // Init BS selectpicked for know fields
       attach: function(context) {
+          //console.log('hello lpbs behavior');
           $([
               'field-geographical-focus',
               'field-related-topics',
@@ -21,6 +22,7 @@ var Drupal = Drupal || {};
               'field-orgref',
               'field-doc-publisher',
               'field-doc-provider',
+              'field-doc-type',
               'field-related-themes'
           ]).each(function (n, item) {
               var select = $('.field-name-' + item + ' select');
@@ -34,6 +36,15 @@ var Drupal = Drupal || {};
               }
               // Also for search
               select = $('.form-item-search-im-' + item + ' select');
+              if (select.length > 0) {
+                  select.selectpicker({
+                      // TODO: fix container
+                      //container: '.form-item-' + item + '-und',
+                      size: 4,
+                      liveSearch: true
+                  });
+              }
+              select = $('.form-item-search-sm-' + item + ' select');
               if (select.length > 0) {
                   select.selectpicker({
                       // TODO: fix container
