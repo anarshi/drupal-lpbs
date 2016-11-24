@@ -31,7 +31,7 @@
 // Views with exposed filters
 .view-with-filters {
     .view-filters {
-        @extend .col-md-3;
+        @extend .col-sm-3;
         @extend .pull-right;
     }
     .view-content {
@@ -47,9 +47,13 @@
         @extend .text-center;
         // Make a responsive grid for the view
         .view-content-inner>div {
+            @extend .col-xs-6;
             @extend .col-sm-4;
             @extend .col-md-3;
             @extend .col-lg-2;
+            @media (max-width: $screen-sm) {
+                &:nth-child(2n+1) { clear: left; }
+            }
             @media (min-width: $screen-sm) and (max-width: $screen-md) {
                 &:nth-child(3n+1) { clear: left; }
             }
