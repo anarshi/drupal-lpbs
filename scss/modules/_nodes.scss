@@ -97,10 +97,27 @@
         header h2 {
             @extend .sr-only;
         }
+        .field {
+            width: 100%;
+            text-align: center;
+        }
         // Image (logo) width should be 100%
         // (organization teasers only show the logo)
         .field-name-field-image {
-            width: 100%;
+            line-height: 180px;
+            @media (min-width: $screen-lg) {
+                line-height: 140px;
+            }
+
+            img.img-responsive {
+                height: initial;
+                display: inline
+            }
+        }
+        .field-name-field-acronym a:hover,
+        .field-name-field-acronym a {
+            color: $grey-light;
+            font-weight: bold;
         }
     }
     // For organization that appears inside another teaser

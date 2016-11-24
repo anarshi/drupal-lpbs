@@ -32,10 +32,12 @@
 .view-with-filters {
     .view-filters {
         @extend .col-sm-3;
+        @extend .col-lg-2;
         @extend .pull-right;
     }
     .view-content {
         @extend .col-sm-9;
+        @extend .col-lg-10;
         .view-content-inner {
             @extend .row;
         }
